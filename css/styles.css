@@ -31,6 +31,7 @@ nav {
 
 
 
+
 nav ul {
     display: flex;
     gap: 10rem;
@@ -282,6 +283,11 @@ a#btn:hover {
     min-width: 250px;
 }
 
+.footer-right,
+.footer-units {
+    justify-content: space-between;
+}
+
 .unit p {
     margin-bottom: 0.5rem;
 }
@@ -336,9 +342,10 @@ a#btn:hover {
 /* Menu padrão */
 #nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     list-style: none;
     flex-wrap: wrap;
+
 }
 
 /* ========================== */
@@ -395,17 +402,9 @@ a#btn:hover {
         padding: 1rem;
     }
 
+
     /* 🔸 Onda */
-    .bottom-wave {
-        position: relative;
-        bottom: unset;
-        left: unset;
-        margin-top: -40px;
-        z-index: 0;
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+    .bottom-wave {}
 
     /* 🔸 Banner */
     .banner {
