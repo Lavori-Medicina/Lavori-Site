@@ -40,11 +40,16 @@
     text-align: justify;
 }
 
+.article-text-history p {
+    margin-bottom: 1.0rem;
+}
+
 .article-text-history h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(35, 100, 112);
     font-weight: bolder;
+    text-align: start;
 }
 
 /* 🎯 ZIGUE-ZAGUE: inverte blocos pares */

@@ -52,4 +52,16 @@
     .article-text p {
         font-size: 1.1rem;
     }
+
+    .history-title h1 {
+        font-size: 2.0rem;
+    }
+
+    .history-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .history-title p {
+        font-size: 1.0rem;
+    }
 }
