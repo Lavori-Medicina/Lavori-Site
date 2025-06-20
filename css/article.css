@@ -9,6 +9,45 @@
     box-sizing: border-box;
 }
 
+.section-units {
+    width: 100%;
+    background: #003366;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.contante-units {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.unity-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.unity-text h1 {
+    color: aqua;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;   
+}
+.unity-text p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: start;
+}
+.unity-text h2{
+    color: #eead2d;
+}
+
 .content-history {
     display: flex;
     flex-wrap: wrap;
