@@ -1,0 +1,66 @@
+/* ========================== */
+/* 🔹 NAVEGAÇÃO (NAVBAR)      */
+/* ========================== */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#header-lavori {
+    width: 150px;
+}
+
+nav ul#nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+}
+
+nav ul li a:not(#contact a) {
+    text-decoration: none;
+    color: #2A4F6E;
+    padding: 5px 0;
+}
+
+#contact a {
+    text-decoration: none;
+    border: 1px solid rgb(70, 164, 226);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #007acc;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover {
+    background: #005f99;
+    color: white;
+}
+
+ul li:not(#contact) a:hover {
+    box-shadow: 0px 2px #007acc;
+    color: #005f99;
+}
+
+/* Botão hamburguer */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+}

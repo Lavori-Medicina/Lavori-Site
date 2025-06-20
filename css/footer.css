@@ -1,0 +1,109 @@
+/* ========================== */
+/* 🔹 RODAPÉ (FOOTER)         */
+/* ========================== */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    background-color: #2A4F6E;
+    color: #f1f5f9;
+    gap: 40px;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 100px;
+}
+
+.footer-left,
+.footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ff8c42 !important;
+    box-shadow: none !important;
+}
+
+.footer-units,
+.unit {
+    text-align: center;
+    min-width: 250px;
+}
+
+.footer-right,
+.footer-units {
+    justify-content: space-around;
+}
+
+.unit p {
+    margin-bottom: 0.5rem;
+}
+
+.unit p:not(.p-strong-footer) {
+    font-size: 14px;
+}
+
+.p-strong-footer {
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #276eae;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+#header-lavori-footer {
+    width: 100px;
+}
+
+/* Onda inferior */
+.bottom-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}

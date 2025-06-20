@@ -1,0 +1,75 @@
+/* ========================== */
+/* 🔹 BANNER PRINCIPAL        */
+/* ========================== */
+.banner {
+    position: relative;
+    height: 120vh;
+    overflow: hidden;
+    background-image: url('../image/tela-principal2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.banner-left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(63, 135, 245, 0.8), rgba(106, 169, 249, 0.8));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 20%, 100% 40%, 95% 60%, 100% 80%, 90% 90%, 0% 100%);
+}
+
+.banner-left h4 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.banner-left h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.banner-left h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #e0e0e0;
+}
+
+.banner-left h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 1.4rem;
+}
+
+a#btn {
+    cursor: pointer;
+    background: #007acc;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+}
+
+a#btn:hover {
+    background: #005f99;
+    color: white;
+}

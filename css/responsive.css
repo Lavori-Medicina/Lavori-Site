@@ -1,0 +1,55 @@
+/* ========================== */
+/* 🔹 RESPONSIVIDADE MOBILE   */
+/* ========================== */
+@media screen and (max-width:740px) {
+
+    .hamburger {
+        display: block;
+        position: absolute;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul#nav-links {
+        display: none;
+        margin-bottom: 50px;
+        gap: 2rem;
+        list-style: none;
+        font-size: 1.1rem;
+    }
+
+    .banner {
+        height: 60vh;
+    }
+
+    .banner-left h4 {
+        font-size: 1rem;
+    }
+
+    .banner-left h1 {
+        font-size: 2rem;
+    }
+
+    .banner-left h3 {
+        font-size: 1rem;
+    }
+
+    .banner-left h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+    }
+
+    .article-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .article-text p {
+        font-size: 1.1rem;
+    }
+}

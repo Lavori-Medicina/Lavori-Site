@@ -53,6 +53,19 @@ function scrollToInfo(event) {
   fecharMenuSeMobile();
 }
 
+function scrollToHistory(event) {
+  event.preventDefault();
+  const info = document.querySelector('#history');
+  const headerHeight = document.querySelector('nav').offsetHeight;
+
+  window.scrollTo({
+    top: info.offsetTop - headerHeight,
+    behavior: 'smooth',
+  });
+
+  fecharMenuSeMobile();
+}
+
 function fecharMenuSeMobile() {
   const navLinks = document.getElementById('nav-links');
   if (window.innerWidth <= 768) {
