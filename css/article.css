@@ -4,7 +4,7 @@
 
 .section-history {
     width: 100%;
-    background-color: #e9f2f9;
+    background: #e5faff;
     padding: 4rem 2rem;
     box-sizing: border-box;
 }
@@ -19,7 +19,7 @@
 }
 
 .image-history {
-    flex: 1 1 20%;
+    flex: 1 1 10%;
     min-width: 280px;
 }
 
@@ -34,20 +34,39 @@
     flex: 1 1 50%;
     min-width: 300px;
     padding: 0 1rem;
-    color: #0a3950;
+    color: rgb(35, 100, 112);
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .article-text-history h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #003366;
+    color: rgb(35, 100, 112);
+    font-weight: bolder;
 }
 
 /* 🎯 ZIGUE-ZAGUE: inverte blocos pares */
 .content-history:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+.history-title {
+    text-align: start;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.history-title h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #0a3950;
+    box-shadow: -8px 0 0 #00cc66;
+    padding-left: 10px;
+    /* background: #e9f2f9; */
+    /* sombra lateral verde à esquerda */
+    /* border-radius: 8px; */
 }
 
 
@@ -102,6 +121,7 @@
     margin-bottom: 1.2rem;
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .btn-primary {
