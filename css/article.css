@@ -2,6 +2,87 @@
 /* 🔹 SEÇÃO DO ARTIGO  INFORMATIVO */
 /* ========================== */
 
+
+
+.section-units {
+    width: 100%;
+    background: #003366;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.container-units {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.unity-text-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.unity-text-title h1 {
+    color: #eead2d;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.unity-text-title p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: start;
+    text-align: justify;
+}
+.unity-text-title h2 {
+    margin-top: 2rem;
+    color: aqua;
+    font-size: 3rem;
+}
+
+.containers-clinicas-unity {
+    background-color: #f2fbff;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.clinica {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clinica h3 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.clinica h4 {
+    color: #005588;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.clinica p {
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
 .section-history {
     width: 100%;
     background: #e5faff;
@@ -9,44 +90,6 @@
     box-sizing: border-box;
 }
 
-.section-units {
-    width: 100%;
-    background: #003366;
-    padding: 4rem 2rem;
-    box-sizing: border-box;
-}
-
-.contante-units {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 4rem;
-}
-
-.unity-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-.unity-text h1 {
-    color: aqua;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;   
-}
-.unity-text p {
-    color: #ffffff;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: start;
-}
-.unity-text h2{
-    color: #eead2d;
-}
 
 .content-history {
     display: flex;
