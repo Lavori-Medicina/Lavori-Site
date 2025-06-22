@@ -29,7 +29,7 @@
 }
 
 .unity-text-title p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: start;
     text-align: justify;
@@ -38,7 +38,7 @@
 .unity-text-title h2 {
     margin-top: 2rem;
     color: aqua;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .containers-clinicas-unity {
@@ -144,6 +144,9 @@
 .image-history {
     flex: 1 1 10%;
     min-width: 280px;
+    position: relative;
+    overflow: visible;
+
 }
 
 .image-history img {
@@ -151,6 +154,34 @@
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.image-history img:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+}
+
+.content-history:nth-child(even) .image-history img {
+    transform: translateX(20px);
+}
+
+.scroll-animate {
+    animation: floatFromSide 1.2s ease forwards;
+    /* antes era 0.6s */
+}
+
+@keyframes floatFromSide {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .article-text-history {
@@ -233,13 +264,14 @@
     min-width: 300px;
 }
 
-
-
 .article-image img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+
 }
 
 .article-text {
@@ -275,4 +307,70 @@
 
 .btn-primary:hover {
     background-color: #005f99;
+}
+
+
+@media screen and (max-width:740px) {
+
+
+    /* INFORMATIVO */
+    .article-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .article-text p {
+        font-size: 1.1rem;
+    }
+
+    .history-title h1 {
+        font-size: 2rem;
+    }
+
+    .article-text-history h2 {
+        font-size: 2rem;
+    }
+
+
+    .article-text-history p {
+        font-size: 1.2rem;
+    }
+
+
+    /* UNIDADES */
+
+
+    .unity-text-title h1 {
+        font-size: 2.5rem;
+
+    }
+
+
+    .unity-text-title p {
+        font-size: 1rem;
+    }
+
+    .unity-text-title h2 {
+
+        font-size: 1.4rem;
+    }
+
+    .clinica h3 {
+        font-size: 1.3rem;
+    }
+
+    .clinica h2 {
+        font-size: 1.3rem;
+    }
+
+    .clinica h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .clinica p {
+        font-size: 1.0rem;
+
+    }
+
+
 }

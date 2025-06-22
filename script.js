@@ -62,17 +62,34 @@ function scrollToInfo(event) {
     behavior: 'smooth',
   });
 
+  const targetImage = info.querySelector('.article-image img'); // ou qualquer outro seletor dentro de #info
+  if (targetImage) {
+    targetImage.classList.remove('scroll-animate'); // remove para poder reanimar
+    void targetImage.offsetWidth; // força reflow
+    targetImage.classList.add('scroll-animate');
+  }
+
   fecharMenuSeMobile();
 }
 
 function scrollToHistory(event) {
   event.preventDefault();
+
   const history = document.querySelector('#history');
   const headerHeight = document.querySelector('nav').offsetHeight;
 
   window.scrollTo({
     top: history.offsetTop - headerHeight,
     behavior: 'smooth',
+  });
+
+  // Animação nas imagens
+  const imagens = history.querySelectorAll('.image-history img');
+  imagens.forEach(img => {
+    img.classList.add('scroll-animate');
+    setTimeout(() => {
+      img.classList.remove('scroll-animate');
+    }, 600);
   });
 
   fecharMenuSeMobile();
