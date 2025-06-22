@@ -67,11 +67,11 @@ function scrollToInfo(event) {
 
 function scrollToHistory(event) {
   event.preventDefault();
-  const info = document.querySelector('#history');
+  const history = document.querySelector('#history');
   const headerHeight = document.querySelector('nav').offsetHeight;
 
   window.scrollTo({
-    top: info.offsetTop - headerHeight,
+    top: history.offsetTop - headerHeight,
     behavior: 'smooth',
   });
 
