@@ -117,6 +117,20 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.texto-localizacao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-style: italic;
+    color: #2a4f6e;
+    margin: 1rem 0 0.5rem;
+}
+
+.map-icon {
+    width: 20px;
+    height: 20px;
+}
+
 
 
 
