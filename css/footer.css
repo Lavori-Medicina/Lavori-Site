@@ -97,16 +97,7 @@
     width: 100px;
 }
 
-/* Onda inferior */
-.bottom-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    pointer-events: none;
-}
+
 
 
 @media screen and (max-width:740px) {

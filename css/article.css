@@ -83,6 +83,7 @@
     line-height: 1.6;
 }
 
+/* 
 .whatsapp-contact {
     display: flex;
     align-items: center;
@@ -97,15 +98,53 @@
 }
 
 /* Estilo do link */
-.whatsapp-contact a {
+/* .whatsapp-contact a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
 }
 
 /* Hover verde tipo WhatsApp */
-.whatsapp-contact a:hover {
+/* .whatsapp-contact a:hover {
     color: #25D366;
+} */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.btn-whatsapp .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.contato-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.personagem-callcenter {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.contato-info {
+    flex: 1;
 }
 
 .mapa-unidade {
@@ -131,6 +170,18 @@
     height: 20px;
 }
 
+.bloco-contato {
+    background-color: #e9f9f0;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border-left: 6px solid #25D366;
+}
+
+.bloco-contato h4 {
+    color: #1e5e3f;
+    margin-bottom: 0.5rem;
+}
 
 
 
@@ -323,6 +374,89 @@
     background-color: #005f99;
 }
 
+/* Section - Services */
+
+.section-services {
+    width: 100%;
+    background-color: #005f99;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+
+}
+
+.article-services {
+    display: flex;
+    /* background-color: #2a4f6e; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    /* margin: 100px; */
+    height: 80vh;
+
+}
+
+.article-services h2 {
+    width: 100%;
+    text-align: center;
+    color: #003366;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.list-services ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.list-services ul li {
+    background-color: transparent;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(100, 180, 255, 0.4);
+    font-size: 1.2rem;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+}
+
+#laboratorial {
+    position: relative;
+    padding-bottom: 1.5rem;
+    /* afasta o texto da seta */
+    overflow: visible;
+    /* importante caso seja li dentro de container com overflow oculto */
+}
+
+/* 2. Cria o triângulo apontando para baixo */
+#laboratorial::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* joga um pouco para fora do li */
+    left: 15%;
+    /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    /* cor da seta: branco (ou troque para outra) */
+}
+
+#information {
+    position: relative;
+    top: -35px;
+    box-shadow: none;
+    font-style: italic;
+    right: 20px;
+}
+
 
 @media screen and (max-width:740px) {
 
@@ -368,6 +502,10 @@
         font-size: 1.4rem;
     }
 
+    .clinica {
+        padding: 1rem;
+    }
+
     .clinica h3 {
         font-size: 1.3rem;
     }
@@ -386,5 +524,32 @@
 
     }
 
+    .contato-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
+    .personagem-callcenter {
+        width: 80px;
+        margin-bottom: 1rem;
+    }
+
+    .contato-info h4 {
+        font-size: 1.4rem;
+    }
+
+    .btn-whatsapp {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mapa-unidade iframe {
+        height: 250px;
+    }
 }
