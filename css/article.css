@@ -376,41 +376,42 @@
 
 /* Section - Services */
 
-.section-services {
+.section-services-medicina {
     width: 100%;
     background-color: #005f99;
-    align-items: center;
-    justify-content: center;
     padding: 4rem 2rem;
     box-sizing: border-box;
-
 }
 
-.article-services {
+.container-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.article-services-medicina {
     display: flex;
-    /* background-color: #2a4f6e; */
+    background-color: #2a4f6e;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    /* padding: 40px; */
-    /* margin: 100px; */
-    height: 80vh;
-
+    padding: 2rem 1rem;
+    border-radius: 10px;
 }
 
-.article-services h2 {
+.article-services-medicina h2 {
     width: 100%;
     text-align: center;
-    color: #003366;
+    color: #ffffff;
     font-size: 2.5rem;
-    margin: 2rem 0;
+    margin: 2rem 0 1rem;
 }
 
 .list-services ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 0;
 }
 
 .list-services ul li {
@@ -424,29 +425,24 @@
     text-align: center;
 }
 
+/* Triângulo indicador */
 #laboratorial {
     position: relative;
     padding-bottom: 1.5rem;
-    /* afasta o texto da seta */
     overflow: visible;
-    /* importante caso seja li dentro de container com overflow oculto */
 }
 
-/* 2. Cria o triângulo apontando para baixo */
 #laboratorial::after {
     content: "";
     position: absolute;
     bottom: -10px;
-    /* joga um pouco para fora do li */
-    left: 15%;
-    /* centraliza horizontalmente */
+    left: 50%;
     transform: translateX(-50%);
-    width: 0px;
+    width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
-    /* cor da seta: branco (ou troque para outra) */
 }
 
 #information {
@@ -455,6 +451,32 @@
     box-shadow: none;
     font-style: italic;
     right: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* 🔸 RESPONSIVIDADE */
+@media screen and (max-width: 740px) {
+    .article-services-medicina h2 {
+        font-size: 2rem;
+    }
+
+    .list-services ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .list-services ul li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    #information {
+        font-size: 0.95rem;
+        top: -25px;
+        right: 0;
+    }
 }
 
 
@@ -551,5 +573,25 @@
 
     .mapa-unidade iframe {
         height: 250px;
+    }
+
+    .article-services-medicina h2 {
+        font-size: 2rem;
+    }
+
+    .list-services ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .list-services ul li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    #information {
+        font-size: 0.95rem;
+        top: -25px;
+        right: 0;
     }
 }

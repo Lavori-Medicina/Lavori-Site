@@ -1,495 +1,625 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Lavori Medicina Ocupacional LTDA - Saúde e Segurança no Trabalho
+    </title>
 
-  <title>
-    Lavori Medicina Ocupacional LTDA - Saúde e Segurança no Trabalho
-  </title>
+    <!-- Descrição para buscadores -->
+    <meta
+      name="description"
+      content="Lavori Medicina Ocupacional LTDA oferece exames admissionais, periódicos e demissionais, laudos técnicos, consultoria e treinamentos para garantir saúde e segurança no trabalho."
+    />
 
-  <!-- Descrição para buscadores -->
-  <meta name="description" content="Lavori Medicina Ocupacional LTDA oferece exames admissionais, periódicos e demissionais, laudos técnicos, consultoria e treinamentos para garantir saúde e segurança no trabalho." />
+    <!-- Palavras-chave relevantes -->
+    <meta
+      name="keywords"
+      content="medicina ocupacional, exames admissionais, exames periódicos, laudos técnicos, segurança do trabalho, PCMSO, LTCAT, saúde no trabalho"
+    />
 
-  <!-- Palavras-chave relevantes -->
-  <meta name="keywords" content="medicina ocupacional, exames admissionais, exames periódicos, laudos técnicos, segurança do trabalho, PCMSO, LTCAT, saúde no trabalho" />
+    <!-- Autor do site -->
+    <meta name="author" content="Lavori Medicina Ocupacional LTDA" />
 
-  <!-- Autor do site -->
-  <meta name="author" content="Lavori Medicina Ocupacional LTDA" />
+    <!-- Robots (para dizer aos buscadores indexar a página e seguir links) -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Robots (para dizer aos buscadores indexar a página e seguir links) -->
-  <meta name="robots" content="index, follow" />
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
 
-  <!-- Ícone da aba do navegador -->
-  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-  <!-- Link para o CSS -->
-  <link rel="stylesheet" href="css/index.css" />
-</head>
+  <header>
+    <nav>
+      <img
+        id="header-lavori"
+        src="image/Lavori-Mascote.png"
+        alt="Lavori Mascote"
+      />
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-<header>
-  <nav>
+      <ul id="nav-links">
+        <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
+        <li>
+          <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
+        </li>
+        <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
+        <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
+        <li>
+          <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
+        </li>
+        <li id="contact"><a href="#contato">CONTATO</a></li>
+      </ul>
+      <div id="overlay" onclick="toggleMenu()"></div>
+    </nav>
+  </header>
 
-    <img id="header-lavori" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <body>
+    <!-- Section Banner -->
+    <section class="banner" id="home">
+      <div class="banner-left">
+        <h4>Medicina Ocupacional</h4>
+        <h1>Lavori</h1>
+        <h3>Saúde no trabalho é com a gente</h3>
+        <a href="#contato" id="btn">VER SERVIÇOS</a>
+      </div>
 
-    <ul id="nav-links">
-      <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
-      <li>
-        <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
-      </li>
-      <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
-      <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
-      <li><a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a></li>
-      <li id="contact"><a href="#contato">CONTATO</a></li>
-    </ul>
-    <div id="overlay" onclick="toggleMenu()"></div>
-  </nav>
-</header>
-
-<body>
-
-  <!-- Section Banner -->
-  <section class="banner" id="home">
-    <div class="banner-left">
-      <h4>Medicina Ocupacional</h4>
-      <h1>Lavori</h1>
-      <h3>Saúde no trabalho é com a gente</h3>
-      <a href="#contato" id="btn">VER SERVIÇOS</a>
-    </div>
-
-    <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
+      <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1" d="M0,160L40,154.7C80,149,160,139,240,138.7C320,139,400,149,480,165.3C560,181,640,203,720,202.7C800,203,880,181,960,181.3C1040,181,1120,203,1200,213.3C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
     </svg> -->
-  </section>
+    </section>
 
-  <!-- Section History -->
-  <section class="section-history" id="history">
-    <!-- BLOCO 1 -->
-    <div class="history-title">
-      <h1>CONHEÇA NOSSA HISTÓRIA</h1>
-    </div>
-
-    <!-- BLOCO 1: FUNDAÇÃO -->
-    <div class="content-history">
-      <div class="article-text-history">
-        <h2>Nossa Fundação</h2>
-        <p>
-          Fundada em 2015, a Lavori nasceu com o propósito de oferecer um
-          serviço diferenciado e de excelência nas áreas de segurança do
-          trabalho e medicina ocupacional. Idealizada pelo diretor técnico
-          Luciano Lima — profissional com vasta experiência no setor — a
-          empresa surgiu a partir da percepção da carência de soluções
-          completas e eficazes no cumprimento das normas de saúde e segurança
-          nas empresas da região.
-        </p>
-        <p>
-          A primeira unidade foi implantada na cidade de Laguna – SC, com uma
-          estrutura moderna e um modelo de atendimento humanizado. Desde o
-          início, a Lavori estabeleceu como pilares a prevenção de acidentes,
-          a promoção da saúde do trabalhador e o suporte técnico qualificado
-          às organizações, tornando-se referência no setor.
-        </p>
-      </div>
-      <div class="image-history">
-        <img src="image/clinica-lavori-laguna.png" alt="Clínica da Lavori - Laguna - Anexo ao Hospital" />
-      </div>
-    </div>
-    <div class="line-history"></div>
-
-    <!-- BLOCO 2: IMBITUBA -->
-    <div class="content-history reverse">
-      <div class="article-text-history">
-        <h2>Expansão para Imbituba</h2>
-        <p>
-          Com o passar do tempo, identificamos que muitas empresas de cidades
-          vizinhas, como Imbituba, enfrentavam dificuldades para acessar
-          serviços de medicina ocupacional com qualidade, agilidade e
-          comprometimento. A escassez de clínicas com estrutura adequada
-          comprometia a eficiência dos processos admissionais e a gestão da
-          saúde corporativa.
-        </p>
-        <p>
-          Diante dessa realidade, a Lavori expandiu sua atuação e, em 2019,
-          inaugurou sua filial em Imbituba – SC. A nova unidade passou a
-          atender diversos segmentos da economia local, oferecendo soluções
-          completas em saúde e segurança do trabalho com a mesma excelência
-          que marcou a trajetória da matriz.
-        </p>
-      </div>
-      <div class="image-history">
-        <img src="image/clinica imbituba.jpg" alt="Clínica de Imbituba" />
-      </div>
-    </div>
-
-    <div class="line-history reverse"></div>
-    <!-- BLOCO 3: GAROPABA -->
-    <div class="content-history">
-      <div class="article-text-history">
-        <h2>Chegada a Garopaba</h2>
-        <p>
-          Garopaba, cidade marcada pela intensa atividade turística e
-          sazonalidade no comércio, apresenta picos de demanda por exames
-          admissionais, laudos técnicos e treinamentos obrigatórios durante o
-          verão. Esse cenário desafiador abriu espaço para a atuação da
-          Lavori.
-        </p>
-        <p>
-          Em 2023, inauguramos nossa unidade em Garopaba – SC,
-          estrategicamente planejada para atender com agilidade e qualidade,
-          especialmente nos períodos de alta temporada. A filial rapidamente
-          se tornou referência regional para empregadores que buscam
-          conformidade legal, eficiência e segurança nos processos
-          relacionados à saúde ocupacional.
-        </p>
-      </div>
-      <div class="image-history">
-        <img src="image/clinica-lavori-laguna.png" alt="Clínica de Garopaba" />
-      </div>
-    </div>
-
-    <div class="line-history"></div>
-    <!-- BLOCO 4: PAULO LOPES -->
-    <div class="content-history reverse">
-      <div class="article-text-history">
-        <h2>Chegada a Paulo Lopes</h2>
-        <p>
-          Em 2024, a Lavori avançou mais um passo em sua história de
-          crescimento com a abertura de uma nova unidade em Paulo Lopes – SC.
-          A cidade, em franca expansão, atraiu investimentos e a instalação de
-          diversas empresas, gerando uma demanda crescente por serviços
-          especializados em segurança do trabalho e saúde ocupacional.
-        </p>
-        <p>
-          A nova unidade foi projetada para oferecer atendimento ágil,
-          excelência no cumprimento das Normas Regulamentadoras (NRs) e
-          suporte técnico personalizado, promovendo ambientes corporativos
-          mais seguros, saudáveis e produtivos. Com essa expansão, a Lavori
-          reforça seu compromisso com o desenvolvimento das regiões onde atua
-          e com a proximidade junto aos seus clientes.
-        </p>
-      </div>
-      <div class="image-history">
-        <img src="image/clinica-lavori-laguna.png" alt="Clínica de Paulo Lopes" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Unity -->
-  <section class="section-units" id="unity">
-    <div class="container-units">
-      <div class="unity-text-title">
-        <h1>UNIDADES</h1>
-        <p>
-          A Lavori Medicina Ocupacional LTDA conta com quatro unidades
-          estrategicamente localizadas no litoral sul de Santa Catarina, nas
-          cidades de Laguna, Imbituba, Garopaba e Paulo Lopes.
-        </p>
-        <p>
-          Cada unidade foi planejada para oferecer facilidade de acesso,
-          conforto e agilidade no atendimento, sempre com foco na qualidade
-          dos serviços prestados. Atuamos com exames ocupacionais, avaliações
-          clínicas e programas de saúde corporativa, contribuindo para a
-          segurança, bem-estar e produtividade dos colaboradores das empresas
-          atendidas.
-        </p>
-
-        <h2>Confira abaixo os endereços e horários de atendimento:</h2>
+    <!-- Section History -->
+    <section class="section-history" id="history">
+      <!-- BLOCO 1 -->
+      <div class="history-title">
+        <h1>CONHEÇA NOSSA HISTÓRIA</h1>
       </div>
 
-      <div class="containers-clinicas-unity">
-        <div class="clinica">
-          <h3>Clínica Lavori Laguna</h3>
-
-          <p><strong>Endereço:</strong> Rua Voluntário Carpes, nº 50 - 2º andar, sala 203</p>
-
-          <h4>Horário de Atendimento</h4>
-          <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
-          <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
-
-          <div class="bloco-contato">
-            <div class="contato-flex">
-              <img src="image/personagem-callcenter.png" alt="Atendente Lavori" class="personagem-callcenter" />
-
-              <div class="contato-info">
-                <h4>Agende ou fale conosco</h4>
-                <p><strong>Email:</strong> contato@lavori.med.br<br />
-                  <strong>Telefone:</strong> (48) 3644-2736
-                </p>
-                <a href="https://wa.me/5548991581525" class="btn-whatsapp" target="_blank">
-                  <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                  WhatsApp: (48) 99166-1525
-                </a>
-              </div>
-            </div>
-          </div>png
-
-          <p class="texto-localizacao">
-            <img src="image/map-icon.png" alt="Ícone de Mapa" class="map-icon" />
-            Veja abaixo a localização da unidade no mapa:
+      <!-- BLOCO 1: FUNDAÇÃO -->
+      <div class="content-history">
+        <div class="article-text-history">
+          <h2>Nossa Fundação</h2>
+          <p>
+            Fundada em 2015, a Lavori nasceu com o propósito de oferecer um
+            serviço diferenciado e de excelência nas áreas de segurança do
+            trabalho e medicina ocupacional. Idealizada pelo diretor técnico
+            Luciano Lima — profissional com vasta experiência no setor — a
+            empresa surgiu a partir da percepção da carência de soluções
+            completas e eficazes no cumprimento das normas de saúde e segurança
+            nas empresas da região.
           </p>
-          <div class="mapa-unidade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.8961631149723!2d-48.78016868498631!3d-28.48289008248473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526be631a57a271%3A0x7fb5d0f83f0a3b36!2sRua%20Volunt%C3%A1rio%20Carpes%2C%2050%20-%20Laguna%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1718999629376!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0; border-radius: 10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+          <p>
+            A primeira unidade foi implantada na cidade de Laguna – SC, com uma
+            estrutura moderna e um modelo de atendimento humanizado. Desde o
+            início, a Lavori estabeleceu como pilares a prevenção de acidentes,
+            a promoção da saúde do trabalhador e o suporte técnico qualificado
+            às organizações, tornando-se referência no setor.
+          </p>
         </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Imbituba</h3>
-          <p><strong>Endereço:</strong> Av. Nicolau B da Rosa Matos, 834 - Centro, Imbituba - SC, 88780-000</p>
-
-          <h4>Horário de Atendimento</h4>
-          <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
-          <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
-
-          <div class="bloco-contato">
-            <div class="contato-flex">
-              <img src="image/personagem-callcenter.png" alt="Atendente" class="personagem-callcenter" />
-              <div class="contato-info">
-                <h4>Agende ou fale conosco</h4>
-                <p>
-                  <strong>Email:</strong> recepcao@lavori.med.br<br />
-                  <strong>Telefone:</strong> (48) 3644-2736
-                </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
-                  <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                  WhatsApp: (48) 99166-1525
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="texto-localizacao">
-            <img src="image/map-icon.png" alt="Ícone de Mapa" class="map-icon" />
-            Veja abaixo a localização da unidade no mapa:
-          </p>
-
-          ...
-          <!-- conteúdo da clínica -->
-          <div class="mapa-unidade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-48.64000000000001!3d-28.240000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526e3f27be862d9%3A0x4e7e6c0b2b9e07aa!2sAv.%20Nicolau%20B%20da%20Rosa%20Matos%2C%20834%20-%20Centro%2C%20Imbituba%20-%20SC%2C%2088780-000!5e0!3m2!1spt-BR!2sbr!4v1689759999999!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0; border-radius: 10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Garopaba</h3>
-          <p><strong>Endereço:</strong> Rua Prefeito João Orestes de Araújo, nº 326</p>
-
-          <h4>Horário de Atendimento</h4>
-          <p>Sexta-feira: 09:00 às 12:00</p>
-
-          <div class="bloco-contato">
-            <div class="contato-flex">
-              <img src="image/personagem-callcenter.png" alt="Atendente" class="personagem-callcenter" />
-              <div class="contato-info">
-                <h4>Agende ou fale conosco</h4>
-                <p>
-                  <strong>Email:</strong> garopaba@lavori.med.br<br />
-                  <strong>Telefone:</strong> (48) 3644-2736
-                </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
-                  <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                  WhatsApp: (48) 99166-1525
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="texto-localizacao">
-            <img src="image/map-icon.png" alt="Ícone de Mapa" class="map-icon" />
-            Veja abaixo a localização da unidade no mapa:
-          </p>
-          <div class="mapa-unidade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.987654321098!2d-48.636789012!3d-28.065432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd5678abcd%3A0x1234567890abcd!2sRua%20Prefeito%20Jo%C3%A3o%20Orestes%20de%20Ara%C3%BAjo%2C%20326%20-%20Garopaba%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000011111!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0; border-radius: 10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Paulo Lopes</h3>
-          <p><strong>Endereço:</strong> Rua Ana Raupp de Sá, nº 448, Nova Belém</p>
-
-          <h4>Horário de Atendimento</h4>
-          <p>Terça-feira: 13:00 às 17:00</p>
-
-          <div class="bloco-contato">
-            <div class="contato-flex">
-              <img src="image/personagem-callcenter.png" alt="Atendente" class="personagem-callcenter" />
-              <div class="contato-info">
-                <h4>Agende ou fale conosco</h4>
-                <p>
-                  <strong>Email:</strong> recepcao@lavori.med.br<br />
-                  <strong>Telefone:</strong> (48) 3644-2736
-                </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
-                  <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                  WhatsApp: (48) 99166-1525
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="texto-localizacao">
-            <img src="image/map-icon.png" alt="Ícone de Mapa" class="map-icon" />
-            Veja abaixo a localização da unidade no mapa:
-          </p>
-          <div class="mapa-unidade">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.8765432109876!2d-48.541234567!3d-28.136789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd9012abcd%3A0x234567890abcd!2sRua%20Ana%20Raupp%20de%20S%C3%A1%2C%20448%20-%20Paulo%20Lopes%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000022222!5m2!1spt-BR!2sbr" width="100%" height="300" style="border: 0; border-radius: 10px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+        <div class="image-history">
+          <img
+            src="image/clinica-lavori-laguna.png"
+            alt="Clínica da Lavori - Laguna - Anexo ao Hospital"
+          />
         </div>
       </div>
-    </div>
-  </section>
+      <div class="line-history"></div>
 
-  <!-- Section Info -->
-
-  <section class="article-section" id="info">
-    <div class="article-content">
-      <div class="article-image">
-        <img src="image/medicina.jpg" alt="Segurança do Trabalho" />
+      <!-- BLOCO 2: IMBITUBA -->
+      <div class="content-history reverse">
+        <div class="article-text-history">
+          <h2>Expansão para Imbituba</h2>
+          <p>
+            Com o passar do tempo, identificamos que muitas empresas de cidades
+            vizinhas, como Imbituba, enfrentavam dificuldades para acessar
+            serviços de medicina ocupacional com qualidade, agilidade e
+            comprometimento. A escassez de clínicas com estrutura adequada
+            comprometia a eficiência dos processos admissionais e a gestão da
+            saúde corporativa.
+          </p>
+          <p>
+            Diante dessa realidade, a Lavori expandiu sua atuação e, em 2019,
+            inaugurou sua filial em Imbituba – SC. A nova unidade passou a
+            atender diversos segmentos da economia local, oferecendo soluções
+            completas em saúde e segurança do trabalho com a mesma excelência
+            que marcou a trajetória da matriz.
+          </p>
+        </div>
+        <div class="image-history">
+          <img src="image/clinica imbituba.jpg" alt="Clínica de Imbituba" />
+        </div>
       </div>
-      <div class="article-text">
-        <h2>
-          Por que investir em Segurança do Trabalho é fundamental para sua
-          empresa?
-        </h2>
-        <p>
-          A segurança do trabalho não é apenas uma obrigação legal — é um
-          investimento essencial para proteger seus colaboradores, evitar
-          prejuízos e garantir a continuidade das operações.
-        </p>
-        <p>
-          Empresas que não investem em segurança do trabalho estão sujeitas a
-          multas pesadas aplicadas pelos órgãos fiscalizadores, além de
-          sofrerem com processos trabalhistas, afastamentos frequentes e perda
-          de produtividade.
-        </p>
-        <p>
-          Além disso, a falta de exames médicos ocupacionais, como os
-          admissionais, periódicos e demissionais, pode acarretar sérios
-          problemas para a saúde dos funcionários e comprometer o cumprimento
-          das normas do Ministério do Trabalho e do eSocial.
-        </p>
-        <p>
-          Na Lavori Medicina Ocupacional, auxiliamos sua empresa a se manter
-          em conformidade com todas as exigências legais, por meio de serviços
-          completos de avaliação clínica, emissão de laudos técnicos e
-          treinamentos voltados à prevenção de acidentes e doenças
-          ocupacionais.
-        </p>
-        <p>
-          Invista em saúde e segurança hoje para evitar multas, proteger sua
-          equipe e promover um ambiente de trabalho mais saudável e produtivo.
-        </p>
-        <a href="#contato" class="btn-primary">Solicite uma Proposta</a>
+
+      <div class="line-history reverse"></div>
+      <!-- BLOCO 3: GAROPABA -->
+      <div class="content-history">
+        <div class="article-text-history">
+          <h2>Chegada a Garopaba</h2>
+          <p>
+            Garopaba, cidade marcada pela intensa atividade turística e
+            sazonalidade no comércio, apresenta picos de demanda por exames
+            admissionais, laudos técnicos e treinamentos obrigatórios durante o
+            verão. Esse cenário desafiador abriu espaço para a atuação da
+            Lavori.
+          </p>
+          <p>
+            Em 2023, inauguramos nossa unidade em Garopaba – SC,
+            estrategicamente planejada para atender com agilidade e qualidade,
+            especialmente nos períodos de alta temporada. A filial rapidamente
+            se tornou referência regional para empregadores que buscam
+            conformidade legal, eficiência e segurança nos processos
+            relacionados à saúde ocupacional.
+          </p>
+        </div>
+        <div class="image-history">
+          <img
+            src="image/clinica-lavori-laguna.png"
+            alt="Clínica de Garopaba"
+          />
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Form Services -->
-  <section class="section-services" id="services">
-
-    <div class="article-services">
-
-      <div class="list-services">
-        <h2>Exames Realizados na Clínica</h2>
-        <ul>
-          <li>ASO-Exame Clínico</li>
-          <li>Audiometria</li>
-          <li>Espirometria</li>
-          <li>Eletrocardiograma</li>
-          <li>Eletrocenfalograma</li>
-          <li>Audiometria</li>
-        </ul>
-
-        <h2>Outros Serviços</h2>
-        <ul>
-          <li>Treinamentos</li>
-          <li>Gestão do eSocial</li>
-          <li>Laudos e Programas de SST </li>
-          <li id="laboratorial">Exames Laboratorias</li>
-          <li>Eletrocenfalograma</li>
-          <li > Avalições Qualitativas de SST</li>
-          <li id="information">Os Exames Laboratoriais são realizados por terceiros.</li>
-        </ul>
+      <div class="line-history"></div>
+      <!-- BLOCO 4: PAULO LOPES -->
+      <div class="content-history reverse">
+        <div class="article-text-history">
+          <h2>Chegada a Paulo Lopes</h2>
+          <p>
+            Em 2024, a Lavori avançou mais um passo em sua história de
+            crescimento com a abertura de uma nova unidade em Paulo Lopes – SC.
+            A cidade, em franca expansão, atraiu investimentos e a instalação de
+            diversas empresas, gerando uma demanda crescente por serviços
+            especializados em segurança do trabalho e saúde ocupacional.
+          </p>
+          <p>
+            A nova unidade foi projetada para oferecer atendimento ágil,
+            excelência no cumprimento das Normas Regulamentadoras (NRs) e
+            suporte técnico personalizado, promovendo ambientes corporativos
+            mais seguros, saudáveis e produtivos. Com essa expansão, a Lavori
+            reforça seu compromisso com o desenvolvimento das regiões onde atua
+            e com a proximidade junto aos seus clientes.
+          </p>
+        </div>
+        <div class="image-history">
+          <img
+            src="image/clinica-lavori-laguna.png"
+            alt="Clínica de Paulo Lopes"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <!-- Coluna da esquerda: Links -->
-      <div class="footer-left">
-        <div class="links-container">
-          <div class="footer-section">
-            <h4>Instituição</h4>
+    <!-- Section Unity -->
+    <section class="section-units" id="unity">
+      <div class="container-units">
+        <div class="unity-text-title">
+          <h1>UNIDADES</h1>
+          <p>
+            A Lavori Medicina Ocupacional LTDA conta com quatro unidades
+            estrategicamente localizadas no litoral sul de Santa Catarina, nas
+            cidades de Laguna, Imbituba, Garopaba e Paulo Lopes.
+          </p>
+          <p>
+            Cada unidade foi planejada para oferecer facilidade de acesso,
+            conforto e agilidade no atendimento, sempre com foco na qualidade
+            dos serviços prestados. Atuamos com exames ocupacionais, avaliações
+            clínicas e programas de saúde corporativa, contribuindo para a
+            segurança, bem-estar e produtividade dos colaboradores das empresas
+            atendidas.
+          </p>
+
+          <h2>Confira abaixo os endereços e horários de atendimento:</h2>
+        </div>
+
+        <div class="containers-clinicas-unity">
+          <div class="clinica">
+            <h3>Clínica Lavori Laguna</h3>
+
+            <p>
+              <strong>Endereço:</strong> Rua Voluntário Carpes, nº 50 - 2º
+              andar, sala 203
+            </p>
+
+            <h4>Horário de Atendimento</h4>
+            <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
+            <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
+
+            <div class="bloco-contato">
+              <div class="contato-flex">
+                <img
+                  src="image/personagem-callcenter.png"
+                  alt="Atendente Lavori"
+                  class="personagem-callcenter"
+                />
+
+                <div class="contato-info">
+                  <h4>Agende ou fale conosco</h4>
+                  <p>
+                    <strong>Email:</strong> contato@lavori.med.br<br />
+                    <strong>Telefone:</strong> (48) 3644-2736
+                  </p>
+                  <a
+                    href="https://wa.me/5548991581525"
+                    class="btn-whatsapp"
+                    target="_blank"
+                  >
+                    <img
+                      src="image/whatsapp-icon.png"
+                      alt="Ícone WhatsApp"
+                      class="whatsapp-icon"
+                    />
+                    WhatsApp: (48) 99166-1525
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="texto-localizacao">
+              <img
+                src="image/map-icon.png"
+                alt="Ícone de Mapa"
+                class="map-icon"
+              />
+              Veja abaixo a localização da unidade no mapa:
+            </p>
+            <div class="mapa-unidade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.8961631149723!2d-48.78016868498631!3d-28.48289008248473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526be631a57a271%3A0x7fb5d0f83f0a3b36!2sRua%20Volunt%C3%A1rio%20Carpes%2C%2050%20-%20Laguna%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1718999629376!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="clinica">
+            <h3>Clínica Lavori Imbituba</h3>
+            <p>
+              <strong>Endereço:</strong> Av. Nicolau B da Rosa Matos, 834 -
+              Centro, Imbituba - SC, 88780-000
+            </p>
+
+            <h4>Horário de Atendimento</h4>
+            <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
+            <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
+
+            <div class="bloco-contato">
+              <div class="contato-flex">
+                <img
+                  src="image/personagem-callcenter.png"
+                  alt="Atendente"
+                  class="personagem-callcenter"
+                />
+                <div class="contato-info">
+                  <h4>Agende ou fale conosco</h4>
+                  <p>
+                    <strong>Email:</strong> recepcao@lavori.med.br<br />
+                    <strong>Telefone:</strong> (48) 3644-2736
+                  </p>
+                  <a
+                    href="https://wa.me/5548991661525"
+                    class="btn-whatsapp"
+                    target="_blank"
+                  >
+                    <img
+                      src="image/whatsapp-icon.png"
+                      alt="Ícone WhatsApp"
+                      class="whatsapp-icon"
+                    />
+                    WhatsApp: (48) 99166-1525
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="texto-localizacao">
+              <img
+                src="image/map-icon.png"
+                alt="Ícone de Mapa"
+                class="map-icon"
+              />
+              Veja abaixo a localização da unidade no mapa:
+            </p>
+
+            ...
+            <!-- conteúdo da clínica -->
+            <div class="mapa-unidade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-48.64000000000001!3d-28.240000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526e3f27be862d9%3A0x4e7e6c0b2b9e07aa!2sAv.%20Nicolau%20B%20da%20Rosa%20Matos%2C%20834%20-%20Centro%2C%20Imbituba%20-%20SC%2C%2088780-000!5e0!3m2!1spt-BR!2sbr!4v1689759999999!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="clinica">
+            <h3>Clínica Lavori Garopaba</h3>
+            <p>
+              <strong>Endereço:</strong> Rua Prefeito João Orestes de Araújo, nº
+              326
+            </p>
+
+            <h4>Horário de Atendimento</h4>
+            <p>Sexta-feira: 09:00 às 12:00</p>
+
+            <div class="bloco-contato">
+              <div class="contato-flex">
+                <img
+                  src="image/personagem-callcenter.png"
+                  alt="Atendente"
+                  class="personagem-callcenter"
+                />
+                <div class="contato-info">
+                  <h4>Agende ou fale conosco</h4>
+                  <p>
+                    <strong>Email:</strong> garopaba@lavori.med.br<br />
+                    <strong>Telefone:</strong> (48) 3644-2736
+                  </p>
+                  <a
+                    href="https://wa.me/5548991661525"
+                    class="btn-whatsapp"
+                    target="_blank"
+                  >
+                    <img
+                      src="image/whatsapp-icon.png"
+                      alt="Ícone WhatsApp"
+                      class="whatsapp-icon"
+                    />
+                    WhatsApp: (48) 99166-1525
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="texto-localizacao">
+              <img
+                src="image/map-icon.png"
+                alt="Ícone de Mapa"
+                class="map-icon"
+              />
+              Veja abaixo a localização da unidade no mapa:
+            </p>
+            <div class="mapa-unidade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.987654321098!2d-48.636789012!3d-28.065432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd5678abcd%3A0x1234567890abcd!2sRua%20Prefeito%20Jo%C3%A3o%20Orestes%20de%20Ara%C3%BAjo%2C%20326%20-%20Garopaba%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000011111!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="clinica">
+            <h3>Clínica Lavori Paulo Lopes</h3>
+            <p>
+              <strong>Endereço:</strong> Rua Ana Raupp de Sá, nº 448, Nova Belém
+            </p>
+
+            <h4>Horário de Atendimento</h4>
+            <p>Terça-feira: 13:00 às 17:00</p>
+
+            <div class="bloco-contato">
+              <div class="contato-flex">
+                <img
+                  src="image/personagem-callcenter.png"
+                  alt="Atendente"
+                  class="personagem-callcenter"
+                />
+                <div class="contato-info">
+                  <h4>Agende ou fale conosco</h4>
+                  <p>
+                    <strong>Email:</strong> recepcao@lavori.med.br<br />
+                    <strong>Telefone:</strong> (48) 3644-2736
+                  </p>
+                  <a
+                    href="https://wa.me/5548991661525"
+                    class="btn-whatsapp"
+                    target="_blank"
+                  >
+                    <img
+                      src="image/whatsapp-icon.png"
+                      alt="Ícone WhatsApp"
+                      class="whatsapp-icon"
+                    />
+                    WhatsApp: (48) 99166-1525
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="texto-localizacao">
+              <img
+                src="image/map-icon.png"
+                alt="Ícone de Mapa"
+                class="map-icon"
+              />
+              Veja abaixo a localização da unidade no mapa:
+            </p>
+            <div class="mapa-unidade">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.8765432109876!2d-48.541234567!3d-28.136789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd9012abcd%3A0x234567890abcd!2sRua%20Ana%20Raupp%20de%20S%C3%A1%2C%20448%20-%20Paulo%20Lopes%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000022222!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border: 0; border-radius: 10px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Info -->
+
+    <section class="article-section" id="info">
+      <div class="article-content">
+        <div class="article-image">
+          <img src="image/medicina.jpg" alt="Segurança do Trabalho" />
+        </div>
+        <div class="article-text">
+          <h2>
+            Por que investir em Segurança do Trabalho é fundamental para sua
+            empresa?
+          </h2>
+          <p>
+            A segurança do trabalho não é apenas uma obrigação legal — é um
+            investimento essencial para proteger seus colaboradores, evitar
+            prejuízos e garantir a continuidade das operações.
+          </p>
+          <p>
+            Empresas que não investem em segurança do trabalho estão sujeitas a
+            multas pesadas aplicadas pelos órgãos fiscalizadores, além de
+            sofrerem com processos trabalhistas, afastamentos frequentes e perda
+            de produtividade.
+          </p>
+          <p>
+            Além disso, a falta de exames médicos ocupacionais, como os
+            admissionais, periódicos e demissionais, pode acarretar sérios
+            problemas para a saúde dos funcionários e comprometer o cumprimento
+            das normas do Ministério do Trabalho e do eSocial.
+          </p>
+          <p>
+            Na Lavori Medicina Ocupacional, auxiliamos sua empresa a se manter
+            em conformidade com todas as exigências legais, por meio de serviços
+            completos de avaliação clínica, emissão de laudos técnicos e
+            treinamentos voltados à prevenção de acidentes e doenças
+            ocupacionais.
+          </p>
+          <p>
+            Invista em saúde e segurança hoje para evitar multas, proteger sua
+            equipe e promover um ambiente de trabalho mais saudável e produtivo.
+          </p>
+          <a href="#contato" class="btn-primary">Solicite uma Proposta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Services -->
+    <section class="section-services-medicina" id="services">
+      <div class="container-services">
+        <div class="article-services-medicina">
+          <div class="list-services">
+            <h2>Exames Realizados na Clínica</h2>
             <ul>
-              <li><a href="#quem-somos">Informativos</a></li>
-              <li><a href="#solucoes">Nossa história</a></li>
-              <li><a href="#agenda">Unidades</a></li>
+              <li>ASO - Exame Clínico</li>
+              <li>Espirometria</li>
+              <li>Eletrocardiograma</li>
+              <li>Eletroencefalograma</li>
+              <li>Audiometria</li>
+            </ul>
+
+            <h2>Outros Serviços</h2>
+            <ul>
+              <li>Treinamentos</li>
+              <li>Gestão do eSocial</li>
+              <li>Laudos e Programas de SST</li>
+              <li id="laboratorial">Exames Laboratoriais</li>
+              <li>Eletroencefalograma</li>
+              <li>Avaliações Qualitativas de SST</li>
+              <li id="information">
+                Os Exames Laboratoriais são realizados por terceiros.
+              </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="footer-section">
-            <h4>Serviços</h4>
-            <ul>
-              <li><a href="#">Laudos Técnicos</a></li>
-              <li><a href="#">Relatórios Complementares</a></li>
-              <li><a href="#">Avaliações Quantitativas</a></li>
-              <li><a href="#">Assessoria Técnica</a></li>
-              <li><a href="#">Treinamentos</a></li>
-            </ul>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- Coluna da esquerda: Links -->
+        <div class="footer-left">
+          <div class="links-container">
+            <div class="footer-section">
+              <h4>Instituição</h4>
+              <ul>
+                <li><a href="#quem-somos">Informativos</a></li>
+                <li><a href="#solucoes">Nossa história</a></li>
+                <li><a href="#agenda">Unidades</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Serviços</h4>
+              <ul>
+                <li><a href="#">Laudos Técnicos</a></li>
+                <li><a href="#">Relatórios Complementares</a></li>
+                <li><a href="#">Avaliações Quantitativas</a></li>
+                <li><a href="#">Assessoria Técnica</a></li>
+                <li><a href="#">Treinamentos</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Contato</h4>
+              <ul>
+                <li><a href="#">Solicitar Proposta</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+              </ul>
+            </div>
           </div>
+        </div>
 
-          <div class="footer-section">
-            <h4>Contato</h4>
-            <ul>
-              <li><a href="#">Solicitar Proposta</a></li>
-              <li><a href="#">Trabalhe Conosco</a></li>
-              <li><a href="#contatos">Contatos</a></li>
-            </ul>
+        <!-- Coluna da direita: Unidades -->
+        <div class="footer-right footer-units">
+          <div class="unit">
+            <p class="p-strong-footer">Imbituba/SC</p>
+            <p>Av. Nicolau Bartolomeu da Rosa Matos, 834</p>
+            <p>filialimbituba@lavori.med.br | Tel: (48) 3644-2736</p>
+            <p>WhatsApp: (48) 99166-1525</p>
+          </div>
+          <div class="unit">
+            <p class="p-strong-footer">Laguna/SC</p>
+            <p>Rua Voluntário Carpes, n° 50 - 2º andar, sala 203</p>
+            <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
+            <p>WhatsApp: (48) 99166-1525</p>
+          </div>
+          <div class="unit">
+            <p class="p-strong-footer">Garopaba/SC</p>
+            <p>Rua Prefeito João Orestes de Araújo, n° 326</p>
+            <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
+            <p>WhatsApp: (48) 99166-1525</p>
+          </div>
+          <div class="unit">
+            <p class="p-strong-footer">Paulo Lopes/SC</p>
+            <p>Rua Ana Raupp de Sa, n° 448, Nova Belém</p>
+            <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
+            <p>WhatsApp: (48) 99166-1525</p>
           </div>
         </div>
       </div>
 
-      <!-- Coluna da direita: Unidades -->
-      <div class="footer-right footer-units">
-        <div class="unit">
-          <p class="p-strong-footer">Imbituba/SC</p>
-          <p>Av. Nicolau Bartolomeu da Rosa Matos, 834</p>
-          <p>filialimbituba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img
+            id="header-lavori-footer"
+            src="image/Lavori-Mascote.png"
+            alt="Lavori Mascote"
+          />
         </div>
-        <div class="unit">
-          <p class="p-strong-footer">Laguna/SC</p>
-          <p>Rua Voluntário Carpes, n° 50 - 2º andar, sala 203</p>
-          <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
-        </div>
-        <div class="unit">
-          <p class="p-strong-footer">Garopaba/SC</p>
-          <p>Rua Prefeito João Orestes de Araújo, n° 326</p>
-          <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
-        </div>
-        <div class="unit">
-          <p class="p-strong-footer">Paulo Lopes/SC</p>
-          <p>Rua Ana Raupp de Sa, n° 448, Nova Belém</p>
-          <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
-        </div>
+        <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="footer-logo">
-        <img id="header-lavori-footer" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-      </div>
-      <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-</body>
-<script src="script.js"></script>
-
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
