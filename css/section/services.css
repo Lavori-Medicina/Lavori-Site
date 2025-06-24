@@ -1,0 +1,308 @@
+/* ========================== */
+/* 🔹 SEÇÃO DO ARTIGO SERVICES */
+/* ========================== */
+
+.section-services-medicina {
+  width: 100%;
+  background-color: #005f99;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.container-services {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article-services-medicina {
+  display: flex;
+  background-color: #2a4f6e;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+.article-services-medicina h2 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+.obs-laboratorio {
+  display: flex;
+  border: 1px solid #1ebe5d;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(100, 180, 255, 0.4);
+  padding: 20px;
+  color: #eead2d;
+  font-size: 1rem;
+}
+
+.obs-laboratorio:hover {
+  background-color: #1ebe5d;
+  color: #ffffff;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.article-services-medicina h3 {}
+
+
+.list-services ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.list-services ul li {
+  background-color: transparent;
+  padding: 1.5rem;
+  border: #e9f9f0 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(100, 180, 255, 0.4);
+  font-size: 1.2rem;
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+}
+
+.article-services-medicina li:hover {
+  background-color: #1ebe5d;
+  text-decoration: none;
+  color: #ffffff;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  list-style: none;
+
+}
+
+a.article-services-medicina li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Triângulo indicador */
+#laboratorial {
+  position: relative;
+  padding-bottom: 1.5rem;
+  overflow: visible;
+}
+
+#laboratorial::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+#information {
+  position: relative;
+  top: -35px;
+  box-shadow: none;
+  font-style: italic;
+  right: 20px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.line-services {
+  width: 100%;
+  height: 0.4rem;
+  background-color: #e9f2f9;
+  margin: 4rem 0;
+}
+
+
+
+/* TELA DE MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+.modal.active {
+  display: block;
+}
+
+.modal-content {
+  background-color: #fdfdfd;
+  margin: 20% auto;
+  padding: 2rem;
+  max-width: 600px;
+  max-height: 70vh;
+  /* Limite de altura para a viewport */
+  overflow-y: auto;
+  border-radius: 10px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.modal-content h2 {
+  color: #0a8a6d;
+  text-align: center;
+  /* Um verde Lavori ou azul escuro elegante */
+  margin-bottom: 1rem;
+}
+
+.modal-content ul {
+  padding-left: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.modal-content li {
+  margin-bottom: 0.4rem;
+}
+
+.modal-content p {
+  margin-bottom: 0.4rem;
+  text-align: justify;
+}
+
+.modal-content li::before {
+  content: "✔️ ";
+  color: #007b5e;
+  margin-right: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 2px 20px;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f2f2f2;
+  border: 2px solid #2a4f6e;
+  /* border-radius: 50%; */
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+}
+
+.close:hover {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.btn-center {
+  display: flex;
+  /* trocar para flex (bloco flexível) */
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 10px 40px;
+  background-color: #0a8a6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 250px;
+  margin: 20px auto;
+}
+
+.list-services {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+.btn-center:hover {
+  background-color: #076044;
+  /* tom mais escuro no hover */
+}
+
+@media (max-width: 900px) {
+  .modal-content {
+    width: 70%;
+    margin: 8% auto;
+    padding: 1.5rem;
+    max-height: 75vh;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .article-services-medicina h2 {
+    font-size: 2rem;
+  }
+
+  .list-services ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .list-services ul li {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  #information {
+    font-size: 0.95rem;
+    top: -25px;
+    right: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 40% auto;
+    padding: 1rem;
+    max-height: 80vh;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal-content p,
+  .modal-content li {
+    font-size: 0.9rem;
+  }
+
+  .close {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    padding: 0;
+  }
+}

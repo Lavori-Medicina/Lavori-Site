@@ -30,7 +30,6 @@
 
 <header>
   <nav>
-
     <img id="header-lavori" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
@@ -41,7 +40,9 @@
       </li>
       <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
       <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
-      <li><a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a></li>
+      <li>
+        <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
+      </li>
       <li id="contact"><a href="#contato">CONTATO</a></li>
     </ul>
     <div id="overlay" onclick="toggleMenu()"></div>
@@ -49,14 +50,13 @@
 </header>
 
 <body>
-
   <!-- Section Banner -->
   <section class="banner" id="home">
     <div class="banner-left">
       <h4>Medicina Ocupacional</h4>
       <h1>Lavori</h1>
       <h3>Saúde no trabalho é com a gente</h3>
-      <a href="#contato" id="btn">VER SERVIÇOS</a>
+      <a href="#services" id="btn" onclick="scrollToServices(event)">VER SERVIÇOS</a>
     </div>
 
     <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
@@ -76,7 +76,7 @@
       <div class="article-text-history">
         <h2>Nossa Fundação</h2>
         <p>
-          Fundada em 2015, a Lavori nasceu com o propósito de oferecer um
+          Fundada em 2013, a Lavori nasceu com o propósito de oferecer um
           serviço diferenciado e de excelência nas áreas de segurança do
           trabalho e medicina ocupacional. Idealizada pelo diretor técnico
           Luciano Lima — profissional com vasta experiência no setor — a
@@ -200,9 +200,12 @@
 
       <div class="containers-clinicas-unity">
         <div class="clinica">
-          <h3>Clínica Lavori Laguna</h3>
+          <h3>Unidade - Clínica Lavori Laguna</h3>
 
-          <p><strong>Endereço:</strong> Rua Voluntário Carpes, nº 50 - 2º andar, sala 203</p>
+          <p>
+            <strong>Endereço:</strong> Rua Voluntário Carpes, nº 50 - 2º
+            andar, sala 203
+          </p>
 
           <h4>Horário de Atendimento</h4>
           <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
@@ -214,16 +217,17 @@
 
               <div class="contato-info">
                 <h4>Agende ou fale conosco</h4>
-                <p><strong>Email:</strong> contato@lavori.med.br<br />
+                <p>
+                  <strong>Email:</strong> contato@lavori.med.br<br />
                   <strong>Telefone:</strong> (48) 3644-2736
                 </p>
-                <a href="https://wa.me/5548991581525" class="btn-whatsapp" target="_blank">
+                <a href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp" target="_blank">
                   <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                  WhatsApp: (48) 99166-1525
+                  WhatsApp: (48) 99158-1525
                 </a>
               </div>
             </div>
-          </div>png
+          </div>
 
           <p class="texto-localizacao">
             <img src="image/map-icon.png" alt="Ícone de Mapa" class="map-icon" />
@@ -236,8 +240,11 @@
         </div>
 
         <div class="clinica">
-          <h3>Clínica Lavori Imbituba</h3>
-          <p><strong>Endereço:</strong> Av. Nicolau B da Rosa Matos, 834 - Centro, Imbituba - SC, 88780-000</p>
+          <h3> Unidade - Clínica Lavori Imbituba</h3>
+          <p>
+            <strong>Endereço:</strong> Av. Nicolau B da Rosa Matos, 834 -
+            Centro, Imbituba - SC, 88780-000
+          </p>
 
           <h4>Horário de Atendimento</h4>
           <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
@@ -252,7 +259,7 @@
                   <strong>Email:</strong> recepcao@lavori.med.br<br />
                   <strong>Telefone:</strong> (48) 3644-2736
                 </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
+                <a href="//wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp" target="_blank">
                   <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
                   WhatsApp: (48) 99166-1525
                 </a>
@@ -273,8 +280,11 @@
         </div>
 
         <div class="clinica">
-          <h3>Clínica Lavori Garopaba</h3>
-          <p><strong>Endereço:</strong> Rua Prefeito João Orestes de Araújo, nº 326</p>
+          <h3>Unidade - Clínica Lavori Garopaba</h3>
+          <p>
+            <strong>Endereço:</strong> Rua Prefeito João Orestes de Araújo, nº
+            326
+          </p>
 
           <h4>Horário de Atendimento</h4>
           <p>Sexta-feira: 09:00 às 12:00</p>
@@ -288,7 +298,7 @@
                   <strong>Email:</strong> garopaba@lavori.med.br<br />
                   <strong>Telefone:</strong> (48) 3644-2736
                 </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
+                <a href="//wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp" target="_blank">
                   <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
                   WhatsApp: (48) 99166-1525
                 </a>
@@ -306,8 +316,10 @@
         </div>
 
         <div class="clinica">
-          <h3>Clínica Lavori Paulo Lopes</h3>
-          <p><strong>Endereço:</strong> Rua Ana Raupp de Sá, nº 448, Nova Belém</p>
+          <h3>Unidade - Clínica Lavori Paulo Lopes</h3>
+          <p>
+            <strong>Endereço:</strong> Rua Ana Raupp de Sá, nº 448, Nova Belém
+          </p>
 
           <h4>Horário de Atendimento</h4>
           <p>Terça-feira: 13:00 às 17:00</p>
@@ -321,7 +333,7 @@
                   <strong>Email:</strong> recepcao@lavori.med.br<br />
                   <strong>Telefone:</strong> (48) 3644-2736
                 </p>
-                <a href="https://wa.me/5548991661525" class="btn-whatsapp" target="_blank">
+                <a href="//wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp" target="_blank">
                   <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
                   WhatsApp: (48) 99166-1525
                 </a>
@@ -381,41 +393,240 @@
           Invista em saúde e segurança hoje para evitar multas, proteger sua
           equipe e promover um ambiente de trabalho mais saudável e produtivo.
         </p>
-        <a href="#contato" class="btn-primary">Solicite uma Proposta</a>
+        <a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-primary" target="_blank">Solicite uma Proposta</a>
       </div>
     </div>
   </section>
 
   <!-- Form Services -->
-<section class="section-services-medicina" id="services">
-  <div class="container-services">
-    <div class="article-services-medicina">
-      <div class="list-services">
-        <h2>Exames Realizados na Clínica</h2>
-        <ul>
-          <li>ASO - Exame Clínico</li>
-          <li>Espirometria</li>
-          <li>Eletrocardiograma</li>
-          <li>Eletroencefalograma</li>
-          <li>Audiometria</li>
-        </ul>
+  <section class="section-services-medicina" id="services">
+    <div class="container-services">
+      <div class="article-services-medicina">
+        <div class="list-services">
+          <h2>Exames Realizados na Clínica</h2>
+          <ul>
+            <li>ASO - Exame Clínico</li>
+            <li>Espirometria</li>
+            <li>Eletrocardiograma</li>
+            <li>Eletroencefalograma</li>
+            <li>Audiometria</li>
+            <li>Avaliação psicossocial</li>
+            <li>Exames Laboratoriais</li>
+          </ul>
+          <div class="obs-laboratorio">
+            <h3>Os exames laboratoriais são realizados em parceria com laboratórios especializados.</h4>
+          </div>
+          <div class="list-services">
+            <!-- seus outros conteúdos -->
 
-        <h2>Outros Serviços</h2>
-        <ul>
-          <li>Treinamentos</li>
-          <li>Gestão do eSocial</li>
-          <li>Laudos e Programas de SST</li>
-          <li id="laboratorial">Exames Laboratoriais</li>
-          <li>Eletroencefalograma</li>
-          <li>Avaliações Qualitativas de SST</li>
-          <li id="information">
-            Os Exames Laboratoriais são realizados por terceiros.
-          </li>
-        </ul>
+            <a href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp-services btn-center" target="_blank">
+              <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
+              Whatsap
+            </a>
+          </div>
+
+          <div class="line-services"></div>
+          <h2>Outros Serviços</h2>
+          <ul>
+            <li data-modal="#modalTreinamentos" onclick="openModal(event)"> Treinamentos</li>
+            <li data-modal="#modaleSocial" onclick="openModal(event)">Gestão do eSocial</li>
+            <li data-modal="#modalLaudos" onclick="openModal(event)">Laudos e Programas de SST</li>
+            <li data-modal="#modalConsult" onclick="openModal(event)">Consultoria e Assessoria</li>
+            <li data-modal="#modalPsicossocial-NR1" onclick="openModal(event)">Avaliações Qualitativas de SST</li>
+            <li data-modal="#modalQuantitativa-SST" onclick="openModal(event)">Avaliação Risco Psicossocial - NR1</li>
+          </ul>
+
+        </div>
+        <div class="list-services">
+          <!-- seus outros conteúdos -->
+
+          <a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-whatsapp-services btn-center" target="_blank">
+            <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
+            Whatsap
+          </a>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Modal treinamentos -->
+  <div id="modalTreinamentos" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+
+      <h2>Treinamentos em SST – Capacitação que Gera Segurança</h2>
+
+      <p>
+        A <strong>Lavori</strong> oferece todos os <strong>treinamentos obrigatórios</strong> exigidos pelas Normas Regulamentadoras (NRs), com conteúdo atualizado, instrutores qualificados e foco total na prevenção de acidentes e no cumprimento legal.
+      </p>
+
+      <ul>
+        <li><strong>NR 1:</strong> Disposições Gerais e Gerenciamento de Riscos Ocupacionais</li>
+        <li><strong>NR 6:</strong> Uso Correto de Equipamentos de Proteção Individual (EPI)</li>
+        <li><strong>NR 10:</strong> Segurança em Instalações Elétricas</li>
+        <li><strong>NR 35:</strong> Trabalho em Altura, com prática supervisionada</li>
+        <li><strong>...e todos os demais treinamentos até a NR 38.</strong></li>
+      </ul>
+
+      <p>
+        <strong>Treinamentos Personalizados:</strong> Desenvolvemos soluções sob medida para a realidade e os riscos específicos da sua empresa – com conteúdo direcionado, linguagem prática e foco em resultados reais.
+      </p>
+
+      <p>
+        Realizamos os cursos <strong>in company</strong> ou em ambiente externo, com emissão de certificados válidos e suporte completo para sua empresa manter-se regularizada.
+      </p>
+
+      <p><strong>Com a Lavori, sua equipe aprende mais, aplica melhor e trabalha com mais segurança.</strong></p>
+    </div>
   </div>
-</section>
+
+  <!-- Modal Gestão eSocial -->
+  <div id="modaleSocial" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+
+      <h2>eSocial SST – Conformidade sem Complicação</h2>
+
+      <p>
+        O <strong>eSocial</strong> é uma obrigação legal que unifica o envio de dados trabalhistas, previdenciários e de saúde e segurança ao Governo Federal. Para empresas, isso representa um grande desafio – e para a <strong>Lavori</strong>, uma oportunidade de facilitar sua gestão.
+      </p>
+
+      <p>
+        Nós cuidamos de todo o processo de envio dos <strong>eventos de SST</strong> exigidos pelo eSocial, com segurança, agilidade e total conformidade. Você economiza tempo, evita multas e garante tranquilidade nas fiscalizações.
+      </p>
+
+      <ul>
+        <li><strong>S-2210 – Comunicação de Acidente de Trabalho:</strong> Registro imediato da CAT, dentro do prazo legal de até 1 dia útil após a ocorrência.</li>
+        <li><strong>S-2220 – Monitoramento da Saúde do Trabalhador:</strong> Envio correto dos dados de exames ocupacionais (admissionais, periódicos, retorno, mudança de função etc.).</li>
+        <li><strong>S-2240 – Condições Ambientais do Trabalho:</strong> Informações sobre exposições a riscos, EPIs utilizados e medidas de proteção adotadas.</li>
+      </ul>
+
+      <p>
+        Deixe a burocracia com a gente! Com a <strong>Lavori</strong>, sua empresa garante total adequação ao eSocial SST com suporte técnico especializado, acompanhamento personalizado e zero dor de cabeça.
+      </p>
+
+      <p><strong>Entre em contato e mantenha seu negócio seguro, atualizado e livre de penalidades.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal Laudos e Pogramas -->
+  <div id="modalLaudos" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+
+      <h2>Laudos e Programas de SST – Conformidade e Segurança sem Complicação</h2>
+
+      <p>
+        A <strong>Lavori</strong> cuida da elaboração de todos os <strong>laudos técnicos</strong> e <strong>programas de Saúde e Segurança do Trabalho</strong> exigidos por lei, garantindo que sua empresa esteja sempre em dia com as Normas Regulamentadoras e a legislação previdenciária.
+      </p>
+
+      <p>
+        Com uma equipe altamente qualificada, entregamos documentos completos, confiáveis e prontos para auditorias, fiscalizações ou exigências legais.
+      </p>
+
+      <ul>
+        <li><strong>PCMSO – Programa de Controle Médico de Saúde Ocupacional:</strong> Acompanhamento da saúde dos colaboradores com base na NR 7, essencial para reduzir riscos e promover bem-estar.</li>
+        <li><strong>PGR – Programa de Gerenciamento de Riscos:</strong> Mapeamento e controle dos riscos ocupacionais conforme a NR 1 e NR 9, com foco em prevenção e segurança.</li>
+        <li><strong>LTCAT – Laudo Técnico das Condições Ambientais do Trabalho:</strong> Documento obrigatório para aposentadoria especial junto ao INSS, com respaldo técnico e legal.</li>
+        <li><strong>Laudos de Insalubridade e Periculosidade (LIP):</strong> Avaliação dos adicionais devidos aos trabalhadores, conforme as exigências das NRs 15 e 16.</li>
+      </ul>
+
+      <p>
+        Todos os documentos são emitidos por profissionais legalmente habilitados, com base em análises criteriosas e de acordo com os mais altos padrões técnicos.
+      </p>
+
+      <p><strong>Com a Lavori, sua empresa ganha segurança jurídica, tranquilidade em fiscalizações e mais confiança na gestão de SST.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal consultoria e acessoria -->
+  <div id="modalConsult" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+
+      <h2>Consultoria e Assessoria em SST – Segurança que Gera Resultados</h2>
+
+      <p>
+        A <strong>Lavori</strong> oferece uma solução completa em <strong>consultoria e assessoria em Saúde e Segurança do Trabalho</strong>, ajudando sua empresa a manter-se em dia com a legislação e a construir um ambiente mais seguro, produtivo e confiável.
+      </p>
+
+      <p>
+        Nossa equipe especializada atua lado a lado com o seu negócio, oferecendo suporte técnico, documentação atualizada e gestão contínua da SST com agilidade, qualidade e foco na prevenção.
+      </p>
+
+      <ul>
+        <li><strong>SESMT Terceirizado:</strong> Profissionais experientes (Técnicos, Engenheiros e Médicos do Trabalho) à disposição da sua empresa, conforme a NR 4 – sem burocracia.</li>
+        <li><strong>Gestão de SST:</strong> Monitoramos prazos, exames, treinamentos e documentos para você se concentrar no que realmente importa.</li>
+        <li><strong>Consultoria Técnica Permanente:</strong> Orientação confiável e atualizada sempre que surgirem dúvidas ou mudanças legais.</li>
+        <li><strong>Auditorias e Inspeções Técnicas:</strong> Verificações preventivas para evitar autuações e identificar melhorias no ambiente de trabalho.</li>
+        <li><strong>Documentação completa:</strong> Elaboração ou atualização de PCMSO, PGR, LTCAT, Laudos, Fichas de EPI e muito mais.</li>
+        <li><strong>Treinamentos In Company:</strong> Cursos obrigatórios e personalizados ministrados no local de trabalho, com foco na realidade da sua equipe.</li>
+      </ul>
+
+      <p>
+        Com a <strong>Lavori</strong>, sua empresa ganha mais do que conformidade: ganha tranquilidade, segurança jurídica e um parceiro comprometido com o sucesso da sua operação.
+      </p>
+
+      <p><strong>Fale com a gente e descubra como podemos facilitar a gestão de SST da sua empresa.</strong></p>
+    </div>
+  </div>
+
+
+  <!-- Modal Avaliação Psicossocial - NR1 -->
+  <div id="modalPsicossocial-NR1" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+
+      <h2>Avaliação de Riscos Psicossociais – Mais Saúde e Produtividade para sua Empresa</h2>
+
+      <p>
+        A <strong>avaliação de riscos psicossociais</strong> é muito mais do que uma exigência da <strong>NR 1 – GRO (Gerenciamento de Riscos Ocupacionais)</strong>. Ela é uma ferramenta estratégica para promover um ambiente de trabalho saudável, equilibrado e produtivo.
+      </p>
+
+      <p>
+        Pressão por metas, jornadas exaustivas, conflitos interpessoais e estresse constante são fatores silenciosos que afetam diretamente o desempenho e o bem-estar da equipe. Identificar esses riscos é essencial para prevenir afastamentos, melhorar o clima organizacional e garantir conformidade legal.
+      </p>
+
+      <ul>
+        <li><strong>O que avaliamos:</strong> Estresse ocupacional, sobrecarga mental, assédio moral, metas excessivas, trabalho isolado, repetitividade e outros fatores que afetam a saúde mental.</li>
+        <li><strong>Como fazemos:</strong> Aplicamos questionários, realizamos entrevistas, observações e análises do ambiente e da organização do trabalho.</li>
+        <li><strong>Benefícios para sua empresa:</strong> Redução do absenteísmo, aumento da produtividade, melhoria no clima de equipe e valorização da imagem institucional.</li>
+        <li><strong>Conexão com a NR 17:</strong> A avaliação psicossocial é integrada à <strong>AET – Análise Ergonômica do Trabalho</strong>, tornando seu PGR ainda mais completo e eficaz.</li>
+      </ul>
+
+      <p>
+        A <strong>Lavori</strong> oferece um serviço completo, com abordagem técnica e humana, para mapear e controlar riscos psicossociais. Cuidar da saúde emocional dos colaboradores é investir na força da sua equipe e no sucesso do seu negócio.
+      </p>
+
+      <p><strong>Entre em contato e leve mais equilíbrio e segurança para dentro da sua empresa.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal quantitaivo -->
+  <div id="modalQuantitativa-SST" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+      <h2>Avaliações Quantitativas em SST – Precisão para Proteger sua Empresa</h2>
+      <p>
+        As <strong>avaliações quantitativas</strong> são essenciais para medir com exatidão a exposição dos colaboradores a agentes físicos, químicos e biológicos no ambiente de trabalho. Elas são exigidas pelas normas de saúde e segurança, como a <strong>NR 9</strong>, e garantem que sua empresa esteja em conformidade com a legislação.
+      </p>
+      <p>
+        Com o apoio de instrumentos certificados e equipe especializada, a <strong>Lavori</strong> realiza medições detalhadas que ajudam a identificar riscos invisíveis e a tomar decisões seguras. Tudo isso de forma prática, ágil e com alto padrão técnico.
+      </p>
+      <ul>
+        <li><strong>Proteja sua equipe:</strong> Detecte com precisão ruído, calor, poeiras, vapores e outros riscos que comprometem a saúde.</li>
+        <li><strong>Evite autuações:</strong> Esteja em dia com as exigências legais, evitando multas e passivos trabalhistas.</li>
+        <li><strong>Ganhe credibilidade:</strong> Demonstre compromisso com a segurança e bem-estar dos trabalhadores.</li>
+        <li><strong>Tecnologia e confiança:</strong> Utilizamos equipamentos modernos e metodologia reconhecida nacionalmente.</li>
+        <li><strong>Resultados práticos:</strong> Relatórios completos, com orientações claras para ações corretivas e preventivas.</li>
+      </ul>
+      <p>
+        Conte com a <strong>Lavori</strong> para transformar dados técnicos em segurança real para sua empresa. Nossas avaliações ajudam a construir ambientes mais saudáveis, produtivos e em total conformidade com a legislação.
+      </p>
+    </div>
+  </div>
+
+
 
   <!-- Footer -->
   <footer>
@@ -460,25 +671,45 @@
           <p class="p-strong-footer">Imbituba/SC</p>
           <p>Av. Nicolau Bartolomeu da Rosa Matos, 834</p>
           <p>filialimbituba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
+          <p class="whatsapp-p">
+            <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
+              <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+              WhatsApp: (48) 99166-1525
+            </a>
+          </p>
         </div>
         <div class="unit">
           <p class="p-strong-footer">Laguna/SC</p>
           <p>Rua Voluntário Carpes, n° 50 - 2º andar, sala 203</p>
           <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
+          <p class="whatsapp-p">
+            <a href="https://wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
+              <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+              WhatsApp: (48) 99158-1525
+            </a>
+          </p>
         </div>
         <div class="unit">
           <p class="p-strong-footer">Garopaba/SC</p>
           <p>Rua Prefeito João Orestes de Araújo, n° 326</p>
           <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
+          <p class="whatsapp-p">
+            <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
+              <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+              WhatsApp: (48) 99166-1525
+            </a>
+          </p>
         </div>
         <div class="unit">
           <p class="p-strong-footer">Paulo Lopes/SC</p>
           <p>Rua Ana Raupp de Sa, n° 448, Nova Belém</p>
           <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p>WhatsApp: (48) 99166-1525</p>
+          <p class="whatsapp-p">
+            <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
+              <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+              WhatsApp: (48) 99166-1525
+            </a>
+          </p>
         </div>
       </div>
     </div>

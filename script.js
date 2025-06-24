@@ -99,4 +99,35 @@ function scrollToServices(event) {
   });
 
   fecharMenuSeMobile();
+
+ 
 }
+
+
+function openModal(event) {
+  event.preventDefault();
+  const modalSelector = event.currentTarget.getAttribute('data-modal');
+  const modal = document.querySelector(modalSelector);
+
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // impede scroll do fundo
+  }
+}
+
+function closeModal() {
+  const modais = document.querySelectorAll('.modal');
+  modais.forEach(modal => {
+    modal.classList.remove('active');
+  });
+  document.body.style.overflow = 'auto';
+}
+window.addEventListener('click', function(e) {
+  const modais = document.querySelectorAll('.modal');
+  modais.forEach(modal => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  });
+});

@@ -69,6 +69,7 @@
     color: #e0e0e0;
 }
 
+
 .banner-left h2 {
     font-size: 1.8rem;
     font-weight: normal;
@@ -114,41 +115,54 @@ a#btn:hover {
 
 @media screen and (max-width:740px) {
     .banner {
-        /* padding-bottom: 40px; */
-         height: auto; 
-        min-height: 100vh;
-        /* padding-bottom: 40px; */
-        background-image: url('../image/tela-mobile2.png');
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('../image/tela-mobile3.png');
     }
 
     .banner-left {
         position: relative;
-        /* ou deixa sem posição */
+        text-align: center;
         width: 100%;
-        height: 30%;
-        top: 600px;
-        /* margin-top: 500px; */
-        /* empurra para baixo */
-        padding: 10px 100px;
+        height: auto;
+        margin-top: auto;
+        /* ISSO empurra para baixo */
         clip-path: none;
+        padding: 20px;
+       
     }
 
     a#btn {
-        padding: 14px 28px;
+        padding: 10px 20px;
         font-size: 1rem;
+        align-self: center;
+        margin-top: 10px !important;
     }
 
 
     .banner-left h1 {
         font-size: 2rem;
+        margin-top: 5px !important;
+    }
+
+    .banner-left h4 {
+        font-size: 1.0rem;
     }
 
     .banner-left h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin-top: 5px !important;
     }
 
-    .banner-left h2 {
-        font-size: 1.8rem;
+    .banner-left h1,
+    .banner-left h3,
+    .banner-left h4 {
+        margin: 0;
     }
+
+
+
+
 
 }

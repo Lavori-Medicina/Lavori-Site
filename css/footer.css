@@ -98,6 +98,29 @@
 }
 
 
+.whatsapp-p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.whatsapp-icon {
+    width: 20px;
+    /* define tamanho fixo para o ícone */
+    height: 20px;
+    object-fit: contain;
+}
+
+.whatsapp-p:hover {
+    color: #ff8c42 !important;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+
+}
 
 
 @media screen and (max-width:740px) {
@@ -105,6 +128,10 @@
     .footer-left,
     .footer-right {
         justify-content: center;
+    }
+
+    .unit {
+        margin-bottom: 20px;
     }
 
 }
