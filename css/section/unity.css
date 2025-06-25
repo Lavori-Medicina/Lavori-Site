@@ -4,10 +4,10 @@
 
 .section-units {
   width: 100%;
-  background: #003366;
+  background: var(--cor-fundo-units);
   padding: 4rem 2rem;
   box-sizing: border-box;
-  color: #ffffff;
+  color: var(--cor-branca);
 }
 
 .container-units {
@@ -21,7 +21,7 @@
 }
 
 .unity-text-title h1 {
-  color: #eead2d;
+  color: var(--cor-destaque-ouro);
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -35,12 +35,12 @@
 
 .unity-text-title h2 {
   margin-top: 2rem;
-  color: aqua;
+  color: var(--cor-destaque-aqua);
   font-size: 2.5rem;
 }
 
 .containers-clinicas-unity {
-  background-color: #f2fbff;
+  background-color: var(--cor-fundo-clinicas);
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -49,34 +49,34 @@
 }
 
 .clinica {
-  background: #ffffff;
+  background: var(--cor-branca);
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .clinica h3 {
-  color: #003366;
+  color: var(--cor-fundo-units);
   margin-bottom: 0.5rem;
   font-size: 2rem;
 }
 
 .clinica h2 {
-  color: #0457aa;
+  color: var(--cor-titulo-subclinica);
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   font-size: 2rem;
 }
 
 .clinica h4 {
-  color: #005588;
+  color: var(--cor-subtitulo-destaque);
   margin-top: 1rem;
   font-weight: bold;
   font-size: 2rem;
 }
 
 .clinica p {
-  color: #000000;
+  color: var(--cor-preta);
   font-size: 1.5rem;
   line-height: 1.6;
 }
@@ -110,8 +110,8 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: #25D366;
-  color: white;
+  background-color: var(--cor-whatsapp);
+  color: var(--cor-branca);
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
@@ -121,7 +121,7 @@
 }
 
 .btn-whatsapp:hover {
-  background-color: #1ebe5d;
+  background-color: var(--cor-whatsapp-hover);
 }
 
 .btn-whatsapp .whatsapp-icon {
@@ -159,7 +159,7 @@
   align-items: center;
   gap: 8px;
   font-style: italic;
-  color: #2a4f6e;
+  color: var(--cor-texto-primario);
   margin: 1rem 0 0.5rem;
 }
 
@@ -169,15 +169,15 @@
 }
 
 .bloco-contato {
-  background-color: #e9f9f0;
+  background-color: var(--cor-fundo-contato);
+  border-left: 6px solid var(--cor-whatsapp);
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem 0;
-  border-left: 6px solid #25D366;
 }
 
 .bloco-contato h4 {
-  color: #1e5e3f;
+  color: var(--cor-titulo-contato);
   margin-bottom: 0.5rem;
 }
 
@@ -187,6 +187,7 @@
     font-size: 2.5rem;
 
   }
+
   .unity-text-title p {
     font-size: 1rem;
   }

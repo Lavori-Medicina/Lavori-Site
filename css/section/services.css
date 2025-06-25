@@ -4,7 +4,7 @@
 
 .section-services-medicina {
   width: 100%;
-  background-color: #005f99;
+  background-color: var(--cor-botao-hover);
   padding: 4rem 2rem;
   box-sizing: border-box;
 }
@@ -17,7 +17,7 @@
 
 .article-services-medicina {
   display: flex;
-  background-color: #2a4f6e;
+  background-color: var(--cor-banner-fundo);
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 1rem;
@@ -27,31 +27,30 @@
 .article-services-medicina h2 {
   width: 100%;
   text-align: center;
-  color: #ffffff;
+  color: var(--cor-branca);
   font-size: 2.5rem;
   margin: 2rem 0rem;
 }
 
 .obs-laboratorio {
   display: flex;
-  border: 1px solid #1ebe5d;
+  border: 1px solid var(--cor-whatsapp-hover);
   border-radius: 8px;
   justify-content: center;
-  box-shadow: 0 0 12px rgba(100, 180, 255, 0.4);
+  box-shadow: 0 0 12px var(--cor-sombra-azulada);
   padding: 20px;
-  color: #eead2d;
+  color: var(--cor-destaque-ouro);
   font-size: 1rem;
 }
 
 .obs-laboratorio:hover {
-  background-color: #1ebe5d;
-  color: #ffffff;
+  background-color: var(--cor-whatsapp-hover);
+  color: var(--cor-branca);
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .article-services-medicina h3 {}
-
 
 .list-services ul {
   display: grid;
@@ -64,29 +63,28 @@
 .list-services ul li {
   background-color: transparent;
   padding: 1.5rem;
-  border: #e9f9f0 1px solid;
+  border: 1px solid var(--cor-fundo-contato);
   border-radius: 8px;
-  box-shadow: 0 0 12px rgba(100, 180, 255, 0.4);
+  box-shadow: 0 0 12px var(--cor-sombra-azulada);
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--cor-branca);
   list-style: none;
   text-align: center;
 }
 
 .article-services-medicina li:hover {
-  background-color: #1ebe5d;
+  background-color: var(--cor-whatsapp-hover);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor-branca);
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   list-style: none;
-
 }
 
 a.article-services-medicina li a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor-branca);
 }
 
 /* Triângulo indicador */
@@ -106,7 +104,7 @@ a.article-services-medicina li a {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #fff;
+  border-top: 10px solid var(--cor-branca);
 }
 
 #information {
@@ -115,7 +113,7 @@ a.article-services-medicina li a {
   box-shadow: none;
   font-style: italic;
   right: 20px;
-  color: #ffffff;
+  color: var(--cor-branca);
   text-align: center;
   font-size: 1rem;
 }
@@ -123,11 +121,9 @@ a.article-services-medicina li a {
 .line-services {
   width: 100%;
   height: 0.4rem;
-  background-color: #e9f2f9;
+  background-color: var(--cor-divisoria-clara);
   margin: 4rem 0;
 }
-
-
 
 /* TELA DE MODAL */
 .modal {
@@ -139,32 +135,29 @@ a.article-services-medicina li a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: var(--cor-overlay);
 }
-
 
 .modal.active {
   display: block;
 }
 
 .modal-content {
-  background-color: #fdfdfd;
+  background-color: var(--cor-fundo-modal);
   margin: 20% auto;
   padding: 2rem;
   max-width: 600px;
   max-height: 70vh;
-  /* Limite de altura para a viewport */
   overflow-y: auto;
   border-radius: 10px;
-  color: #333;
+  color: var(--cor-texto-escuro);
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
 }
 
 .modal-content h2 {
-  color: #0a8a6d;
+  color: var(--cor-verde-destaque);
   text-align: center;
-  /* Um verde Lavori ou azul escuro elegante */
   margin-bottom: 1rem;
 }
 
@@ -186,7 +179,7 @@ a.article-services-medicina li a {
 
 .modal-content li::before {
   content: "✔️ ";
-  color: #007b5e;
+  color: var(--cor-check-verde);
   margin-right: 8px;
 }
 
@@ -194,40 +187,35 @@ a.article-services-medicina li a {
   color: #aaa;
   float: right;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--cor-preta);
   padding: 2px 20px;
   width: 40px;
   height: 40px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: #f2f2f2;
-  border: 2px solid #2a4f6e;
-  /* border-radius: 50%; */
-  color: #333;
+  background-color: var(--cor-fundo-close);
+  border: 2px solid var(--cor-texto-primario);
+  color: var(--cor-texto-escuro);
   font-size: 22px;
   font-weight: bold;
   transition: all 0.2s ease;
-
 }
 
 .close:hover {
-  background-color: #e74c3c;
-  color: white;
-  border-color: #e74c3c;
+  background-color: var(--cor-vermelho-hover);
+  color: var(--cor-branca);
+  border-color: var(--cor-vermelho-hover);
 }
 
 .btn-center {
   display: flex;
-  /* trocar para flex (bloco flexível) */
   align-items: center;
   text-align: center;
   gap: 8px;
   padding: 10px 40px;
-  background-color: #0a8a6d;
-  color: white;
+  background-color: var(--cor-verde-destaque);
+  color: var(--cor-branca);
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
@@ -238,19 +226,15 @@ a.article-services-medicina li a {
   margin: 20px auto;
 }
 
+.btn-center:hover {
+  background-color: var(--cor-verde-hover);
+}
+
 .list-services {
   display: flex;
   justify-content: center;
-
   flex-direction: column;
   align-items: center;
-
-}
-
-
-.btn-center:hover {
-  background-color: #076044;
-  /* tom mais escuro no hover */
 }
 
 @media (max-width: 900px) {

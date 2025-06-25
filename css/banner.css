@@ -2,9 +2,6 @@
 /* 🔹 BANNER PRINCIPAL        */
 /* ========================== */
 
-
-
-
 .banner {
     position: relative;
     height: 100vh;
@@ -28,8 +25,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, rgba(63, 135, 245, 0.8), rgba(106, 169, 249, 0.8));
-    color: white;
+    background: linear-gradient(to right, var(--gradiente-azul-escuro), var(--gradiente-azul-claro));
+    color: var(--cor-branca);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +63,7 @@
     font-weight: 400;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    color: #e0e0e0;
+    color: var(--cor-texto-secundario-claro);
 }
 
 
@@ -78,8 +75,8 @@
 
 a#btn {
     cursor: pointer;
-    background: #007acc;
-    color: #fff;
+    background: var(--cor-botao-primario);
+    color: var(--cor-branca);
     padding: 12px 24px;
     border-radius: 10px;
     text-decoration: none;
@@ -89,8 +86,8 @@ a#btn {
 }
 
 a#btn:hover {
-    background: #005f99;
-    color: white;
+    background: var(--cor-botao-hover);
+    color: var(--cor-branca);
 }
 
 
@@ -112,12 +109,91 @@ a#btn:hover {
 } */
 
 
+/* Telas grandes (até 1200px) */
+@media screen and (max-width: 1200px) {
+    .banner {
+        background-position: 65% center;
+    }
+
+    .banner-left h1 {
+        font-size: 3rem;
+    }
+
+    .banner-left h4 {
+        font-size: 1.4rem;
+    }
+
+    .banner-left h3 {
+        font-size: 1.2rem;
+    }
+
+    a#btn {
+        font-size: 1rem;
+        padding: 10px 22px;
+    }
+}
+
+/* Telas médias (até 1024px) */
+@media screen and (max-width: 1024px) {
+
+    .banner {
+        background-position: 65% center;
+    }
+
+    .banner-left {
+        width: 40%;
+        padding: 0 4%;
+
+    }
+
+    .banner-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-left h4 {
+        font-size: 1.2rem;
+    }
+
+    .banner-left h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets menores (até 900px) */
+@media screen and (max-width: 900px) {
+    .banner {
+        background-position: 68% center;
+        background-image: url('../image/banner_900w.png');
+    }
+
+    .banner-left {
+        width: 35%;
+    }
+
+    .banner-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-left h4 {
+        font-size: 1.1rem;
+    }
+
+    .banner-left h3 {
+        font-size: 0.9rem;
+    }
+
+    a#btn {
+        font-size: 0.95rem;
+        padding: 8px 20px;
+    }
+}
 
 @media screen and (max-width:740px) {
     .banner {
         display: flex;
         flex-direction: column;
         height: 100vh;
+        background-position: center center;
         background-image: url('../image/tela-mobile3.png');
     }
 
@@ -130,7 +206,7 @@ a#btn:hover {
         /* ISSO empurra para baixo */
         clip-path: none;
         padding: 20px;
-       
+
     }
 
     a#btn {

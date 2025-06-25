@@ -5,4 +5,6 @@
 @import url('./section/info.css');
 @import url('./section/services.css');
 @import url('./section/unity.css');
+@import url('./section/excess.css');
 @import url('./footer.css');
+@import url('colors/cors.css');

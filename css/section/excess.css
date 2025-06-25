@@ -1,0 +1,90 @@
+/* ========================== */
+/* 🔹 SEÇÃO DO ARTIGO EPI     */
+/* ========================== */
+
+.section-article-epi {
+  background-color: var(--cor-fundo-clinicas);
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.article-epi {
+  max-width: 70rem;
+  margin: 2rem auto;
+  background: var(--cor-branca);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 0 20px var(--cor-sombra);
+}
+
+.epi-header h1 {
+  font-size: 2.5rem;
+  color: var(--cor-texto-primario);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.epi-subtitle {
+  font-size: 1.2rem;
+  color: var(--cor-texto-escuro);
+  margin-bottom: 2rem;
+}
+
+.epi-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.epi-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.epi-image figcaption {
+  font-size: 0.95rem;
+  color: var(--cor-texto-secundario-claro);
+  margin-top: 0.5rem;
+}
+
+.epi-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--cor-texto-escuro);
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.button-area {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.button-download-epi {
+  background-color: var(--cor-botao-primario);
+  color: var(--cor-branca);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.button-download-epi:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+@media (max-width: 768px) {
+  .article-epi {
+    padding: 2rem 1.5rem;
+  }
+
+  .epi-header h1 {
+    font-size: 2rem;
+  }
+
+  .epi-subtitle {
+    font-size: 1rem;
+  }
+}

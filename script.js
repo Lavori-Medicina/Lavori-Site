@@ -131,3 +131,52 @@ window.addEventListener('click', function(e) {
     }
   });
 });
+
+function anotherScreen() {
+  const anotherScreen = document.querySelector('#another-screen');
+  const headerHeight = document.querySelector('nav').offsetHeight;
+
+  window.scrollTo({
+    top: anotherScreen.offsetTop - headerHeight,
+    behavior: 'smooth',
+  });
+
+  fecharMenuSeMobile();
+}
+
+
+function scrollWithOffset(targetSelector) {
+  const target = document.querySelector(targetSelector);
+  const headerHeight = document.querySelector("nav").offsetHeight;
+
+  if (target) {
+    window.scrollTo({
+      top: target.offsetTop - headerHeight,
+      behavior: "smooth",
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function (event) {
+      const href = this.getAttribute("href");
+
+      if (document.querySelector(href)) {
+        event.preventDefault();
+        scrollWithOffset(href);
+
+        // Fecha o menu se estiver no mobile
+        if (typeof fecharMenuSeMobile === "function") {
+          fecharMenuSeMobile();
+        }
+      }
+    });
+  });
+});
+
+window.addEventListener("load", () => {
+  if (window.location.hash) {
+    scrollWithOffset(window.location.hash);
+  }
+});
