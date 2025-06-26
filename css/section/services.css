@@ -285,6 +285,6 @@ a.article-services-medicina li a {
   }
 
   .modal.active {
-    display: flex;
+    display: block;
   }
 }
