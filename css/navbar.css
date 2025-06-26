@@ -192,4 +192,15 @@ ul li:not(#contact) a:hover {
   nav ul#nav-links.active + #overlay {
     display: block;
   }
+
+   #header-instagram {
+    width: 60px;
+    height: 60px;
+  }
+
+  #contact a {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
 }
+

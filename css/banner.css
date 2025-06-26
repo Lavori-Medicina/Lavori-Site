@@ -211,19 +211,19 @@ a#btn:hover {
 
     a#btn {
         padding: 10px 20px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         align-self: center;
         margin-top: 10px !important;
     }
 
 
     .banner-left h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-top: 5px !important;
     }
 
     .banner-left h4 {
-        font-size: 1.0rem;
+        font-size: 0.8rem;
     }
 
     .banner-left h3 {

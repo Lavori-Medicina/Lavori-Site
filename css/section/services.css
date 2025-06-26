@@ -25,7 +25,6 @@
 }
 
 .article-services-medicina h2 {
-  width: 100%;
   text-align: center;
   color: var(--cor-branca);
   font-size: 2.5rem;
@@ -50,12 +49,12 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.article-services-medicina h3 {}
 
 .list-services ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  align-items: center;
   margin-bottom: 2rem;
   padding: 0;
 }
@@ -87,25 +86,7 @@ a.article-services-medicina li a {
   color: var(--cor-branca);
 }
 
-/* Triângulo indicador */
-#laboratorial {
-  position: relative;
-  padding-bottom: 1.5rem;
-  overflow: visible;
-}
 
-#laboratorial::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid var(--cor-branca);
-}
 
 #information {
   position: relative;
@@ -247,12 +228,16 @@ a.article-services-medicina li a {
 }
 
 @media screen and (max-width:740px) {
+  .section-services-medicina {
+    padding: 2rem 1rem;
+  }
+
   .article-services-medicina h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .list-services ul {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
@@ -288,5 +273,9 @@ a.article-services-medicina li a {
     height: 35px;
     font-size: 18px;
     padding: 0;
+  }
+
+  .btn-center {
+    font-size: 0.8rem;
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .container-units {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -183,6 +183,10 @@
 
 @media screen and (max-width:740px) {
 
+  .section-units {
+    padding: 2rem 1rem;
+  }
+
   .unity-text-title h1 {
     font-size: 2.5rem;
 
@@ -197,12 +201,18 @@
     font-size: 1.4rem;
   }
 
+  .containers-clinicas-unity {
+    padding: 0.5rem;
+  }
+
+
   .clinica {
     padding: 1rem;
   }
 
   .clinica h3 {
     font-size: 1.3rem;
+    text-align: center;
   }
 
   .clinica h2 {
@@ -215,7 +225,7 @@
   }
 
   .clinica p {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
 
   }
 
@@ -235,8 +245,8 @@
   }
 
   .btn-whatsapp {
-    font-size: 1.2rem;
-    padding: 10px 20px;
+    font-size: 0.7rem;
+    padding: 5px 10px;
   }
 
   .whatsapp-icon {
@@ -246,6 +256,10 @@
 
   .mapa-unidade iframe {
     height: 250px;
+  }
+
+  .container-units {
+    max-width: 2000px;
   }
 
 }

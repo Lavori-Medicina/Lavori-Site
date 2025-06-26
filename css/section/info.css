@@ -72,15 +72,17 @@
 
 
 @media screen and (max-width:740px) {
-
-
+  
+  .article-section {
+    padding: 3rem 1.5rem;
+  }
   /* INFORMATIVO */
   .article-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .article-text p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 
 }

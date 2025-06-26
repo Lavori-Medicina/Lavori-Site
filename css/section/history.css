@@ -108,6 +108,10 @@
 }
 
 @media screen and (max-width:740px) {
+    .section-history {
+        padding: 3rem 1.5rem;
+    }
+
     .history-title h1 {
         font-size: 2rem;
     }
