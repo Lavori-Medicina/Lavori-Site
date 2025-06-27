@@ -1,3 +1,4 @@
+@import url('colors/cors.css');
 @import url('./base.css');
 @import url('./navbar.css');
 @import url('./banner.css');
@@ -7,4 +8,4 @@
 @import url('./section/unity.css');
 @import url('./section/excess.css');
 @import url('./footer.css');
-@import url('colors/cors.css');
+@import url('modal/modal.css');

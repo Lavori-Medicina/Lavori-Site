@@ -2,11 +2,12 @@
 /* 🔹 BANNER PRINCIPAL        */
 /* ========================== */
 
+
 .banner {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     overflow: hidden;
-    background-image: url('../image/tela-principal5.png');
+    background-image: url('../image/banner-clinica-lavori-2.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -194,7 +195,7 @@ a#btn:hover {
         flex-direction: column;
         height: 100vh;
         background-position: center center;
-        background-image: url('../image/tela-mobile3.png');
+        background-image: url('../image/banner-clinica-lavori.png');
     }
 
     .banner-left {

@@ -99,8 +99,6 @@ function scrollToServices(event) {
   });
 
   fecharMenuSeMobile();
-
- 
 }
 
 

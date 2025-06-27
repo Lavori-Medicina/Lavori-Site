@@ -37,8 +37,8 @@
   --cor-titulo-contato: #1e5e3f;
 
   /* 🎨 Efeitos visuais */
-  --gradiente-azul-escuro: rgba(63, 135, 245, 0.8);
-  --gradiente-azul-claro: rgba(106, 169, 249, 0.8);
+  --gradiente-azul-escuro: rgba(63, 135, 245, 0.6);
+  --gradiente-azul-claro: rgba(106, 169, 249, 0.6);
   --cor-sombra: rgba(0, 0, 0, 0.1);
   --cor-sombra-azulada: rgba(100, 180, 255, 0.4);
   --cor-overlay: rgba(0, 0, 0, 0.3);
