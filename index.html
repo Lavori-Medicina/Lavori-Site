@@ -49,14 +49,85 @@
     </nav>
   </header>
 
-  <body>
-    <!-- Section Banner -->
-    <section class="banner" id="home">
-      <div class="banner-left">
-        <h4>Medicina Ocupacional</h4>
-        <h1>Lavori</h1>
-        <h3>Saúde no trabalho é com a gente</h3>
-        <a href="#services" id="btn" onclick="scrollToServices(event)">VER SERVIÇOS</a>
+    <ul id="nav-links">
+      <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
+      <li>
+        <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
+      </li>
+      <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
+      <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
+      <li>
+        <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
+      </li>
+      <li>
+        <a href="extras.html">EXTRAS</a>
+      </li>
+      <li id="contact"><a href="#contato">CONTATO</a></li>
+      <a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram" src="image/icon-instagram.png" alt="Instagram" /> </a>
+    </ul>
+    <div id="overlay" onclick="toggleMenu()"></div>
+  </nav>
+</header>
+
+<body>
+  <!-- Section Banner -->
+  <section class="banner" id="home">
+
+    <div class="banner-left">
+      <h4>Medicina Ocupacional</h4>
+      <h1>Lavori</h1>
+      <h3>Saúde no trabalho é com a gente</h3>
+      <a data-modal="#modalContrato" id="btn" onclick="openModal(event)">VER SERVIÇOS</a>
+    </div>
+
+    <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1" d="M0,160L40,154.7C80,149,160,139,240,138.7C320,139,400,149,480,165.3C560,181,640,203,720,202.7C800,203,880,181,960,181.3C1040,181,1120,203,1200,213.3C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg> -->
+  </section>
+
+  <!-- Modal de Contatos -->
+  <div id="modalContrato" class="modal">
+    <div class="modal-content-contrato">
+      <div class="close" onclick="closeModal()">×</div>
+      <h2>Telefones de contatos </h2>
+      <ul>
+        <li> <a href="">WhatsApp - Laguna</a></li>
+        <li> <a href="">WhatsApp - Imbtiuba</a></li>
+        <li> <a href="">WhatsApp - Garopaba</a></li>
+        <li> <a href="">WhatsApp - Paulo Lopes</a></li>
+        <li> <a href="">WhatsApp - Setor</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Section History -->
+  <section class="section-history" id="history">
+    <!-- BLOCO 1 -->
+    <div class="history-title">
+      <h1>CONHEÇA NOSSA HISTÓRIA</h1>
+    </div>
+
+    <!-- BLOCO 1: FUNDAÇÃO -->
+    <div class="content-history">
+      <div class="article-text-history">
+        <h2>Nossa Fundação</h2>
+        <p>
+          Fundada em 2013, a Lavori nasceu com o propósito de oferecer um
+          serviço diferenciado e de excelência nas áreas de segurança do
+          trabalho e medicina ocupacional. Idealizada pelo diretor técnico
+          Luciano Lima — profissional com vasta experiência no setor — a
+          empresa surgiu a partir da percepção da carência de soluções
+          completas e eficazes no cumprimento das normas de saúde e segurança
+          nas empresas da região.
+        </p>
+        <p>
+          A primeira unidade foi implantada na cidade de Laguna – SC, com uma
+          estrutura moderna e um modelo de atendimento humanizado. Desde o
+          início, a Lavori estabeleceu como pilares a prevenção de acidentes,
+          a promoção da saúde do trabalhador e o suporte técnico qualificado
+          às organizações, tornando-se referência no setor.
+        </p>
       </div>
 
       <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
@@ -458,13 +529,53 @@
               <li data-modal="#modalQuantitativa-SST" onclick="openModal(event)">Avaliação Risco Psicossocial - NR1</li>
             </ul>
 
-          </div>
-          <div class="list-services">
-            <!-- seus outros conteúdos -->
+  <!-- Form Services -->
+  <section class="section-services-medicina" id="services">
+    <div class="container-services">
 
+      <div class="article-services-medicina">
+
+        <div class="list-services">
+          <h2>Exames Realizados na Clínica</h2>
+
+          <ul>
+            <li>ASO - Exame Clínico</li>
+            <li>Espirometria</li>
+            <li>Eletrocardiograma</li>
+            <li>Eletroencefalograma</li>
+            <li>Audiometria</li>
+            <li>Avaliação psicossocial</li>
+            <li>Exames Laboratoriais</li>
+          </ul>
+
+          <div class="obs-laboratorio">
+            <h3>Os exames laboratoriais são realizados em parceria com laboratórios especializados.</h3>
+          </div>
+
+          <div title="Clique para agendar um exame">
+            <a href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp-services btn-center" target="_blank">
+              <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
+              WhatsApp - Recepção
+            </a>
+          </div>
+        </div>
+
+        <div class="line-services"></div>
+
+        <div class="list-services">
+          <h2>Outros Serviços</h2>
+          <ul>
+            <li title="Clique para saber" data-modal="#modalTreinamentos" onclick="openModal(event)">Treinamentos</li>
+            <li title="Clique para saber" data-modal="#modaleSocial" onclick="openModal(event)">Gestão do eSocial</li>
+            <li title="Clique para saber" data-modal="#modalLaudos" onclick="openModal(event)">Laudos e Programas de SST</li>
+            <li title="Clique para saber" data-modal="#modalConsult" onclick="openModal(event)">Consultoria e Assessoria</li>
+            <li title="Clique para saber" data-modal="#modalPsicossocial-NR1" onclick="openModal(event)">Avaliação Risco Psicossocial - NR1</li>
+            <li title="Clique para saber" data-modal="#higieneOcupacional" onclick="openModal(event)">Higiene Ocupacional</li>
+          </ul>
+          <div title="Clique para solicitar uma proposta">
             <a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-whatsapp-services btn-center" target="_blank">
               <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-              whatsapp - SETOR TÉCNICO
+              WhatsApp - Setor Técnico
             </a>
           </div>
         </div>
@@ -502,10 +613,11 @@
       </div>
     </div>
 
-    <!-- Modal Gestão eSocial -->
-    <div id="modaleSocial" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
+
+  <!-- Modal treinamentos -->
+  <div id="modalTreinamentos" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
 
         <h2>eSocial SST – Conformidade sem Complicação</h2>
 
@@ -647,6 +759,39 @@
         </p>
       </div>
     </div>
+  </div>
+
+  <!-- Modal quantitaivo -->
+  <div id="higieneOcupacional" class="modal">
+    <div class="modal-content">
+      <div class="close" onclick="closeModal()">×</div>
+      <h2>Higiene Ocupacional Lavori – Cuidar da Saúde é Cuidar do Futuro da Sua Empresa</h2>
+      <p>
+        A <strong>Lavori</strong> oferece soluções completas em <strong>Higiene Ocupacional</strong> para identificar, avaliar e controlar os riscos que podem afetar a saúde dos seus colaboradores. Com uma equipe especializada e tecnologia de ponta, garantimos mais segurança, produtividade e conformidade para o seu negócio.
+      </p>
+      <p>
+        Atuamos com <strong>avaliações qualitativas e quantitativas</strong>, atendendo às exigências das principais Normas Regulamentadoras, como <strong>NR 9</strong> e <strong>NR 15</strong>, e oferecendo um serviço ágil, eficiente e com alto padrão técnico.
+      </p>
+
+      <h3>✅ Por que escolher a Lavori para cuidar da Higiene Ocupacional da sua empresa?</h3>
+      <ul>
+        <li><strong>Serviço completo:</strong> Realizamos desde a análise preliminar até a entrega de relatórios com ações práticas e preventivas.</li>
+        <li><strong>Tecnologia de ponta:</strong> Utilizamos equipamentos modernos e calibrados para medições precisas.</li>
+        <li><strong>Equipe técnica especializada:</strong> Profissionais experientes em ambientes industriais, comerciais e corporativos.</li>
+        <li><strong>Conformidade legal:</strong> Atendemos rigorosamente às exigências das NRs, reduzindo riscos de multas e autuações.</li>
+        <li><strong>Redução de custos:</strong> Prevenção de doenças ocupacionais e afastamentos, com impacto direto na produtividade.</li>
+        <li><strong>Relatórios claros e objetivos:</strong> Entregamos orientações que facilitam a tomada de decisão e a implementação de melhorias.</li>
+      </ul>
+
+      <p>
+        <strong>Proteja quem move a sua empresa!</strong> Com a Lavori, sua organização ganha muito mais do que laudos: ganha segurança, tranquilidade e confiança para crescer com responsabilidade.
+      </p>
+
+      <p>
+        <strong>Entre em contato agora</strong> e descubra como nossas soluções em Higiene Ocupacional podem transformar o ambiente de trabalho na sua empresa.
+      </p>
+    </div>
+  </div>
 
 
 
@@ -687,51 +832,39 @@
           </div>
         </div>
 
-        <!-- Coluna da direita: Unidades -->
-        <div class="footer-right footer-units">
-          <div class="unit">
-            <p class="p-strong-footer">Imbituba/SC</p>
-            <p>Av. Nicolau Bartolomeu da Rosa Matos, 834</p>
-            <p>filialimbituba@lavori.med.br | Tel: (48) 3644-2736</p>
-            <p class="whatsapp-p">
-              <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
-                <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
-                WhatsApp: (48) 99166-1525
-              </a>
-            </p>
+          <div class="footer-section">
+            <h4>Serviços em SST</h4>
+            <ul>
+              <li><a href="#">Laudos e Programas em SST</a></li>
+              <li><a href="#">Gestão do eSocial</a></li>
+              <li><a href="#">Higiene Ocupacional</a></li>
+              <li><a href="#">Avaliação Risco Psicossocial - NR1</a></li>
+              <li><a href="#">Treinamentos</a></li>
+              <li><a href="#">Consultoria e Assessoria</a></li>
+            </ul>
           </div>
-          <div class="unit">
-            <p class="p-strong-footer">Laguna/SC</p>
-            <p>Rua Voluntário Carpes, n° 50 - 2º andar, sala 203</p>
-            <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-            <p class="whatsapp-p">
-              <a href="https://wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
-                <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
-                WhatsApp: (48) 99158-1525
-              </a>
-            </p>
+
+          <div class="footer-section">
+            <h4>Medicina do Trabalho</h4>
+            <ul>
+              <li><a href="#">Exame Clínico - ASO</a></li>
+              <li><a href="#">Eletrocardiograma</a></li>
+              <li><a href="#">Elecenfalograma</a></li>
+              <li><a href="#">Espirometria</a></li>
+              <li><a href="#">Avaliação Psicossocial</a></li>
+              <li><a href="#">Audiometria</a></li>
+              <li title="Exames laboratorias são realizados com clínicas parceiras terceiras"><a href="#">Exames Laboratoriais</a></li>
+            </ul>
           </div>
-          <div class="unit">
-            <p class="p-strong-footer">Garopaba/SC</p>
-            <p>Rua Prefeito João Orestes de Araújo, n° 326</p>
-            <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
-            <p class="whatsapp-p">
-              <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
-                <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
-                WhatsApp: (48) 99166-1525
-              </a>
-            </p>
-          </div>
-          <div class="unit">
-            <p class="p-strong-footer">Paulo Lopes/SC</p>
-            <p>Rua Ana Raupp de Sa, n° 448, Nova Belém</p>
-            <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-            <p class="whatsapp-p">
-              <a href="https://wa.me/5548991661525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">
-                <img src="image/icon-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
-                WhatsApp: (48) 99166-1525
-              </a>
-            </p>
+
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <ul>
+
+              <li><a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">Solicitar Proposta</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
+              <li><a href="#contatos">Contatos</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -746,4 +879,15 @@
   </body>
   <script src="script.js"></script>
 
-  </html>
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img id="header-lavori-footer" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
+      </div>
+      <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
+      <div class="footer-icon"><a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram-footer" src="image/icons-instagram2.png" alt="Instagram"></a>
+      </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

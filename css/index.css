@@ -1,3 +1,5 @@
+@import url('colors/cors.css');
+@import url('modal/modal.css');
 @import url('./base.css');
 @import url('./navbar.css');
 @import url('./banner.css');
@@ -5,12 +7,12 @@
 @import url('./section/info.css');
 @import url('./section/services.css');
 @import url('./section/unity.css');
+@import url('./section/excess.css');
 @import url('./footer.css');
 @import url('./article.css');
 @import url('./responsive.css');
 @import url('./contact.css');
 
 body {
-
   font-family: 'Roboto', Arial, sans-serif;
 }
