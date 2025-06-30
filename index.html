@@ -1,893 +1,937 @@
-  <!DOCTYPE html>
-  <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>
+            Lavori Medicina Ocupacional LTDA - Saúde e Segurança no Trabalho
+        </title>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>
-      Lavori Medicina Ocupacional LTDA - Saúde e Segurança no Trabalho
-    </title>
+        <!-- Descrição para buscadores -->
+        <meta
+            name="description"
+            content="Lavori Medicina Ocupacional LTDA oferece exames admissionais, periódicos e demissionais, laudos técnicos, consultoria e treinamentos para garantir saúde e segurança no trabalho."
+        />
 
-    <!-- Descrição para buscadores -->
-    <meta name="description" content="Lavori Medicina Ocupacional LTDA oferece exames admissionais, periódicos e demissionais, laudos técnicos, consultoria e treinamentos para garantir saúde e segurança no trabalho." />
+        <!-- Palavras-chave relevantes -->
+        <meta
+            name="keywords"
+            content="medicina ocupacional, exames admissionais, exames periódicos, laudos técnicos, segurança do trabalho, PCMSO, LTCAT, saúde no trabalho"
+        />
 
-    <!-- Palavras-chave relevantes -->
-    <meta name="keywords" content="medicina ocupacional, exames admissionais, exames periódicos, laudos técnicos, segurança do trabalho, PCMSO, LTCAT, saúde no trabalho" />
+        <!-- Autor do site -->
+        <meta name="author" content="Lavori Medicina Ocupacional LTDA" />
 
-    <!-- Autor do site -->
-    <meta name="author" content="Lavori Medicina Ocupacional LTDA" />
+        <!-- Robots (para dizer aos buscadores indexar a página e seguir links) -->
+        <meta name="robots" content="index, follow" />
 
-    <!-- Robots (para dizer aos buscadores indexar a página e seguir links) -->
-    <meta name="robots" content="index, follow" />
+        <!-- Ícone da aba do navegador -->
+        <link
+            rel="shortcut icon"
+            href="image/favicon.ico"
+            type="image/x-icon"
+        />
 
-    <!-- Ícone da aba do navegador -->
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+        <!-- Link para o CSS -->
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
 
-    <!-- Link para o CSS -->
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
+    <header>
+        <nav>
+            <img
+                id="header-lavori"
+                src="image/Lavori-Mascote.png"
+                alt="Lavori Mascote"
+            />
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-  <header>
-    <nav>
-      <img id="header-lavori" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
+                <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
+                <li>
+                    <a href="#history" onclick="scrollToHistory(event)"
+                        >NOSSA HISTÓRIA</a
+                    >
+                </li>
+                <li>
+                    <a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a>
+                </li>
+                <li>
+                    <a href="#info" onclick="scrollToInfo(event)"
+                        >INFORMATIVO</a
+                    >
+                </li>
+                <li>
+                    <a href="#services" onclick="scrollToServices(event)"
+                        >SERVIÇOS</a
+                    >
+                </li>
+                <li id="contact"><a href="#contato">CONTATO</a></li>
+            </ul>
+            <div id="overlay" onclick="toggleMenu()"></div>
+        </nav>
+    </header>
 
-      <ul id="nav-links">
-        <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
-        <li>
-          <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
-        </li>
-        <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
-        <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
-        <li>
-          <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
-        </li>
-        <li id="contact"><a href="#contato">CONTATO</a></li>
-      </ul>
-      <div id="overlay" onclick="toggleMenu()"></div>
-    </nav>
-  </header>
+    <body>
+        <!-- Section Banner -->
+        <section class="banner" id="home">
+            <div class="banner-left">
+                <h4>Medicina Ocupacional</h4>
+                <h1>Lavori</h1>
+                <h3>Saúde no trabalho é com a gente</h3>
+                <a
+                    data-modal="#modalContrato"
+                    id="btn"
+                    onclick="openModal(event)"
+                    >VER SERVIÇOS</a
+                >
+            </div>
 
-    <ul id="nav-links">
-      <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
-      <li>
-        <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
-      </li>
-      <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
-      <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
-      <li>
-        <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
-      </li>
-      <li>
-        <a href="extras.html">EXTRAS</a>
-      </li>
-      <li id="contact"><a href="#contato">CONTATO</a></li>
-      <a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram" src="image/icon-instagram.png" alt="Instagram" /> </a>
-    </ul>
-    <div id="overlay" onclick="toggleMenu()"></div>
-  </nav>
-</header>
-
-<body>
-  <!-- Section Banner -->
-  <section class="banner" id="home">
-
-    <div class="banner-left">
-      <h4>Medicina Ocupacional</h4>
-      <h1>Lavori</h1>
-      <h3>Saúde no trabalho é com a gente</h3>
-      <a data-modal="#modalContrato" id="btn" onclick="openModal(event)">VER SERVIÇOS</a>
-    </div>
-
-    <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
+            <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1" d="M0,160L40,154.7C80,149,160,139,240,138.7C320,139,400,149,480,165.3C560,181,640,203,720,202.7C800,203,880,181,960,181.3C1040,181,1120,203,1200,213.3C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
     </svg> -->
-  </section>
+        </section>
 
-  <!-- Modal de Contatos -->
-  <div id="modalContrato" class="modal">
-    <div class="modal-content-contrato">
-      <div class="close" onclick="closeModal()">×</div>
-      <h2>Telefones de contatos </h2>
-      <ul>
-        <li> <a href="">WhatsApp - Laguna</a></li>
-        <li> <a href="">WhatsApp - Imbtiuba</a></li>
-        <li> <a href="">WhatsApp - Garopaba</a></li>
-        <li> <a href="">WhatsApp - Paulo Lopes</a></li>
-        <li> <a href="">WhatsApp - Setor</a></li>
-      </ul>
-
-    </div>
-  </div>
-
-  <!-- Section History -->
-  <section class="section-history" id="history">
-    <!-- BLOCO 1 -->
-    <div class="history-title">
-      <h1>CONHEÇA NOSSA HISTÓRIA</h1>
-    </div>
-
-    <!-- BLOCO 1: FUNDAÇÃO -->
-    <div class="content-history">
-      <div class="article-text-history">
-        <h2>Nossa Fundação</h2>
-        <p>
-          Fundada em 2013, a Lavori nasceu com o propósito de oferecer um
-          serviço diferenciado e de excelência nas áreas de segurança do
-          trabalho e medicina ocupacional. Idealizada pelo diretor técnico
-          Luciano Lima — profissional com vasta experiência no setor — a
-          empresa surgiu a partir da percepção da carência de soluções
-          completas e eficazes no cumprimento das normas de saúde e segurança
-          nas empresas da região.
-        </p>
-        <p>
-          A primeira unidade foi implantada na cidade de Laguna – SC, com uma
-          estrutura moderna e um modelo de atendimento humanizado. Desde o
-          início, a Lavori estabeleceu como pilares a prevenção de acidentes,
-          a promoção da saúde do trabalhador e o suporte técnico qualificado
-          às organizações, tornando-se referência no setor.
-        </p>
-      </div>
-
-      <!-- <svg class="bottom-wave" viewBox="0 0 1440 320">
-        <path fill="#ffffff" fill-opacity="1" d="M0,160L40,154.7C80,149,160,139,240,138.7C320,139,400,149,480,165.3C560,181,640,203,720,202.7C800,203,880,181,960,181.3C1040,181,1120,203,1200,213.3C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-      </svg> -->
-    </section>
-
-
-
-  <!-- Section Unity -->
-
-    <section class="section-units" id="unity">
-    <div class="container-units">
-      <div class="unity-text-title">
-        <h1>UNIDADES</h1>
-      <p>
-    A Lavori Medicina Ocupacional LTDA conta com quatro unidades estrategicamente localizadas no litoral sul de Santa Catarina, nas cidades de Laguna, Imbituba, Garopaba e Paulo Lopes. 
-  </p>
-  <p>Cada unidade foi planejada para oferecer facilidade de acesso, conforto e agilidade no atendimento, sempre com foco na qualidade dos serviços prestados. Atuamos com exames ocupacionais, avaliações clínicas e programas de saúde corporativa, contribuindo para a segurança, bem-estar e produtividade dos colaboradores das empresas atendidas.</p>
-
-        <h2>Confira abaixo os endereços e horários de atendimento:</h2>
-      </div>
-
-      <div class="containers-clinicas-unity">
-        <div class="clinica">
-          <h3>Clínica Lavori Laguna</h3>
-          <p><strong>Endereço:</strong> Rua Voluntário Carpes, nº 50 - 2º andar, sala 203</p>
-          <h4>Horário de Atendimento</h4>
-          <p>Segunda a Sexta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
-          <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
-          <h2>Telefone de contato</h2>
-          <p>filialimbituba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p class="whatsapp-contact">
-    <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-    <a href="https://wa.me/5548991661525" target="_blank" title="Clique aqui para abrir o WhatsApp">WhatsApp: (48) 99166-1525</a>
-  </p>
-  <div class="mapa-unidade">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.8961631149723!2d-48.78016868498631!3d-28.48289008248473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526be631a57a271%3A0x7fb5d0f83f0a3b36!2sRua%20Volunt%C3%A1rio%20Carpes%2C%2050%20-%20Laguna%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1718999629376!5m2!1spt-BR!2sbr"
-      width="100%"
-      height="300"
-      style="border:0; border-radius: 10px;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-        </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Imbituba</h3>
-          <p><strong>Endereço:</strong>  Av. Nicolau B da Rosa Matos, 834 - Centro, Imbituba - SC, 88780-000</p>
-          <h4>Horário de Atendimento</h4>
-          <p>Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às 17:00</p>
-          <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
-        <h2>Telefone de contato</h2>
-          <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-        <p class="whatsapp-contact">
-    <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-    <a href="https://wa.me/5548991661525" target="_blank" title="Clique aqui para abrir o WhatsApp">WhatsApp: (48) 99166-1525</a>
-  </p>
-
-    ... <!-- conteúdo da clínica -->
-        <div class="mapa-unidade">
-          <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-48.64000000000001!3d-28.240000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526e3f27be862d9%3A0x4e7e6c0b2b9e07aa!2sAv.%20Nicolau%20B%20da%20Rosa%20Matos%2C%20834%20-%20Centro%2C%20Imbituba%20-%20SC%2C%2088780-000!5e0!3m2!1spt-BR!2sbr!4v1689759999999!5m2!1spt-BR!2sbr"
-          width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Garopaba</h3>
-          <p><strong>Endereço:</strong> Rua Prefeito João Orestes de Araújo, nº 326</p>
-          <h4>Horário de Atendimento</h4>
-          <p>Sexta-feira: 09 às 12:00</p>
-          <h2>Telefone de contato</h2>
-          <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
-          <p class="whatsapp-contact">
-            <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-            <a href="https://wa.me/5548991661525" target="_blank" title="Clique aqui para abrir o WhatsApp">WhatsApp: (48) 99166-1525</a>
-          </p>
-
-          <div class="mapa-unidade">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.987654321098!2d-48.636789012!3d-28.065432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd5678abcd%3A0x1234567890abcd!2sRua%20Prefeito%20Jo%C3%A3o%20Orestes%20de%20Ara%C3%BAjo%2C%20326%20-%20Garopaba%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000011111!5m2!1spt-BR!2sbr"
-                  width="100%" height="300" style="border:0; border-radius:10px;"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-              </div>
-          </div>
-
-        <div class="clinica">
-          <h3>Clínica Lavori Paulo Lopes</h3>
-          <p><strong>Endereço:</strong> Rua Ana Raupp de Sá, nº 448, Nova Belém</p>
-          <h4>Horário de Atendimento</h4>
-          <p>Ter;a-feira: 13:00 às 17:00</p>
-          <h2>Telefone de contato</h2>
-          <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
-            <p class="whatsapp-contact">
-              <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-              <a href="https://wa.me/5548991661525" target="_blank" title="Clique aqui para abrir o WhatsApp">WhatsApp: (48) 99166-1525</a>
-                </p>
-          <div class="mapa-unidade">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.8765432109876!2d-48.541234567!3d-28.136789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd9012abcd%3A0x234567890abcd!2sRua%20Ana%20Raupp%20de%20S%C3%A1%2C%20448%20-%20Paulo%20Lopes%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000022222!5m2!1spt-BR!2sbr"
-        width="100%" height="300" style="border:0; border-radius:10px;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-<!-- Agora a SECTION é o pai geral -->
-<section class="section-form">
-  
-  <!-- Ícones e textos à esquerda -->
-  <div class="icon-section">
-    <h2 class="contact-title-left">Contato</h2>
-
-    <div class="icon-item">
-      <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
-      </svg>
-      <span class="icon-text">Av. Nicolau Bartolomeu da Rosa Matos, 834</span>
-    </div>
-
-    <div class="icon-item">
-      <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M12.04 2.01c-5.5 0-9.97 4.45-9.97 9.94 0 1.75.45 3.45 1.32 4.97L2 22l5.24-1.36a9.94 9.94 0 004.8 1.22h.01c5.49 0 9.94-4.47 9.94-9.96s-4.45-9.93-9.94-9.93zm0 18.09c-1.44 0-2.85-.37-4.1-1.07l-.29-.17-3.11.81.83-3.03-.19-.31a8.01 8.01 0 01-1.2-4.28c0-4.42 3.6-8.01 8.02-8.01s8.01 3.59 8.01 8.01-3.59 8.05-8.01 8.05zm4.36-6.02c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.21-1.43-1.35-1.67-.14-.24-.01-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3 0-.42-.06-.12-.54-1.3-.75-1.77-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3s-.84.82-.84 2c0 1.17.86 2.3.98 2.46.12.16 1.69 2.58 4.1 3.62.57.24 1.01.38 1.36.48.57.18 1.08.15 1.49.09.46-.07 1.43-.59 1.63-1.17.2-.58.2-1.08.14-1.17-.06-.1-.22-.16-.46-.28z"/>
-      </svg>
-      <span class="icon-text">(48) 99158-1525</span>
-    </div>
-
-    <div class="icon-item">
-      <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.26 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/>
-      </svg>
-      <span class="icon-text">(48) 3644-2736</span>
-    </div>
-
-    <div class="icon-item">
-      <svg class="form-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/>
-      </svg>
-      <span class="icon-text">recepcao@lavori.med.br</span>
-    </div>
-  </div>
-
-  <!-- Formulário à direita -->
-  <div class="form-wrapper">
-    <div class="form-container">
-      <form action="https://formsubmit.co/pedrof_fh@hotmail.com" method="post" class="form">
-        <h2 class="contact-title">Fale Conosco</h2>
-        <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
-
-        <div class="form-group">
-          <label class="label" for="name">Seu Nome</label>
-          <input class="inputs" type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group">
-          <label class="label" for="email">E-mail*</label>
-          <input class="inputs" type="email" id="email" name="email" required />
-        </div>
-
-        <div class="form-group">
-          <label class="label" for="message">No que podemos-lhe ajudar?</label>
-          <textarea class="input-message" name="message" rows="6" required></textarea>
-        </div>
-
-        <button class="contact-button" type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
-</section>
-
-
-  </div>
-  <!-- Section History -->
-
-    <section class="section-history" id="history">
-      <!-- BLOCO 1 -->
-      <div class="history-title">
-        <h1>CONHEÇA NOSSA HISTÓRIA</h1>
-      </div>
-
-      <!-- BLOCO 1: FUNDAÇÃO -->
-      <div class="content-history">
-        <div class="article-text-history">
-          <h2>Nossa Fundação</h2>
-          <p>
-            Fundada em 2013, a Lavori nasceu com o propósito de oferecer um
-            serviço diferenciado e de excelência nas áreas de segurança do
-            trabalho e medicina ocupacional. Idealizada pelo diretor técnico
-            Luciano Lima — profissional com vasta experiência no setor — a
-            empresa surgiu a partir da percepção da carência de soluções
-            completas e eficazes no cumprimento das normas de saúde e segurança
-            nas empresas da região.
-          </p>
-          <p>
-            A primeira unidade foi implantada na cidade de Laguna – SC, com uma
-            estrutura moderna e um modelo de atendimento humanizado. Desde o
-            início, a Lavori estabeleceu como pilares a prevenção de acidentes,
-            a promoção da saúde do trabalhador e o suporte técnico qualificado
-            às organizações, tornando-se referência no setor.
-          </p>
-        </div>
-        <div class="image-history">
-          <img src="image/clinica-lavori-laguna.png" alt="Clínica da Lavori - Laguna - Anexo ao Hospital" />
-        </div>
-      </div>
-      <div class="line-history"></div>
-
-      <!-- BLOCO 2: IMBITUBA -->
-      <div class="content-history reverse">
-        <div class="article-text-history">
-          <h2>Expansão para Imbituba</h2>
-          <p>
-            Com o passar do tempo, identificamos que muitas empresas de cidades
-            vizinhas, como Imbituba, enfrentavam dificuldades para acessar
-            serviços de medicina ocupacional com qualidade, agilidade e
-            comprometimento. A escassez de clínicas com estrutura adequada
-            comprometia a eficiência dos processos admissionais e a gestão da
-            saúde corporativa.
-          </p>
-          <p>
-            Diante dessa realidade, a Lavori expandiu sua atuação e, em 2019,
-            inaugurou sua filial em Imbituba – SC. A nova unidade passou a
-            atender diversos segmentos da economia local, oferecendo soluções
-            completas em saúde e segurança do trabalho com a mesma excelência
-            que marcou a trajetória da matriz.
-          </p>
-        </div>
-        <div class="image-history">
-          <img src="image/clinica imbituba.jpg" alt="Clínica de Imbituba" />
-        </div>
-      </div>
-
-      <div class="line-history reverse"></div>
-      <!-- BLOCO 3: GAROPABA -->
-      <div class="content-history">
-        <div class="article-text-history">
-          <h2>Chegada a Garopaba</h2>
-          <p>
-            Garopaba, cidade marcada pela intensa atividade turística e
-            sazonalidade no comércio, apresenta picos de demanda por exames
-            admissionais, laudos técnicos e treinamentos obrigatórios durante o
-            verão. Esse cenário desafiador abriu espaço para a atuação da
-            Lavori.
-          </p>
-          <p>
-            Em 2023, inauguramos nossa unidade em Garopaba – SC,
-            estrategicamente planejada para atender com agilidade e qualidade,
-            especialmente nos períodos de alta temporada. A filial rapidamente
-            se tornou referência regional para empregadores que buscam
-            conformidade legal, eficiência e segurança nos processos
-            relacionados à saúde ocupacional.
-          </p>
-        </div>
-        <div class="image-history">
-          <img src="image/clinica-lavori-laguna.png" alt="Clínica de Garopaba" />
-        </div>
-      </div>
-
-      <div class="line-history"></div>
-      <!-- BLOCO 4: PAULO LOPES -->
-      <div class="content-history reverse">
-        <div class="article-text-history">
-          <h2>Chegada a Paulo Lopes</h2>
-          <p>
-            Em 2024, a Lavori avançou mais um passo em sua história de
-            crescimento com a abertura de uma nova unidade em Paulo Lopes – SC.
-            A cidade, em franca expansão, atraiu investimentos e a instalação de
-            diversas empresas, gerando uma demanda crescente por serviços
-            especializados em segurança do trabalho e saúde ocupacional.
-          </p>
-          <p>
-            A nova unidade foi projetada para oferecer atendimento ágil,
-            excelência no cumprimento das Normas Regulamentadoras (NRs) e
-            suporte técnico personalizado, promovendo ambientes corporativos
-            mais seguros, saudáveis e produtivos. Com essa expansão, a Lavori
-            reforça seu compromisso com o desenvolvimento das regiões onde atua
-            e com a proximidade junto aos seus clientes.
-          </p>
-        </div>
-        <div class="image-history">
-          <img src="image/clinica-lavori-laguna.png" alt="Clínica de Paulo Lopes" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Unity -->
-    <section class="section-units" id="unity">
-      <div class="container-units">
-        <div class="unity-text-title">
-          <h1>UNIDADES</h1>
-          <p>
-            A Lavori Medicina Ocupacional LTDA conta com quatro unidades
-            estrategicamente localizadas no litoral sul de Santa Catarina, nas
-            cidades de Laguna, Imbituba, Garopaba e Paulo Lopes.
-          </p>
-          <p>
-            Cada unidade foi planejada para oferecer facilidade de acesso,
-            conforto e agilidade no atendimento, sempre com foco na qualidade
-            dos serviços prestados. Atuamos com exames ocupacionais, avaliações
-            clínicas e programas de saúde corporativa, contribuindo para a
-            segurança, bem-estar e produtividade dos colaboradores das empresas
-            atendidas.
-          </p>
-
-          <h2>Confira abaixo os endereços e horários de atendimento:</h2>
-        </div>
-
-  <!-- Section Info -->
-
-    <section class="article-section" id="info">
-      <div class="article-content">
-        <div class="article-image">
-          <img src="image/medicina.jpg" alt="Segurança do Trabalho" />
-        </div>
-        <div class="article-text">
-          <h2>
-            Por que investir em Segurança do Trabalho é fundamental para sua
-            empresa?
-          </h2>
-          <p>
-            A segurança do trabalho não é apenas uma obrigação legal — é um
-            investimento essencial para proteger seus colaboradores, evitar
-            prejuízos e garantir a continuidade das operações.
-          </p>
-          <p>
-            Empresas que não investem em segurança do trabalho estão sujeitas a
-            multas pesadas aplicadas pelos órgãos fiscalizadores, além de
-            sofrerem com processos trabalhistas, afastamentos frequentes e perda
-            de produtividade.
-          </p>
-          <p>
-            Além disso, a falta de exames médicos ocupacionais, como os
-            admissionais, periódicos e demissionais, pode acarretar sérios
-            problemas para a saúde dos funcionários e comprometer o cumprimento
-            das normas do Ministério do Trabalho e do eSocial.
-          </p>
-          <p>
-            Na Lavori Medicina Ocupacional, auxiliamos sua empresa a se manter
-            em conformidade com todas as exigências legais, por meio de serviços
-            completos de avaliação clínica, emissão de laudos técnicos e
-            treinamentos voltados à prevenção de acidentes e doenças
-            ocupacionais.
-          </p>
-          <p>
-            Invista em saúde e segurança hoje para evitar multas, proteger sua
-            equipe e promover um ambiente de trabalho mais saudável e produtivo.
-          </p>
-          <a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-primary" target="_blank">Solicite uma Proposta</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Form Services -->
-    <section class="section-services-medicina" id="services">
-      <div class="container-services">
-        <div class="article-services-medicina">
-          <div class="list-services">
-            <h2>Exames Realizados na Clínica</h2>
-            <ul>
-              <li>ASO - Exame Clínico</li>
-              <li>Espirometria</li>
-              <li>Eletrocardiograma</li>
-              <li>Eletroencefalograma</li>
-              <li>Audiometria</li>
-              <li>Avaliação psicossocial</li>
-              <li>Exames Laboratoriais</li>
-            </ul>
-            <div class="obs-laboratorio">
-              <h3>Os exames laboratoriais são realizados em parceria com laboratórios especializados.</h4>
+        <!-- Modal de Contatos -->
+        <div id="modalContrato" class="modal">
+            <div class="modal-content-contrato">
+                <div class="close" onclick="closeModal()">×</div>
+                <h2>Telefones de contatos</h2>
+                <ul>
+                    <li><a href="">WhatsApp - Laguna</a></li>
+                    <li><a href="">WhatsApp - Imbtiuba</a></li>
+                    <li><a href="">WhatsApp - Garopaba</a></li>
+                    <li><a href="">WhatsApp - Paulo Lopes</a></li>
+                    <li><a href="">WhatsApp - Setor</a></li>
+                </ul>
             </div>
-            <div class="list-services">
-              <!-- seus outros conteúdos -->
+        </div>
 
-              <a href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp-services btn-center" target="_blank">
-                <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-                Whatsapp - Recepção
-              </a>
+        <!-- Section History -->
+        <section class="section-history" id="history">
+            <!-- BLOCO 1 -->
+            <div class="history-title">
+                <h1>CONHEÇA NOSSA HISTÓRIA</h1>
             </div>
 
-            <div class="line-services"></div>
-            <h2>Outros Serviços</h2>
-            <ul>
-              <li data-modal="#modalTreinamentos" onclick="openModal(event)"> Treinamentos</li>
-              <li data-modal="#modaleSocial" onclick="openModal(event)">Gestão do eSocial</li>
-              <li data-modal="#modalLaudos" onclick="openModal(event)">Laudos e Programas de SST</li>
-              <li data-modal="#modalConsult" onclick="openModal(event)">Consultoria e Assessoria</li>
-              <li data-modal="#modalPsicossocial-NR1" onclick="openModal(event)">Avaliações Qualitativas de SST</li>
-              <li data-modal="#modalQuantitativa-SST" onclick="openModal(event)">Avaliação Risco Psicossocial - NR1</li>
-            </ul>
+            <!-- BLOCO 1: FUNDAÇÃO -->
+            <div class="content-history">
+                <div class="article-text-history">
+                    <h2>Nossa Fundação</h2>
+                    <p>
+                        Fundada em 2013, a Lavori nasceu com o propósito de
+                        oferecer um serviço diferenciado e de excelência nas
+                        áreas de segurança do trabalho e medicina ocupacional.
+                        Idealizada pelo diretor técnico Luciano Lima —
+                        profissional com vasta experiência no setor — a empresa
+                        surgiu a partir da percepção da carência de soluções
+                        completas e eficazes no cumprimento das normas de saúde
+                        e segurança nas empresas da região.
+                    </p>
+                    <p>
+                        A primeira unidade foi implantada na cidade de Laguna –
+                        SC, com uma estrutura moderna e um modelo de atendimento
+                        humanizado. Desde o início, a Lavori estabeleceu como
+                        pilares a prevenção de acidentes, a promoção da saúde do
+                        trabalhador e o suporte técnico qualificado às
+                        organizações, tornando-se referência no setor.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <!-- Form Services -->
-  <section class="section-services-medicina" id="services">
-    <div class="container-services">
+        <!-- Section Unity -->
 
-      <div class="article-services-medicina">
+        <section class="section-units" id="unity">
+            <div class="container-units">
+                <div class="unity-text-title">
+                    <h1>UNIDADES</h1>
+                    <p>
+                        A Lavori Medicina Ocupacional LTDA conta com quatro
+                        unidades estrategicamente localizadas no litoral sul de
+                        Santa Catarina, nas cidades de Laguna, Imbituba,
+                        Garopaba e Paulo Lopes.
+                    </p>
+                    <p>
+                        Cada unidade foi planejada para oferecer facilidade de
+                        acesso, conforto e agilidade no atendimento, sempre com
+                        foco na qualidade dos serviços prestados. Atuamos com
+                        exames ocupacionais, avaliações clínicas e programas de
+                        saúde corporativa, contribuindo para a segurança,
+                        bem-estar e produtividade dos colaboradores das empresas
+                        atendidas.
+                    </p>
 
-        <div class="list-services">
-          <h2>Exames Realizados na Clínica</h2>
+                    <h2>
+                        Confira abaixo os endereços e horários de atendimento:
+                    </h2>
+                </div>
 
-          <ul>
-            <li>ASO - Exame Clínico</li>
-            <li>Espirometria</li>
-            <li>Eletrocardiograma</li>
-            <li>Eletroencefalograma</li>
-            <li>Audiometria</li>
-            <li>Avaliação psicossocial</li>
-            <li>Exames Laboratoriais</li>
-          </ul>
+                <div class="containers-clinicas-unity">
+                    <div class="clinica">
+                        <h3>Clínica Lavori Laguna</h3>
+                        <p>
+                            <strong>Endereço:</strong> Rua Voluntário Carpes, nº
+                            50 - 2º andar, sala 203
+                        </p>
+                        <h4>Horário de Atendimento</h4>
+                        <p>
+                            Segunda a Sexta-feira: 07:00 às 12:00 e 13:00 às
+                            17:00
+                        </p>
+                        <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
+                        <h2>Telefone de contato</h2>
+                        <p>
+                            filialimbituba@lavori.med.br | Tel: (48) 3644-2736
+                        </p>
+                        <p class="whatsapp-contact">
+                            <img
+                                src="image/whatsapp-icon.png"
+                                alt="Ícone WhatsApp"
+                                class="whatsapp-icon"
+                            />
+                            <a
+                                href="https://wa.me/5548991661525"
+                                target="_blank"
+                                title="Clique aqui para abrir o WhatsApp"
+                                >WhatsApp: (48) 99166-1525</a
+                            >
+                        </p>
+                        <div class="mapa-unidade">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.8961631149723!2d-48.78016868498631!3d-28.48289008248473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526be631a57a271%3A0x7fb5d0f83f0a3b36!2sRua%20Volunt%C3%A1rio%20Carpes%2C%2050%20-%20Laguna%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1718999629376!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="300"
+                                style="border: 0; border-radius: 10px"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
 
-          <div class="obs-laboratorio">
-            <h3>Os exames laboratoriais são realizados em parceria com laboratórios especializados.</h3>
-          </div>
+                    <div class="clinica">
+                        <h3>Clínica Lavori Imbituba</h3>
+                        <p>
+                            <strong>Endereço:</strong> Av. Nicolau B da Rosa
+                            Matos, 834 - Centro, Imbituba - SC, 88780-000
+                        </p>
+                        <h4>Horário de Atendimento</h4>
+                        <p>
+                            Segunda a Quinta-feira: 07:00 às 12:00 e 13:00 às
+                            17:00
+                        </p>
+                        <p>Sexta-feira: 07:00 às 12:00 e 13:00 às 16:00</p>
+                        <h2>Telefone de contato</h2>
+                        <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
+                        <p class="whatsapp-contact">
+                            <img
+                                src="image/whatsapp-icon.png"
+                                alt="Ícone WhatsApp"
+                                class="whatsapp-icon"
+                            />
+                            <a
+                                href="https://wa.me/5548991661525"
+                                target="_blank"
+                                title="Clique aqui para abrir o WhatsApp"
+                                >WhatsApp: (48) 99166-1525</a
+                            >
+                        </p>
 
-          <div title="Clique para agendar um exame">
-            <a href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F" class="btn-whatsapp-services btn-center" target="_blank">
-              <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-              WhatsApp - Recepção
-            </a>
-          </div>
-        </div>
+                        ...
+                        <!-- conteúdo da clínica -->
+                        <div class="mapa-unidade">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.123456789!2d-48.64000000000001!3d-28.240000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526e3f27be862d9%3A0x4e7e6c0b2b9e07aa!2sAv.%20Nicolau%20B%20da%20Rosa%20Matos%2C%20834%20-%20Centro%2C%20Imbituba%20-%20SC%2C%2088780-000!5e0!3m2!1spt-BR!2sbr!4v1689759999999!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="300"
+                                style="border: 0; border-radius: 10px"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
 
-        <div class="line-services"></div>
+                    <div class="clinica">
+                        <h3>Clínica Lavori Garopaba</h3>
+                        <p>
+                            <strong>Endereço:</strong> Rua Prefeito João Orestes
+                            de Araújo, nº 326
+                        </p>
+                        <h4>Horário de Atendimento</h4>
+                        <p>Sexta-feira: 09 às 12:00</p>
+                        <h2>Telefone de contato</h2>
+                        <p>garopaba@lavori.med.br | Tel: (48) 3644-2736</p>
+                        <p class="whatsapp-contact">
+                            <img
+                                src="image/whatsapp-icon.png"
+                                alt="Ícone WhatsApp"
+                                class="whatsapp-icon"
+                            />
+                            <a
+                                href="https://wa.me/5548991661525"
+                                target="_blank"
+                                title="Clique aqui para abrir o WhatsApp"
+                                >WhatsApp: (48) 99166-1525</a
+                            >
+                        </p>
 
-        <div class="list-services">
-          <h2>Outros Serviços</h2>
-          <ul>
-            <li title="Clique para saber" data-modal="#modalTreinamentos" onclick="openModal(event)">Treinamentos</li>
-            <li title="Clique para saber" data-modal="#modaleSocial" onclick="openModal(event)">Gestão do eSocial</li>
-            <li title="Clique para saber" data-modal="#modalLaudos" onclick="openModal(event)">Laudos e Programas de SST</li>
-            <li title="Clique para saber" data-modal="#modalConsult" onclick="openModal(event)">Consultoria e Assessoria</li>
-            <li title="Clique para saber" data-modal="#modalPsicossocial-NR1" onclick="openModal(event)">Avaliação Risco Psicossocial - NR1</li>
-            <li title="Clique para saber" data-modal="#higieneOcupacional" onclick="openModal(event)">Higiene Ocupacional</li>
-          </ul>
-          <div title="Clique para solicitar uma proposta">
-            <a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" class="btn-whatsapp-services btn-center" target="_blank">
-              <img src="image/whatsapp-icon.png" alt="Ícone WhatsApp" class="whatsapp-icon" />
-              WhatsApp - Setor Técnico
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+                        <div class="mapa-unidade">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.987654321098!2d-48.636789012!3d-28.065432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd5678abcd%3A0x1234567890abcd!2sRua%20Prefeito%20Jo%C3%A3o%20Orestes%20de%20Ara%C3%BAjo%2C%20326%20-%20Garopaba%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000011111!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="300"
+                                style="border: 0; border-radius: 10px"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
 
-    <!-- Modal treinamentos -->
-    <div id="modalTreinamentos" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
+                    <div class="clinica">
+                        <h3>Clínica Lavori Paulo Lopes</h3>
+                        <p>
+                            <strong>Endereço:</strong> Rua Ana Raupp de Sá, nº
+                            448, Nova Belém
+                        </p>
+                        <h4>Horário de Atendimento</h4>
+                        <p>Ter;a-feira: 13:00 às 17:00</p>
+                        <h2>Telefone de contato</h2>
+                        <p>recepcao@lavori.med.br | Tel: (48) 3644-2736</p>
+                        <p class="whatsapp-contact">
+                            <img
+                                src="image/whatsapp-icon.png"
+                                alt="Ícone WhatsApp"
+                                class="whatsapp-icon"
+                            />
+                            <a
+                                href="https://wa.me/5548991661525"
+                                target="_blank"
+                                title="Clique aqui para abrir o WhatsApp"
+                                >WhatsApp: (48) 99166-1525</a
+                            >
+                        </p>
+                        <div class="mapa-unidade">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.8765432109876!2d-48.541234567!3d-28.136789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9526abcd9012abcd%3A0x234567890abcd!2sRua%20Ana%20Raupp%20de%20S%C3%A1%2C%20448%20-%20Paulo%20Lopes%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719000022222!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="300"
+                                style="border: 0; border-radius: 10px"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Treinamentos em SST – Capacitação que Gera Segurança</h2>
+        <!-- Agora a SECTION é o pai geral -->
+        <section class="section-form">
+            <!-- Ícones e textos à esquerda -->
+            <div class="icon-section">
+                <h2 class="contact-title-left">Contato</h2>
 
-        <p>
-          A <strong>Lavori</strong> oferece todos os <strong>treinamentos obrigatórios</strong> exigidos pelas Normas Regulamentadoras (NRs), com conteúdo atualizado, instrutores qualificados e foco total na prevenção de acidentes e no cumprimento legal.
-        </p>
+                <div class="icon-item">
+                    <svg
+                        class="form-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+                        />
+                    </svg>
+                    <span class="icon-text"
+                        >Av. Nicolau Bartolomeu da Rosa Matos, 834</span
+                    >
+                </div>
 
-        <ul>
-          <li><strong>NR 1:</strong> Disposições Gerais e Gerenciamento de Riscos Ocupacionais</li>
-          <li><strong>NR 6:</strong> Uso Correto de Equipamentos de Proteção Individual (EPI)</li>
-          <li><strong>NR 10:</strong> Segurança em Instalações Elétricas</li>
-          <li><strong>NR 35:</strong> Trabalho em Altura, com prática supervisionada</li>
-          <li><strong>...e todos os demais treinamentos até a NR 38.</strong></li>
-        </ul>
+                <div class="icon-item">
+                    <svg
+                        class="form-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M12.04 2.01c-5.5 0-9.97 4.45-9.97 9.94 0 1.75.45 3.45 1.32 4.97L2 22l5.24-1.36a9.94 9.94 0 004.8 1.22h.01c5.49 0 9.94-4.47 9.94-9.96s-4.45-9.93-9.94-9.93zm0 18.09c-1.44 0-2.85-.37-4.1-1.07l-.29-.17-3.11.81.83-3.03-.19-.31a8.01 8.01 0 01-1.2-4.28c0-4.42 3.6-8.01 8.02-8.01s8.01 3.59 8.01 8.01-3.59 8.05-8.01 8.05zm4.36-6.02c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.37-1.94-1.19-.72-.64-1.21-1.43-1.35-1.67-.14-.24-.01-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3 0-.42-.06-.12-.54-1.3-.75-1.77-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3s-.84.82-.84 2c0 1.17.86 2.3.98 2.46.12.16 1.69 2.58 4.1 3.62.57.24 1.01.38 1.36.48.57.18 1.08.15 1.49.09.46-.07 1.43-.59 1.63-1.17.2-.58.2-1.08.14-1.17-.06-.1-.22-.16-.46-.28z"
+                        />
+                    </svg>
+                    <span class="icon-text">(48) 99158-1525</span>
+                </div>
 
-        <p>
-          <strong>Treinamentos Personalizados:</strong> Desenvolvemos soluções sob medida para a realidade e os riscos específicos da sua empresa – com conteúdo direcionado, linguagem prática e foco em resultados reais.
-        </p>
+                <div class="icon-item">
+                    <svg
+                        class="form-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.26 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"
+                        />
+                    </svg>
+                    <span class="icon-text">(48) 3644-2736</span>
+                </div>
 
-        <p>
-          Realizamos os cursos <strong>in company</strong> ou em ambiente externo, com emissão de certificados válidos e suporte completo para sua empresa manter-se regularizada.
-        </p>
-
-        <p><strong>Com a Lavori, sua equipe aprende mais, aplica melhor e trabalha com mais segurança.</strong></p>
-      </div>
-    </div>
-
-
-  <!-- Modal treinamentos -->
-  <div id="modalTreinamentos" class="modal">
-    <div class="modal-content">
-      <div class="close" onclick="closeModal()">×</div>
-
-        <h2>eSocial SST – Conformidade sem Complicação</h2>
-
-        <p>
-          O <strong>eSocial</strong> é uma obrigação legal que unifica o envio de dados trabalhistas, previdenciários e de saúde e segurança ao Governo Federal. Para empresas, isso representa um grande desafio – e para a <strong>Lavori</strong>, uma oportunidade de facilitar sua gestão.
-        </p>
-
-        <p>
-          Nós cuidamos de todo o processo de envio dos <strong>eventos de SST</strong> exigidos pelo eSocial, com segurança, agilidade e total conformidade. Você economiza tempo, evita multas e garante tranquilidade nas fiscalizações.
-        </p>
-
-        <ul>
-          <li><strong>S-2210 – Comunicação de Acidente de Trabalho:</strong> Registro imediato da CAT, dentro do prazo legal de até 1 dia útil após a ocorrência.</li>
-          <li><strong>S-2220 – Monitoramento da Saúde do Trabalhador:</strong> Envio correto dos dados de exames ocupacionais (admissionais, periódicos, retorno, mudança de função etc.).</li>
-          <li><strong>S-2240 – Condições Ambientais do Trabalho:</strong> Informações sobre exposições a riscos, EPIs utilizados e medidas de proteção adotadas.</li>
-        </ul>
-
-        <p>
-          Deixe a burocracia com a gente! Com a <strong>Lavori</strong>, sua empresa garante total adequação ao eSocial SST com suporte técnico especializado, acompanhamento personalizado e zero dor de cabeça.
-        </p>
-
-        <p><strong>Entre em contato e mantenha seu negócio seguro, atualizado e livre de penalidades.</strong></p>
-      </div>
-    </div>
-
-    <!-- Modal Laudos e Pogramas -->
-    <div id="modalLaudos" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
-
-        <h2>Laudos e Programas de SST – Conformidade e Segurança sem Complicação</h2>
-
-        <p>
-          A <strong>Lavori</strong> cuida da elaboração de todos os <strong>laudos técnicos</strong> e <strong>programas de Saúde e Segurança do Trabalho</strong> exigidos por lei, garantindo que sua empresa esteja sempre em dia com as Normas Regulamentadoras e a legislação previdenciária.
-        </p>
-
-        <p>
-          Com uma equipe altamente qualificada, entregamos documentos completos, confiáveis e prontos para auditorias, fiscalizações ou exigências legais.
-        </p>
-
-        <ul>
-          <li><strong>PCMSO – Programa de Controle Médico de Saúde Ocupacional:</strong> Acompanhamento da saúde dos colaboradores com base na NR 7, essencial para reduzir riscos e promover bem-estar.</li>
-          <li><strong>PGR – Programa de Gerenciamento de Riscos:</strong> Mapeamento e controle dos riscos ocupacionais conforme a NR 1 e NR 9, com foco em prevenção e segurança.</li>
-          <li><strong>LTCAT – Laudo Técnico das Condições Ambientais do Trabalho:</strong> Documento obrigatório para aposentadoria especial junto ao INSS, com respaldo técnico e legal.</li>
-          <li><strong>Laudos de Insalubridade e Periculosidade (LIP):</strong> Avaliação dos adicionais devidos aos trabalhadores, conforme as exigências das NRs 15 e 16.</li>
-        </ul>
-
-        <p>
-          Todos os documentos são emitidos por profissionais legalmente habilitados, com base em análises criteriosas e de acordo com os mais altos padrões técnicos.
-        </p>
-
-        <p><strong>Com a Lavori, sua empresa ganha segurança jurídica, tranquilidade em fiscalizações e mais confiança na gestão de SST.</strong></p>
-      </div>
-    </div>
-
-    <!-- Modal consultoria e acessoria -->
-    <div id="modalConsult" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
-
-        <h2>Consultoria e Assessoria em SST – Segurança que Gera Resultados</h2>
-
-        <p>
-          A <strong>Lavori</strong> oferece uma solução completa em <strong>consultoria e assessoria em Saúde e Segurança do Trabalho</strong>, ajudando sua empresa a manter-se em dia com a legislação e a construir um ambiente mais seguro, produtivo e confiável.
-        </p>
-
-        <p>
-          Nossa equipe especializada atua lado a lado com o seu negócio, oferecendo suporte técnico, documentação atualizada e gestão contínua da SST com agilidade, qualidade e foco na prevenção.
-        </p>
-
-        <ul>
-          <li><strong>SESMT Terceirizado:</strong> Profissionais experientes (Técnicos, Engenheiros e Médicos do Trabalho) à disposição da sua empresa, conforme a NR 4 – sem burocracia.</li>
-          <li><strong>Gestão de SST:</strong> Monitoramos prazos, exames, treinamentos e documentos para você se concentrar no que realmente importa.</li>
-          <li><strong>Consultoria Técnica Permanente:</strong> Orientação confiável e atualizada sempre que surgirem dúvidas ou mudanças legais.</li>
-          <li><strong>Auditorias e Inspeções Técnicas:</strong> Verificações preventivas para evitar autuações e identificar melhorias no ambiente de trabalho.</li>
-          <li><strong>Documentação completa:</strong> Elaboração ou atualização de PCMSO, PGR, LTCAT, Laudos, Fichas de EPI e muito mais.</li>
-          <li><strong>Treinamentos In Company:</strong> Cursos obrigatórios e personalizados ministrados no local de trabalho, com foco na realidade da sua equipe.</li>
-        </ul>
-
-        <p>
-          Com a <strong>Lavori</strong>, sua empresa ganha mais do que conformidade: ganha tranquilidade, segurança jurídica e um parceiro comprometido com o sucesso da sua operação.
-        </p>
-
-        <p><strong>Fale com a gente e descubra como podemos facilitar a gestão de SST da sua empresa.</strong></p>
-      </div>
-    </div>
-
-
-    <!-- Modal Avaliação Psicossocial - NR1 -->
-    <div id="modalPsicossocial-NR1" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
-
-        <h2>Avaliação de Riscos Psicossociais – Mais Saúde e Produtividade para sua Empresa</h2>
-
-        <p>
-          A <strong>avaliação de riscos psicossociais</strong> é muito mais do que uma exigência da <strong>NR 1 – GRO (Gerenciamento de Riscos Ocupacionais)</strong>. Ela é uma ferramenta estratégica para promover um ambiente de trabalho saudável, equilibrado e produtivo.
-        </p>
-
-        <p>
-          Pressão por metas, jornadas exaustivas, conflitos interpessoais e estresse constante são fatores silenciosos que afetam diretamente o desempenho e o bem-estar da equipe. Identificar esses riscos é essencial para prevenir afastamentos, melhorar o clima organizacional e garantir conformidade legal.
-        </p>
-
-        <ul>
-          <li><strong>O que avaliamos:</strong> Estresse ocupacional, sobrecarga mental, assédio moral, metas excessivas, trabalho isolado, repetitividade e outros fatores que afetam a saúde mental.</li>
-          <li><strong>Como fazemos:</strong> Aplicamos questionários, realizamos entrevistas, observações e análises do ambiente e da organização do trabalho.</li>
-          <li><strong>Benefícios para sua empresa:</strong> Redução do absenteísmo, aumento da produtividade, melhoria no clima de equipe e valorização da imagem institucional.</li>
-          <li><strong>Conexão com a NR 17:</strong> A avaliação psicossocial é integrada à <strong>AET – Análise Ergonômica do Trabalho</strong>, tornando seu PGR ainda mais completo e eficaz.</li>
-        </ul>
-
-        <p>
-          A <strong>Lavori</strong> oferece um serviço completo, com abordagem técnica e humana, para mapear e controlar riscos psicossociais. Cuidar da saúde emocional dos colaboradores é investir na força da sua equipe e no sucesso do seu negócio.
-        </p>
-
-        <p><strong>Entre em contato e leve mais equilíbrio e segurança para dentro da sua empresa.</strong></p>
-      </div>
-    </div>
-
-    <!-- Modal quantitaivo -->
-    <div id="modalQuantitativa-SST" class="modal">
-      <div class="modal-content">
-        <div class="close" onclick="closeModal()">×</div>
-        <h2>Avaliações Quantitativas em SST – Precisão para Proteger sua Empresa</h2>
-        <p>
-          As <strong>avaliações quantitativas</strong> são essenciais para medir com exatidão a exposição dos colaboradores a agentes físicos, químicos e biológicos no ambiente de trabalho. Elas são exigidas pelas normas de saúde e segurança, como a <strong>NR 9</strong>, e garantem que sua empresa esteja em conformidade com a legislação.
-        </p>
-        <p>
-          Com o apoio de instrumentos certificados e equipe especializada, a <strong>Lavori</strong> realiza medições detalhadas que ajudam a identificar riscos invisíveis e a tomar decisões seguras. Tudo isso de forma prática, ágil e com alto padrão técnico.
-        </p>
-        <ul>
-          <li><strong>Proteja sua equipe:</strong> Detecte com precisão ruído, calor, poeiras, vapores e outros riscos que comprometem a saúde.</li>
-          <li><strong>Evite autuações:</strong> Esteja em dia com as exigências legais, evitando multas e passivos trabalhistas.</li>
-          <li><strong>Ganhe credibilidade:</strong> Demonstre compromisso com a segurança e bem-estar dos trabalhadores.</li>
-          <li><strong>Tecnologia e confiança:</strong> Utilizamos equipamentos modernos e metodologia reconhecida nacionalmente.</li>
-          <li><strong>Resultados práticos:</strong> Relatórios completos, com orientações claras para ações corretivas e preventivas.</li>
-        </ul>
-        <p>
-          Conte com a <strong>Lavori</strong> para transformar dados técnicos em segurança real para sua empresa. Nossas avaliações ajudam a construir ambientes mais saudáveis, produtivos e em total conformidade com a legislação.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal quantitaivo -->
-  <div id="higieneOcupacional" class="modal">
-    <div class="modal-content">
-      <div class="close" onclick="closeModal()">×</div>
-      <h2>Higiene Ocupacional Lavori – Cuidar da Saúde é Cuidar do Futuro da Sua Empresa</h2>
-      <p>
-        A <strong>Lavori</strong> oferece soluções completas em <strong>Higiene Ocupacional</strong> para identificar, avaliar e controlar os riscos que podem afetar a saúde dos seus colaboradores. Com uma equipe especializada e tecnologia de ponta, garantimos mais segurança, produtividade e conformidade para o seu negócio.
-      </p>
-      <p>
-        Atuamos com <strong>avaliações qualitativas e quantitativas</strong>, atendendo às exigências das principais Normas Regulamentadoras, como <strong>NR 9</strong> e <strong>NR 15</strong>, e oferecendo um serviço ágil, eficiente e com alto padrão técnico.
-      </p>
-
-      <h3>✅ Por que escolher a Lavori para cuidar da Higiene Ocupacional da sua empresa?</h3>
-      <ul>
-        <li><strong>Serviço completo:</strong> Realizamos desde a análise preliminar até a entrega de relatórios com ações práticas e preventivas.</li>
-        <li><strong>Tecnologia de ponta:</strong> Utilizamos equipamentos modernos e calibrados para medições precisas.</li>
-        <li><strong>Equipe técnica especializada:</strong> Profissionais experientes em ambientes industriais, comerciais e corporativos.</li>
-        <li><strong>Conformidade legal:</strong> Atendemos rigorosamente às exigências das NRs, reduzindo riscos de multas e autuações.</li>
-        <li><strong>Redução de custos:</strong> Prevenção de doenças ocupacionais e afastamentos, com impacto direto na produtividade.</li>
-        <li><strong>Relatórios claros e objetivos:</strong> Entregamos orientações que facilitam a tomada de decisão e a implementação de melhorias.</li>
-      </ul>
-
-      <p>
-        <strong>Proteja quem move a sua empresa!</strong> Com a Lavori, sua organização ganha muito mais do que laudos: ganha segurança, tranquilidade e confiança para crescer com responsabilidade.
-      </p>
-
-      <p>
-        <strong>Entre em contato agora</strong> e descubra como nossas soluções em Higiene Ocupacional podem transformar o ambiente de trabalho na sua empresa.
-      </p>
-    </div>
-  </div>
-
-
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-container">
-        <!-- Coluna da esquerda: Links -->
-        <div class="footer-left">
-          <div class="links-container">
-            <div class="footer-section">
-              <h4>Instituição</h4>
-              <ul>
-                <li><a href="#quem-somos">Informativos</a></li>
-                <li><a href="#solucoes">Nossa história</a></li>
-                <li><a href="#agenda">Unidades</a></li>
-              </ul>
+                <div class="icon-item">
+                    <svg
+                        class="form-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"
+                        />
+                    </svg>
+                    <span class="icon-text">recepcao@lavori.med.br</span>
+                </div>
             </div>
 
-            <div class="footer-section">
-              <h4>Serviços</h4>
-              <ul>
-                <li><a href="#">Laudos Técnicos</a></li>
-                <li><a href="#">Relatórios Complementares</a></li>
-                <li><a href="#">Avaliações Quantitativas</a></li>
-                <li><a href="#">Assessoria Técnica</a></li>
-                <li><a href="#">Treinamentos</a></li>
-              </ul>
+            <!-- Formulário à direita -->
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <form
+                        action="https://formsubmit.co/pedrof_fh@hotmail.com"
+                        method="post"
+                        class="form"
+                    >
+                        <h2 class="contact-title">Fale Conosco</h2>
+                        <p>
+                            Preencha o formulário abaixo e entraremos em contato
+                            o mais breve possível.
+                        </p>
+
+                        <div class="form-group">
+                            <label class="label" for="name">Seu Nome</label>
+                            <input
+                                class="inputs"
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="email">E-mail*</label>
+                            <input
+                                class="inputs"
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label" for="message"
+                                >No que podemos-lhe ajudar?</label
+                            >
+                            <textarea
+                                class="input-message"
+                                name="message"
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="contact-button" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section History -->
+
+        <section class="section-history" id="history">
+            <!-- BLOCO 1 -->
+            <div class="history-title">
+                <h1>CONHEÇA NOSSA HISTÓRIA</h1>
             </div>
 
-            <div class="footer-section">
-              <h4>Contato</h4>
-              <ul>
-                <li><a href="#">Solicitar Proposta</a></li>
-                <li><a href="#">Trabalhe Conosco</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-              </ul>
+            <!-- BLOCO 1: FUNDAÇÃO -->
+            <div class="content-history">
+                <div class="article-text-history">
+                    <h2>Nossa Fundação</h2>
+                    <p>
+                        Fundada em 2013, a Lavori nasceu com o propósito de
+                        oferecer um serviço diferenciado e de excelência nas
+                        áreas de segurança do trabalho e medicina ocupacional.
+                        Idealizada pelo diretor técnico Luciano Lima —
+                        profissional com vasta experiência no setor — a empresa
+                        surgiu a partir da percepção da carência de soluções
+                        completas e eficazes no cumprimento das normas de saúde
+                        e segurança nas empresas da região.
+                    </p>
+                    <p>
+                        A primeira unidade foi implantada na cidade de Laguna –
+                        SC, com uma estrutura moderna e um modelo de atendimento
+                        humanizado. Desde o início, a Lavori estabeleceu como
+                        pilares a prevenção de acidentes, a promoção da saúde do
+                        trabalhador e o suporte técnico qualificado às
+                        organizações, tornando-se referência no setor.
+                    </p>
+                </div>
+                <div class="image-history">
+                    <img
+                        src="image/clinica-lavori-laguna.png"
+                        alt="Clínica da Lavori - Laguna - Anexo ao Hospital"
+                    />
+                </div>
             </div>
-          </div>
-        </div>
+            <div class="line-history"></div>
 
-          <div class="footer-section">
-            <h4>Serviços em SST</h4>
-            <ul>
-              <li><a href="#">Laudos e Programas em SST</a></li>
-              <li><a href="#">Gestão do eSocial</a></li>
-              <li><a href="#">Higiene Ocupacional</a></li>
-              <li><a href="#">Avaliação Risco Psicossocial - NR1</a></li>
-              <li><a href="#">Treinamentos</a></li>
-              <li><a href="#">Consultoria e Assessoria</a></li>
-            </ul>
-          </div>
+            <!-- BLOCO 2: IMBITUBA -->
+            <div class="content-history reverse">
+                <div class="article-text-history">
+                    <h2>Expansão para Imbituba</h2>
+                    <p>
+                        Com o passar do tempo, identificamos que muitas empresas
+                        de cidades vizinhas, como Imbituba, enfrentavam
+                        dificuldades para acessar serviços de medicina
+                        ocupacional com qualidade, agilidade e comprometimento.
+                        A escassez de clínicas com estrutura adequada
+                        comprometia a eficiência dos processos admissionais e a
+                        gestão da saúde corporativa.
+                    </p>
+                    <p>
+                        Diante dessa realidade, a Lavori expandiu sua atuação e,
+                        em 2019, inaugurou sua filial em Imbituba – SC. A nova
+                        unidade passou a atender diversos segmentos da economia
+                        local, oferecendo soluções completas em saúde e
+                        segurança do trabalho com a mesma excelência que marcou
+                        a trajetória da matriz.
+                    </p>
+                </div>
+                <div class="image-history">
+                    <img
+                        src="image/clinica imbituba.jpg"
+                        alt="Clínica de Imbituba"
+                    />
+                </div>
+            </div>
 
-          <div class="footer-section">
-            <h4>Medicina do Trabalho</h4>
-            <ul>
-              <li><a href="#">Exame Clínico - ASO</a></li>
-              <li><a href="#">Eletrocardiograma</a></li>
-              <li><a href="#">Elecenfalograma</a></li>
-              <li><a href="#">Espirometria</a></li>
-              <li><a href="#">Avaliação Psicossocial</a></li>
-              <li><a href="#">Audiometria</a></li>
-              <li title="Exames laboratorias são realizados com clínicas parceiras terceiras"><a href="#">Exames Laboratoriais</a></li>
-            </ul>
-          </div>
+            <div class="line-history reverse"></div>
+            <!-- BLOCO 3: GAROPABA -->
+            <div class="content-history">
+                <div class="article-text-history">
+                    <h2>Chegada a Garopaba</h2>
+                    <p>
+                        Garopaba, cidade marcada pela intensa atividade
+                        turística e sazonalidade no comércio, apresenta picos de
+                        demanda por exames admissionais, laudos técnicos e
+                        treinamentos obrigatórios durante o verão. Esse cenário
+                        desafiador abriu espaço para a atuação da Lavori.
+                    </p>
+                    <p>
+                        Em 2023, inauguramos nossa unidade em Garopaba – SC,
+                        estrategicamente planejada para atender com agilidade e
+                        qualidade, especialmente nos períodos de alta temporada.
+                        A filial rapidamente se tornou referência regional para
+                        empregadores que buscam conformidade legal, eficiência e
+                        segurança nos processos relacionados à saúde
+                        ocupacional.
+                    </p>
+                </div>
+                <div class="image-history">
+                    <img
+                        src="image/clinica-lavori-laguna.png"
+                        alt="Clínica de Garopaba"
+                    />
+                </div>
+            </div>
 
-          <div class="footer-section">
-            <h4>Contato</h4>
-            <ul>
+            <div class="line-history"></div>
+            <!-- BLOCO 4: PAULO LOPES -->
+            <div class="content-history reverse">
+                <div class="article-text-history">
+                    <h2>Chegada a Paulo Lopes</h2>
+                    <p>
+                        Em 2024, a Lavori avançou mais um passo em sua história
+                        de crescimento com a abertura de uma nova unidade em
+                        Paulo Lopes – SC. A cidade, em franca expansão, atraiu
+                        investimentos e a instalação de diversas empresas,
+                        gerando uma demanda crescente por serviços
+                        especializados em segurança do trabalho e saúde
+                        ocupacional.
+                    </p>
+                    <p>
+                        A nova unidade foi projetada para oferecer atendimento
+                        ágil, excelência no cumprimento das Normas
+                        Regulamentadoras (NRs) e suporte técnico personalizado,
+                        promovendo ambientes corporativos mais seguros,
+                        saudáveis e produtivos. Com essa expansão, a Lavori
+                        reforça seu compromisso com o desenvolvimento das
+                        regiões onde atua e com a proximidade junto aos seus
+                        clientes.
+                    </p>
+                </div>
+                <div class="image-history">
+                    <img
+                        src="image/clinica-lavori-laguna.png"
+                        alt="Clínica de Paulo Lopes"
+                    />
+                </div>
+            </div>
+        </section>
 
-              <li><a href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" title="Clique para enviar uma mensagem via WhatsApp">Solicitar Proposta</a></li>
-              <li><a href="#">Trabalhe Conosco</a></li>
-              <li><a href="#contatos">Contatos</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <!-- Section Unity -->
+        <section class="section-units" id="unity">
+            <div class="container-units">
+                <div class="unity-text-title">
+                    <h1>UNIDADES</h1>
+                    <p>
+                        A Lavori Medicina Ocupacional LTDA conta com quatro
+                        unidades estrategicamente localizadas no litoral sul de
+                        Santa Catarina, nas cidades de Laguna, Imbituba,
+                        Garopaba e Paulo Lopes.
+                    </p>
+                    <p>
+                        Cada unidade foi planejada para oferecer facilidade de
+                        acesso, conforto e agilidade no atendimento, sempre com
+                        foco na qualidade dos serviços prestados. Atuamos com
+                        exames ocupacionais, avaliações clínicas e programas de
+                        saúde corporativa, contribuindo para a segurança,
+                        bem-estar e produtividade dos colaboradores das empresas
+                        atendidas.
+                    </p>
 
-      <div class="footer-bottom">
-        <div class="footer-logo">
-          <img id="header-lavori-footer" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-        </div>
-        <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-  </body>
-  <script src="script.js"></script>
+                    <h2>
+                        Confira abaixo os endereços e horários de atendimento:
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- Section Info -->
 
-    <div class="footer-bottom">
-      <div class="footer-logo">
-        <img id="header-lavori-footer" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-      </div>
-      <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
-      <div class="footer-icon"><a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram-footer" src="image/icons-instagram2.png" alt="Instagram"></a>
-      </div>
-  </footer>
-</body>
-<script src="script.js"></script>
+        <section class="article-section" id="info">
+            <div class="article-content">
+                <div class="article-image">
+                    <img src="image/medicina.jpg" alt="Segurança do Trabalho" />
+                </div>
+                <div class="article-text">
+                    <h2>
+                        Por que investir em Segurança do Trabalho é fundamental
+                        para sua empresa?
+                    </h2>
+                    <p>
+                        A segurança do trabalho não é apenas uma obrigação legal
+                        — é um investimento essencial para proteger seus
+                        colaboradores, evitar prejuízos e garantir a
+                        continuidade das operações.
+                    </p>
+                    <p>
+                        Empresas que não investem em segurança do trabalho estão
+                        sujeitas a multas pesadas aplicadas pelos órgãos
+                        fiscalizadores, além de sofrerem com processos
+                        trabalhistas, afastamentos frequentes e perda de
+                        produtividade.
+                    </p>
+                    <p>
+                        Além disso, a falta de exames médicos ocupacionais, como
+                        os admissionais, periódicos e demissionais, pode
+                        acarretar sérios problemas para a saúde dos funcionários
+                        e comprometer o cumprimento das normas do Ministério do
+                        Trabalho e do eSocial.
+                    </p>
+                    <p>
+                        Na Lavori Medicina Ocupacional, auxiliamos sua empresa a
+                        se manter em conformidade com todas as exigências
+                        legais, por meio de serviços completos de avaliação
+                        clínica, emissão de laudos técnicos e treinamentos
+                        voltados à prevenção de acidentes e doenças
+                        ocupacionais.
+                    </p>
+                    <p>
+                        Invista em saúde e segurança hoje para evitar multas,
+                        proteger sua equipe e promover um ambiente de trabalho
+                        mais saudável e produtivo.
+                    </p>
+                    <a
+                        href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F"
+                        class="btn-primary"
+                        target="_blank"
+                        >Solicite uma Proposta</a
+                    >
+                </div>
+            </div>
+        </section>
 
+        <!-- Form Services -->
+        <section class="section-services-medicina" id="services">
+            <div class="container-services">
+                <div class="article-services-medicina">
+                    <div class="list-services">
+                        <h2>Exames Realizados na Clínica</h2>
+                        <ul>
+                            <li>ASO - Exame Clínico</li>
+                            <li>Espirometria</li>
+                            <li>Eletrocardiograma</li>
+                            <li>Eletroencefalograma</li>
+                            <li>Audiometria</li>
+                            <li>Avaliação psicossocial</li>
+                            <li>Exames Laboratoriais</li>
+                        </ul>
+                        <div class="obs-laboratorio">
+                            <h3>
+                                Os exames laboratoriais são realizados em
+                                parceria com laboratórios especializados.
+                            </h3>
+                        </div>
+                        <div class="list-services">
+                            <!-- seus outros conteúdos -->
+
+                            <a
+                                href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F"
+                                class="btn-whatsapp-services btn-center"
+                                target="_blank"
+                            >
+                                <img
+                                    src="image/whatsapp-icon.png"
+                                    alt="Ícone WhatsApp"
+                                    class="whatsapp-icon"
+                                />
+                                Whatsapp - Recepção
+                            </a>
+                        </div>
+
+                        <div class="line-services"></div>
+                        <h2>Outros Serviços</h2>
+                        <ul>
+                            <li
+                                data-modal="#modalTreinamentos"
+                                onclick="openModal(event)"
+                            >
+                                Treinamentos
+                            </li>
+                            <li
+                                data-modal="#modaleSocial"
+                                onclick="openModal(event)"
+                            >
+                                Gestão do eSocial
+                            </li>
+                            <li
+                                data-modal="#modalLaudos"
+                                onclick="openModal(event)"
+                            >
+                                Laudos e Programas de SST
+                            </li>
+                            <li
+                                data-modal="#modalConsult"
+                                onclick="openModal(event)"
+                            >
+                                Consultoria e Assessoria
+                            </li>
+                            <li
+                                data-modal="#modalPsicossocial-NR1"
+                                onclick="openModal(event)"
+                            >
+                                Avaliações Qualitativas de SST
+                            </li>
+                            <li
+                                data-modal="#modalQuantitativa-SST"
+                                onclick="openModal(event)"
+                            >
+                                Avaliação Risco Psicossocial - NR1
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form Services -->
+        <section class="section-services-medicina" id="services">
+            <div class="container-services">
+                <div class="article-services-medicina">
+                    <div class="list-services">
+                        <h2>Exames Realizados na Clínica</h2>
+
+                        <ul>
+                            <li>ASO - Exame Clínico</li>
+                            <li>Espirometria</li>
+                            <li>Eletrocardiograma</li>
+                            <li>Eletroencefalograma</li>
+                            <li>Audiometria</li>
+                            <li>Avaliação psicossocial</li>
+                            <li>Exames Laboratoriais</li>
+                        </ul>
+
+                        <div class="obs-laboratorio">
+                            <h3>
+                                Os exames laboratoriais são realizados em
+                                parceria com laboratórios especializados.
+                            </h3>
+                        </div>
+
+                        <div title="Clique para agendar um exame">
+                            <a
+                                href="//wa.me/5548991581525?text=Ol%C3%A1!%0AGostaria%20de%20agendar%20um%20exame%20ocupacional.%0AQuais%20hor%C3%A1rios%20est%C3%A3o%20dispon%C3%ADveis%3F"
+                                class="btn-whatsapp-services btn-center"
+                                target="_blank"
+                            >
+                                <img
+                                    src="image/whatsapp-icon.png"
+                                    alt="Ícone WhatsApp"
+                                    class="whatsapp-icon"
+                                />
+                                WhatsApp - Recepção
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="line-services"></div>
+
+                    <div class="list-services">
+                        <h2>Outros Serviços</h2>
+                        <ul>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#modalTreinamentos"
+                                onclick="openModal(event)"
+                            >
+                                Treinamentos
+                            </li>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#modaleSocial"
+                                onclick="openModal(event)"
+                            >
+                                Gestão do eSocial
+                            </li>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#modalLaudos"
+                                onclick="openModal(event)"
+                            >
+                                Laudos e Programas de SST
+                            </li>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#modalConsult"
+                                onclick="openModal(event)"
+                            >
+                                Consultoria e Assessoria
+                            </li>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#modalPsicossocial-NR1"
+                                onclick="openModal(event)"
+                            >
+                                Avaliação Risco Psicossocial - NR1
+                            </li>
+                            <li
+                                title="Clique para saber"
+                                data-modal="#higieneOcupacional"
+                                onclick="openModal(event)"
+                            >
+                                Higiene Ocupacional
+                            </li>
+                        </ul>
+                        <div title="Clique para solicitar uma proposta">
+                            <a
+                                href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F"
+                                class="btn-whatsapp-services btn-center"
+                                target="_blank"
+                            >
+                                <img
+                                    src="image/whatsapp-icon.png"
+                                    alt="Ícone WhatsApp"
+                                    class="whatsapp-icon"
+                                />
+                                WhatsApp - Setor Técnico
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <!-- Coluna da esquerda: Links -->
+                <div class="footer-left">
+                    <div class="links-container">
+                        <div class="footer-section">
+                            <h4>Serviços em SST</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Laudos e Programas em SST</a>
+                                </li>
+                                <li><a href="#">Gestão do eSocial</a></li>
+                                <li><a href="#">Higiene Ocupacional</a></li>
+                                <li>
+                                    <a href="#"
+                                        >Avaliação Risco Psicossocial - NR1</a
+                                    >
+                                </li>
+                                <li><a href="#">Treinamentos</a></li>
+                                <li>
+                                    <a href="#">Consultoria e Assessoria</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4>Medicina do Trabalho</h4>
+                            <ul>
+                                <li><a href="#">Exame Clínico - ASO</a></li>
+                                <li><a href="#">Eletrocardiograma</a></li>
+                                <li><a href="#">Elecenfalograma</a></li>
+                                <li><a href="#">Espirometria</a></li>
+                                <li><a href="#">Avaliação Psicossocial</a></li>
+                                <li><a href="#">Audiometria</a></li>
+                                <li
+                                    title="Exames laboratorias são realizados com clínicas parceiras terceiras"
+                                >
+                                    <a href="#">Exames Laboratoriais</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h4>Contato</h4>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://wa.me/5548992001525?text=Ol%C3%A1!%0AGostaria%20de%20solicitar%20uma%20proposta%20de%20servi%C3%A7os%20em%20SST.%0APode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F"
+                                        target="_blank"
+                                        title="Clique para enviar uma mensagem via WhatsApp"
+                                        >Solicitar Proposta</a
+                                    >
+                                </li>
+                                <li><a href="#">Trabalhe Conosco</a></li>
+                                <li><a href="#contatos">Contatos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img
+                        id="header-lavori-footer"
+                        src="image/Lavori-Mascote.png"
+                        alt="Lavori Mascote"
+                    />
+                </div>
+                <p>&copy; 2025 Lavori. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
