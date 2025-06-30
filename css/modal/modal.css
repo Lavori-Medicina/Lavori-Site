@@ -29,7 +29,6 @@
   overflow-y: auto;
   border-radius: 10px;
   color: var(--cor-texto-escuro);
-  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
 }
 
@@ -92,37 +91,117 @@
 
 .modal-content-contrato {
   background-color: var(--cor-texto-primario);
-  margin: 20% auto;
+  margin: 10% auto;
   padding: 2rem;
   max-width: 600px;
-  max-height: 70vh;
+  width: 90%;
+  max-height: 80vh;
   overflow-y: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   color: var(--cor-texto-escuro);
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
+.modal-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--cor-branca);
+}
 
-
-.modal-content-contrato ul li {
+.div-contatos-whats {
+  display: flex;
+  justify-content: center;
   background-color: transparent;
-  padding: 1.2rem 0.1rem;
+  padding: 0.5rem 0;
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+  width: 60%;
+  text-decoration: none;
+}
+
+.contato-lista li {
+  background-color: transparent;
+  color: var(--cor-branca);
+  padding: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid var(--cor-fundo-contato);
   border-radius: 8px;
   box-shadow: 0 0 12px var(--cor-sombra-azulada);
   font-size: 1.2rem;
-  color: var(--cor-branca);
-  list-style: none;
   text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
 }
 
-.modal-content-contrato li:hover {
+.contato-lista li:hover {
   background-color: var(--cor-whatsapp-hover);
-  text-decoration: none;
-  color: var(--cor-branca);
   transform: scale(1.05);
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  cursor: pointer;
-  list-style: none;
+  color: var(--cor-branca);
+
+}
+
+.contato-lista li a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.contato-lista li a:hover,
+.contato-lista li a:focus,
+.contato-lista li a:active {
+  text-decoration: none !important;
+  color: var(--cor-branca) !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.contato-lista li span a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contato-lista li span a:hover,
+.contato-lista li span a:focus,
+.contato-lista li span a:active {
+  text-decoration: none !important;
+  outline: none !important;
+  color: var(--cor-branca) !important;
+}
+
+
+@media (max-width: 768px) {
+  .modal-content-contrato {
+    padding: 1rem;
+    max-width: 90%;
+    margin: 15% auto;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .contato-lista {
+    width: 90%;
+  }
+
+  .contato-lista li {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .contato-lista li a {
+    font-size: 1rem;
+  }
 }

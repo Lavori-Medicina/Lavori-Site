@@ -31,6 +31,24 @@ function scrollToHome(event) {
   fecharMenuSeMobile();
 }
 
+
+function scrollToContact(event) {
+  event.preventDefault();
+  const contact = document.querySelector('#contato');
+  const headerHeight = document.querySelector('nav').offsetHeight;
+
+  window.scrollTo({
+    top: contact.offsetTop - headerHeight,
+    behavior: 'smooth',
+  });
+
+  fecharMenuSeMobile();
+}
+
+
+
+
+
 function scrollToUnity(event) {
   event.preventDefault();
   const unity = document.querySelector('#unity');

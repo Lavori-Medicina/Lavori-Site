@@ -47,4 +47,11 @@
   /* 🎨 Elementos específicos */
   --cor-check-verde: #007b5e;
   --cor-vermelho-hover: #e74c3c;
+
+  /* Cores do fomrulário */
+  --cor-icon-form-hover:#007bff;
+  --cor-icon-form:#013c77;
+  --cor-boder-message:#000000;
+
+
 }

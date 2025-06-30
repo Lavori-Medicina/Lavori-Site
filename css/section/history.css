@@ -7,6 +7,7 @@
     background: var(--cor-fundo-clinicas);
     padding: 4rem 2rem;
     box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .content-history {
