@@ -11,8 +11,8 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
-    
+
+
 }
 
 /* .banner-right img {
@@ -115,7 +115,8 @@ a#btn:hover {
 /* Telas grandes (até 1200px) */
 @media screen and (max-width: 1200px) {
     .banner {
-        background-position: 65% center;
+        background-image: url('../image/banner-tablet.png');
+        background-position: 70% right;
     }
 
     .banner-left h1 {

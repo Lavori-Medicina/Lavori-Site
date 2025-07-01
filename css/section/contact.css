@@ -2,15 +2,14 @@
    ESTRUTURA EXTERNA DO FORMULÁRIO
    ============================================= */
 .section-form {
- 
 
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: flex-start;
-  gap: 5rem; 
-  padding: 2rem; 
+  gap: 5rem;
+  padding: 2rem;
   max-width: 1400px;
-  margin: 6rem auto 5rem auto; 
+  margin: 6rem auto 5rem auto;
 }
 
 .form-wrapper {
@@ -30,8 +29,8 @@
   background: white;
   display: inline;
   align-items: center;
-  padding: 1.25rem; 
-  margin: 6.25rem 3.125rem 3.125rem 3.125rem; 
+  padding: 1.25rem;
+  margin: 6.25rem 3.125rem 3.125rem 3.125rem;
 }
 
 
@@ -50,15 +49,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   width: 100%;
-  max-width: 37.5rem; 
-  margin-bottom: 0.75rem; 
+  max-width: 37.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .label {
-  font-size: 1.0rem; 
-  margin-bottom: 0.3125rem; 
+  font-size: 1.0rem;
+  margin-bottom: 0.3125rem;
   color: var(--cor-boder-message)
 }
 
@@ -71,21 +70,21 @@
   text-align: left;
   justify-content: left;
   margin-bottom: 2.5rem;
-  margin-top: 0.125rem; 
+  margin-top: 0.125rem;
 }
 
 .contact-title-left {
-  font-size: 3.25rem; 
+  font-size: 3.25rem;
   color: #013c77;
-  margin-top: -5rem; 
-  margin-left: 5rem; 
-  margin-bottom: -1rem; 
+  margin-top: -5rem;
+  margin-left: 5rem;
+  margin-bottom: -1rem;
   text-align: center;
 }
 
 p {
   font-size: 1.25rem;
-  margin-bottom: 1.875rem; 
+  margin-bottom: 1.875rem;
 }
 
 /* =============================================
@@ -95,12 +94,12 @@ p {
 .inputs,
 .input-message {
   width: 100%;
-  padding: 0.625rem; 
-  font-size: 1.125rem; 
+  padding: 0.625rem;
+  font-size: 1.125rem;
   font-family: "Roboto", Arial, sans-serif;
-  border: 0.125rem solid var(--cor-boder-message); 
+  border: 0.125rem solid var(--cor-boder-message);
   border-radius: 0;
-  margin-bottom: 0.75rem; 
+  margin-bottom: 0.75rem;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -108,7 +107,7 @@ p {
 .inputs:focus,
 .input-message:focus {
   outline: none;
-  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
   border-color: var(--cor-boder-message);
 }
 
@@ -127,11 +126,11 @@ p {
   border: none;
   color: var(--cor-branca);
   font-size: 1.4rem;
-  padding: 0.75rem 1.5rem; 
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
-  margin-top: 1.25rem; 
+  margin-top: 1.25rem;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -164,8 +163,10 @@ p {
 }
 
 .form-icon {
-  width: 4.0625rem; /* 65px */
-  height: 4.0625rem; /* 65px */
+  width: 4.0625rem;
+  /* 65px */
+  height: 4.0625rem;
+  /* 65px */
   fill: var(--cor-icon-form);
   transition: fill 0.3s ease;
 }
@@ -176,20 +177,20 @@ p {
 
 .icon-section {
   position: absolute;
-  margin-top: 1rem; 
+  margin-top: 1rem;
   top: 10%;
   left: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  gap: 1.5rem; 
+  align-items: flex-start;
+  gap: 1.5rem;
   z-index: 10;
 }
 
 .icon-item {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .icon-text {
@@ -199,7 +200,8 @@ p {
 }
 
 .form-icon {
-  width: 3rem; /* 65px */
+  width: 3rem;
+  /* 65px */
   height: 3rem;
   fill: var(--cor-icon-form);
   transition: fill 0.3s ease;
@@ -231,15 +233,96 @@ p {
 .form-wrapper {
   /* margin-left: auto;
   margin-right: auto; */
-   margin: 0;
+  margin: 0;
 }
 
 
 /* =============================================
    RESPONSIVO
    ============================================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 
-    
+  .icon-section {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-title-left {
+    font-size: 2.2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  .icon-item {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .icon-text {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    align-self: center;
+  }
+}
+
 @media (max-width: 768px) {
   .section-form {
     flex-direction: column;
@@ -261,7 +344,8 @@ p {
   }
 
   .contact-title-left {
-    margin-top: -3rem; /* Ajuste para centralizar no mobile */
+    margin-top: -3rem;
+    /* Ajuste para centralizar no mobile */
     margin-left: 0;
     text-align: center;
   }

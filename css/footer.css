@@ -9,7 +9,7 @@
     background-color: var(--cor-texto-primario);
     color: #f1f5f9;
     gap: 4rem;
-    
+
 }
 
 .links-container {
@@ -156,6 +156,9 @@
 }
 
 @media screen and (max-width:740px) {
+    .links-container {
+        flex-direction: column;
+    }
 
     .footer-left,
     .footer-right {
