@@ -167,7 +167,7 @@ a#btn:hover {
 @media screen and (max-width: 900px) {
     .banner {
         background-position: 68% center;
-        background-image: url('../image/banner_900w.png');
+        background-image: url('../image/banner-clinica-lavori-2.png');
     }
 
     .banner-left {
