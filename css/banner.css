@@ -80,7 +80,7 @@ a#btn {
     cursor: pointer;
     background: var(--cor-botao-primario);
     color: var(--cor-branca);
-    padding: 12px 24px;
+    padding: 15px 24px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
