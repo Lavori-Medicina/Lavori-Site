@@ -113,9 +113,10 @@ a#btn:hover {
 
 
 /* Telas grandes (até 1200px) */
+/* Telas grandes (até 1200px) */
 @media screen and (max-width: 1200px) {
     .banner {
-        background-position: 60% center;
+        background-position: 65% center;
     }
 
     .banner-left h1 {
@@ -239,9 +240,5 @@ a#btn:hover {
     .banner-left h4 {
         margin: 0;
     }
-
-
-
-
 
 }
