@@ -71,6 +71,10 @@
   text-align: center;
 }
 
+#id-cursor-exames li {
+  cursor: none;
+}
+
 .article-services-medicina li:hover {
   background-color: var(--cor-whatsapp-hover);
   text-decoration: none;
