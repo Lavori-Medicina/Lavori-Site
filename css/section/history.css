@@ -176,4 +176,8 @@
     .article-text-history p {
         font-size: 1rem;
     }
+
+    .image-history img {
+        width: 95%;
+    }
 }
