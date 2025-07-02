@@ -191,8 +191,59 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
 window.addEventListener("load", () => {
   if (window.location.hash) {
     scrollWithOffset(window.location.hash);
   }
 });
+
+// Dicionário com as imagens de cada galeria
+const imageSets = {
+  imbituba: [
+    "image/clinica imbituba.jpg",
+    "image/laguna-recepção2.jpg",
+    "image/laguna-recepção3.jpg"
+  ],
+  laguna: [
+    "image/laguna-porta.jpg",
+    "image/laguna-recepção2.jpg",
+    "image/laguna-recepção3.jpg"
+  ],
+  garopaba: [
+    "image/laguna-porta.jpg",
+    "image/laguna-recepção2.jpg",
+    "image/laguna-recepção3.jpg"
+  ],
+  pauloLopes: [
+    "image/laguna-porta.jpg",
+    "image/laguna-recepção2.jpg",
+    "image/laguna-recepção3.jpg"
+  ],
+  // Adicione outras clínicas aqui
+};
+
+// Índices de controle para cada galeria
+const imageIndexes = {
+  imbituba: 0,
+  laguna: 0,
+  garopaba:0,
+  pauloLopes:0
+  // Mesmo nome das chaves acima
+};
+
+// Função única e reutilizável
+function changeImage(clinica, direction) {
+  const total = imageSets[clinica].length;
+  imageIndexes[clinica] += direction;
+
+  if (imageIndexes[clinica] < 0) imageIndexes[clinica] = total - 1;
+  if (imageIndexes[clinica] >= total) imageIndexes[clinica] = 0;
+
+  const imgElement = document.getElementById(`imageSlider-${clinica}`);
+  imgElement.src = imageSets[clinica][imageIndexes[clinica]];
+}
+
+
+
