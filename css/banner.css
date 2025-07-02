@@ -198,7 +198,7 @@ a#btn:hover {
         flex-direction: column;
         height: 100vh;
         background-position: center center;
-        background-image: url('../image/banner-clinica-lavori-mobile-2.png');
+        background-image: url('../image/banner-lavori-mobile.png');
     }
 
     .banner-left {
