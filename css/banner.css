@@ -7,7 +7,7 @@
     position: relative;
     height: 120vh;
     overflow: hidden;
-    background-image: url('../image/banner-clinica-lavori-2.png');
+    background-image: url('../image/banner-clinica-lavori-3.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ a#btn:hover {
 @media screen and (max-width: 900px) {
     .banner {
         background-position: 68% center;
-        background-image: url('../image/banner-clinica-lavori.png');
+        background-image: url('../image/banner-clinica-lavori-3.png');
     }
 
     .banner-left {
@@ -198,7 +198,7 @@ a#btn:hover {
         flex-direction: column;
         height: 100vh;
         background-position: center center;
-        background-image: url('../image/banner-clinica-lavori.png');
+        background-image: url('../image/banner-clinica-lavori-mobile-2.png');
     }
 
     .banner-left {
