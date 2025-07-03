@@ -204,12 +204,12 @@ const imageSets = {
   imbituba: [
     "image/clinica imbituba.jpg",
     "image/laguna-recepção2.jpg",
-    "image/laguna-recepção3.jpg"
+    "image/laguna-recepção.jpg"
   ],
   laguna: [
     "image/laguna-porta.jpg",
     "image/laguna-recepção2.jpg",
-    "image/laguna-recepção3.jpg"
+    "image/laguna-recepção.jpg"
   ],
   garopaba: [
     "image/laguna-porta.jpg",
