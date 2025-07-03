@@ -1,0 +1,190 @@
+/* ========================== */
+/* 🔹 RODAPÉ (FOOTER)         */
+/* ========================== */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: var(--cor-texto-primario);
+    color: #f1f5f9;
+    gap: 4rem;
+
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 100px;
+}
+
+.footer-left,
+.footer-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--cor-branca);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: var(--cor-link-secundario);
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--cor-destaque-hover) !important;
+    box-shadow: none !important;
+}
+
+.footer-units,
+.unit {
+    text-align: center;
+    min-width: 250px;
+}
+
+.footer-right,
+.footer-units {
+    justify-content: space-around;
+}
+
+.unit p {
+    margin-bottom: 0.5rem;
+}
+
+.unit p:not(.p-strong-footer) {
+    font-size: 14px;
+}
+
+.p-strong-footer {
+    font-weight: bold;
+    color: var(--cor-branca);
+    font-size: 1.1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1rem;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: var(--cor-footer-inferior);
+    color: var(--cor-branca);
+    /* font-weight: bolder; */
+
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+
+}
+
+#header-lavori-footer {
+    width: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.whatsapp-p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+
+}
+
+.whatsapp-icon {
+    width: 20px;
+    /* define tamanho fixo para o ícone */
+    height: 20px;
+    object-fit: contain;
+}
+
+.whatsapp-p:hover {
+    color: var(--cor-destaque-hover) !important;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.1rem;
+}
+
+#header-instagram-footer {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:740px) {
+    .links-container {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+    }
+
+    .unit {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-bottom {
+        gap: 0.8rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.6rem;
+    }
+
+    .footer-icon {
+        width: 50px;
+        height: 30px;
+    }
+
+    #header-instagram-footer {
+        width: 25px;
+        height: 20px;
+    }
+
+}

@@ -1,0 +1,212 @@
+/* ========================== */
+/* 🔹 SEÇÃO DO ARTIGO SERVICES */
+/* ========================== */
+
+.section-services-medicina {
+  width: 100%;
+  background-color: var(--cor-botao-hover);
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+}
+
+.container-services {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.article-services-medicina {
+  display: flex;
+  background-color: var(--cor-banner-fundo);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+.article-services-medicina h2 {
+  text-align: center;
+  color: var(--cor-branca);
+  font-size: 2.5rem;
+  margin: 2rem 0rem;
+}
+
+.obs-laboratorio {
+  display: flex;
+  border: 1px solid var(--cor-whatsapp-hover);
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 0 12px var(--cor-sombra-azulada);
+  padding: 20px;
+  color: var(--cor-destaque-ouro);
+  font-size: 1rem;
+}
+
+.obs-laboratorio:hover {
+  background-color: var(--cor-whatsapp-hover);
+  color: var(--cor-branca);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.list-services ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.list-services ul li {
+  background-color: transparent;
+  padding: 1.5rem;
+  border: 1px solid var(--cor-fundo-contato);
+  border-radius: 8px;
+  box-shadow: 0 0 12px var(--cor-sombra-azulada);
+  font-size: 1.2rem;
+  color: var(--cor-branca);
+  list-style: none;
+  text-align: center;
+}
+
+#id-cursor-exames li {
+  cursor: none;
+}
+
+.article-services-medicina li:hover {
+  background-color: var(--cor-whatsapp-hover);
+  text-decoration: none;
+  color: var(--cor-branca);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  list-style: none;
+}
+
+a.article-services-medicina li a {
+  text-decoration: none;
+  color: var(--cor-branca);
+}
+
+
+
+#information {
+  position: relative;
+  top: -35px;
+  box-shadow: none;
+  font-style: italic;
+  right: 20px;
+  color: var(--cor-branca);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.line-services {
+  width: 100%;
+  height: 0.4rem;
+  background-color: var(--cor-divisoria-clara);
+  margin: 4rem 0;
+}
+
+/* TELA DE MODAL */
+
+.btn-center {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 10px 40px;
+  background-color: var(--cor-verde-destaque);
+  color: var(--cor-branca);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 350px;
+  margin: 20px auto;
+}
+
+.btn-center:hover {
+  background-color: var(--cor-verde-hover);
+}
+
+.list-services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .modal-content {
+    width: 70%;
+    margin: 8% auto;
+    padding: 1.5rem;
+    max-height: 75vh;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .section-services-medicina {
+    padding: 2rem 1rem;
+  }
+
+  .article-services-medicina h2 {
+    font-size: 1.6rem;
+  }
+
+  .list-services ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .list-services ul li {
+    font-size: 0.8rem;
+    padding: 1rem 1rem;
+  }
+
+  #information {
+    font-size: 0.95rem;
+    top: -25px;
+    right: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 40% auto;
+    padding: 1rem;
+    max-height: 80vh;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .modal-content p,
+  .modal-content li {
+    font-size: 0.9rem;
+  }
+
+  .close {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .btn-center {
+    font-size: 0.8rem;
+  }
+
+  .modal.active {
+    display: block;
+  }
+
+  .obs-laboratorio {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
