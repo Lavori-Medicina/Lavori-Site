@@ -203,8 +203,8 @@ window.addEventListener("load", () => {
 const imageSets = {
   imbituba: [
     "image/clinica imbituba.jpg",
-    "image/laguna-recepção2.jpg",
-    "image/laguna-recepção.jpg"
+    "image/clinica-lavori-imbituba-recepcao-1.jpg",
+    "image/clinica-lavori-imbituba-recepcao-2.jpg"
   ],
   laguna: [
     "image/laguna-porta.jpg",
@@ -212,14 +212,14 @@ const imageSets = {
     "image/laguna-recepção.jpg"
   ],
   garopaba: [
-    "image/laguna-porta.jpg",
-    "image/laguna-recepção2.jpg",
-    "image/laguna-recepção3.jpg"
+    "image/clinica imbituba.jpg",
+    "image/clinica-lavori-imbituba-recepcao-1.jpg",
+    "image/clinica-lavori-imbituba-recepcao-2.jpg"
   ],
   pauloLopes: [
-    "image/laguna-porta.jpg",
-    "image/laguna-recepção2.jpg",
-    "image/laguna-recepção3.jpg"
+   "image/clinica imbituba.jpg",
+    "image/clinica-lavori-imbituba-recepcao-1.jpg",
+    "image/clinica-lavori-imbituba-recepcao-2.jpg"
   ],
   // Adicione outras clínicas aqui
 };
