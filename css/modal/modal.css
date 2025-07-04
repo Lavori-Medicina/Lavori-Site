@@ -9,8 +9,6 @@
   height: 100%;
   overflow: auto;
   background-color: var(--cor-overlay);
-
-
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -24,10 +22,12 @@
   background-color: var(--cor-fundo-modal);
   margin: 20% auto;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 37.5rem;
+  /* 600px */
   max-height: 70vh;
   overflow-y: auto;
-  border-radius: 10px;
+  border-radius: 0.625rem;
+  /* 10px */
   color: var(--cor-texto-escuro);
   line-height: 1.6;
 }
@@ -57,7 +57,8 @@
 .modal-content li::before {
   content: "✔️ ";
   color: var(--cor-check-verde);
-  margin-right: 8px;
+  margin-right: 0.5rem;
+  /* 8px */
 }
 
 .close {
@@ -65,16 +66,21 @@
   float: right;
   cursor: pointer;
   border: 1px solid var(--cor-preta);
-  padding: 2px 20px;
-  width: 40px;
-  height: 40px;
+  padding: 0.125rem 1.25rem;
+  /* 2px 20px */
+  width: 2.5rem;
+  /* 40px */
+  height: 2.5rem;
+  /* 40px */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--cor-fundo-close);
-  border: 2px solid var(--cor-texto-primario);
+  border: 0.125rem solid var(--cor-texto-primario);
+  /* 2px */
   color: var(--cor-texto-escuro);
-  font-size: 22px;
+  font-size: 1.375rem;
+  /* 22px */
   font-weight: bold;
   transition: all 0.2s ease;
 }
@@ -85,21 +91,21 @@
   border-color: var(--cor-vermelho-hover);
 }
 
-
-
 /* Modal Banner */
-
 .modal-content-contrato {
   background-color: var(--cor-texto-primario);
   margin: 10% auto;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 37.5rem;
+  /* 600px */
   width: 90%;
   max-height: 80vh;
   overflow-y: auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;
+  /* 12px */
   color: var(--cor-texto-escuro);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.3);
+  /* 20px */
   position: relative;
 }
 
@@ -129,9 +135,12 @@
   color: var(--cor-branca);
   padding: 1rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--cor-fundo-contato);
-  border-radius: 8px;
-  box-shadow: 0 0 12px var(--cor-sombra-azulada);
+  border: 0.0625rem solid var(--cor-fundo-contato);
+  /* 1px */
+  border-radius: 0.5rem;
+  /* 8px */
+  box-shadow: 0 0 0.75rem var(--cor-sombra-azulada);
+  /* 12px */
   font-size: 1.2rem;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -142,7 +151,6 @@
   background-color: var(--cor-whatsapp-hover);
   transform: scale(1.05);
   color: var(--cor-branca);
-
 }
 
 .contato-lista li a {
@@ -154,7 +162,6 @@
   border: none;
   outline: none;
 }
-
 
 .contato-lista li a:hover,
 .contato-lista li a:focus,
@@ -179,7 +186,6 @@
   outline: none !important;
   color: var(--cor-branca) !important;
 }
-
 
 @media (max-width: 768px) {
   .modal-content-contrato {

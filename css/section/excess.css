@@ -12,9 +12,11 @@
   max-width: 70rem;
   margin: 2rem auto;
   background: var(--cor-branca);
-  border-radius: 12px;
+  border-radius: 0.75rem;
+  /* 12px */
   padding: 3rem;
-  box-shadow: 0 0 20px var(--cor-sombra);
+  box-shadow: 0 0 1.25rem var(--cor-sombra);
+  /* 20px */
 }
 
 .epi-header h1 {
@@ -38,7 +40,8 @@
 .epi-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  /* 8px */
 }
 
 .epi-image figcaption {
@@ -65,7 +68,8 @@
   color: var(--cor-branca);
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  /* 8px */
   text-decoration: none;
   transition: background 0.3s;
   display: inline-block;
@@ -75,7 +79,7 @@
   background-color: var(--cor-botao-hover);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .article-epi {
     padding: 2rem 1.5rem;
   }

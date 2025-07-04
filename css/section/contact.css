@@ -2,13 +2,12 @@
    ESTRUTURA EXTERNA DO FORMULÁRIO
    ============================================= */
 .section-form {
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 5rem;
   padding: 2rem;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 6rem auto 5rem auto;
 }
 
@@ -19,11 +18,10 @@
 }
 
 .form-container {
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
   margin: 0;
 }
-
 
 .form-contact {
   background: white;
@@ -32,8 +30,6 @@
   padding: 1.25rem;
   margin: 6.25rem 3.125rem 3.125rem 3.125rem;
 }
-
-
 
 /* =============================================
    FORMULÁRIO
@@ -56,7 +52,7 @@
 }
 
 .label {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-bottom: 0.3125rem;
   color: var(--cor-boder-message)
 }
@@ -164,9 +160,7 @@ p {
 
 .form-icon {
   width: 4.0625rem;
-  /* 65px */
   height: 4.0625rem;
-  /* 65px */
   fill: var(--cor-icon-form);
   transition: fill 0.3s ease;
 }
@@ -201,7 +195,6 @@ p {
 
 .form-icon {
   width: 3rem;
-  /* 65px */
   height: 3rem;
   fill: var(--cor-icon-form);
   transition: fill 0.3s ease;
@@ -231,16 +224,13 @@ p {
 }
 
 .form-wrapper {
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: 0;
 }
-
 
 /* =============================================
    RESPONSIVO
    ============================================= */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 48.0625rem) and (max-width: 64rem) {
   .section-form {
     display: flex;
     flex-direction: column;
@@ -271,7 +261,7 @@ p {
 
   .icon-item {
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +277,7 @@ p {
 
   .form-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem;
     padding: 0 1rem;
   }
 
@@ -323,7 +313,7 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .section-form {
     flex-direction: column;
     align-items: center;
@@ -345,7 +335,6 @@ p {
 
   .contact-title-left {
     margin-top: -3rem;
-    /* Ajuste para centralizar no mobile */
     margin-left: 0;
     text-align: center;
   }

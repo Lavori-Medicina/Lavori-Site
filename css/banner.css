@@ -2,7 +2,6 @@
 /* 🔹 BANNER PRINCIPAL        */
 /* ========================== */
 
-
 .banner {
     position: relative;
     height: 120vh;
@@ -11,16 +10,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
-
 }
-
-/* .banner-right img {
-    width: 100%;
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-} */
 
 .banner-left {
     width: 40%;
@@ -47,10 +37,12 @@
 
 .banner-left h4 {
     font-size: 1.6rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    /* 10px */
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 0.075rem;
+    /* 1.2px */
 }
 
 .banner-left h1 {
@@ -69,7 +61,6 @@
     color: var(--cor-texto-secundario-claro);
 }
 
-
 .banner-left h2 {
     font-size: 1.8rem;
     font-weight: normal;
@@ -80,8 +71,10 @@ a#btn {
     cursor: pointer;
     background: var(--cor-botao-primario);
     color: var(--cor-branca);
-    padding: 15px 24px;
-    border-radius: 10px;
+    padding: 0.9375rem 1.5rem;
+    /* 15px 24px */
+    border-radius: 0.625rem;
+    /* 10px */
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease;
@@ -93,26 +86,6 @@ a#btn:hover {
     color: var(--cor-branca);
 }
 
-
-
-/* .bottom-wave path {
-    transform: scaleY(0.2);
-    transform-origin: bottom;
-}
-
-
-.bottom-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    pointer-events: none;
-} */
-
-
-/* Telas grandes (até 1200px) */
 /* Telas grandes (até 1200px) */
 @media screen and (max-width: 1200px) {
     .banner {
@@ -133,7 +106,8 @@ a#btn:hover {
 
     a#btn {
         font-size: 1rem;
-        padding: 10px 22px;
+        padding: 0.625rem 1.375rem;
+        /* 10px 22px */
     }
 }
 
@@ -147,7 +121,6 @@ a#btn:hover {
     .banner-left {
         width: 40%;
         padding: 0 4%;
-
     }
 
     .banner-left h1 {
@@ -188,11 +161,12 @@ a#btn:hover {
 
     a#btn {
         font-size: 0.95rem;
-        padding: 8px 20px;
+        padding: 0.5rem 1.25rem;
+        /* 8px 20px */
     }
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width: 740px) {
     .banner {
         display: flex;
         flex-direction: column;
@@ -207,23 +181,24 @@ a#btn:hover {
         width: 100%;
         height: auto;
         margin-top: auto;
-        /* ISSO empurra para baixo */
         clip-path: none;
-        padding: 20px;
-
+        padding: 1.25rem;
+        /* 20px */
     }
 
     a#btn {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
+        /* 10px 20px */
         font-size: 0.8rem;
         align-self: center;
-        margin-top: 10px !important;
+        margin-top: 0.625rem !important;
+        /* 10px */
     }
-
 
     .banner-left h1 {
         font-size: 1.7rem;
-        margin-top: 5px !important;
+        margin-top: 0.3125rem !important;
+        /* 5px */
     }
 
     .banner-left h4 {
@@ -232,7 +207,8 @@ a#btn:hover {
 
     .banner-left h3 {
         font-size: 0.8rem;
-        margin-top: 5px !important;
+        margin-top: 0.3125rem !important;
+        /* 5px */
     }
 
     .banner-left h1,
@@ -240,5 +216,4 @@ a#btn:hover {
     .banner-left h4 {
         margin: 0;
     }
-
 }

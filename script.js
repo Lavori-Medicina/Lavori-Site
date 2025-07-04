@@ -221,19 +221,17 @@ const imageSets = {
     "image/clinica-lavori-imbituba-recepcao-1.jpg",
     "image/clinica-lavori-imbituba-recepcao-2.jpg"
   ],
-  // Adicione outras clínicas aqui
+
 };
 
-// Índices de controle para cada galeria
 const imageIndexes = {
   imbituba: 0,
   laguna: 0,
   garopaba:0,
   pauloLopes:0
-  // Mesmo nome das chaves acima
+
 };
 
-// Função única e reutilizável
 function changeImage(clinica, direction) {
   const total = imageSets[clinica].length;
   imageIndexes[clinica] += direction;
