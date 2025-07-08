@@ -28,32 +28,33 @@
   <link rel="stylesheet" href="css/index.css" />
 </head>
 
-<header>
-  <nav>
-    <img id="header-lavori" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-    <ul id="nav-links">
-      <li><a href="#home" onclick="scrollToHome(event)">HOME</a></li>
-      <li>
-        <a href="#history" onclick="scrollToHistory(event)">NOSSA HISTÓRIA</a>
-      </li>
-      <li><a href="#unity" onclick="scrollToUnity(event)">UNIDADES</a></li>
-      <li><a href="#info" onclick="scrollToInfo(event)">INFORMATIVO</a></li>
-      <li>
-        <a href="#services" onclick="scrollToServices(event)">SERVIÇOS</a>
-      </li>
-      <li>
-        <a href="extras.html">EXTRAS</a>
-      </li>
-      <li id="contact"><a href="#contato" onclick="scrollToContact(event)">CONTATO</a></li>
-      <a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram" src="image/icon-instagram.png" alt="Instagram" /> </a>
-    </ul>
-    <div id="overlay" onclick="toggleMenu()"></div>
-  </nav>
-</header>
 
 <body>
+  <header>
+    <nav>
+      <img id="header-lavori" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+      <ul id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li>
+          <a href="#history">NOSSA HISTÓRIA</a>
+        </li>
+        <li><a href="#unity">UNIDADES</a></li>
+        <li><a href="#info">INFORMATIVO</a></li>
+        <li>
+          <a href="#services">SERVIÇOS</a>
+        </li>
+        <li>
+          <a href="extras.html">EXTRAS</a>
+        </li>
+        <li id="contact"><a href="#contato">CONTATO</a></li>
+        <a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram" src="image/icon-instagram.png" alt="Instagram" /> </a>
+      </ul>
+      <div id="overlay" onclick="toggleMenu()"></div>
+    </nav>
+  </header>
   <!-- Section Banner -->
   <section class="banner" id="home">
 
@@ -213,7 +214,35 @@
       </div>
 
     </div>
+
   </section>
+  <section class="container-mission">
+    <div class="article-mission">
+
+      <div class="box-mission">
+        <div class="title-mission">
+          <h2>Missão</h2>
+        </div>
+        <p>Fornecer serviços de alta qualidade, que consigam atender as necessidades dos nossos clientes e garantir suas expectativas.</p>
+      </div>
+
+      <div class="box-mission">
+        <div class="title-mission">
+          <h2>Visão</h2>
+        </div>
+        <p>Ser a solução de SST para empresas dos mais diversos segmentos.</p>
+      </div>
+
+      <div class="box-mission">
+        <div class="title-mission">
+          <h2>Valores</h2>
+        </div>
+        <p>Especialistas em SST, engajados para alavancar resultados, apaixonados pelos clientes, extraordinários e com coragem para enfrentar desafios.</p>
+      </div>
+
+    </div>
+  </section>
+
 
   <!-- Section Unity -->
   <section class="section-units" id="unity">
@@ -530,6 +559,7 @@
       <p><strong>Com a Lavori, sua equipe aprende mais, aplica melhor e trabalha com mais segurança.</strong></p>
     </div>
   </div>
+
 
   <!-- Modal Gestão eSocial -->
   <div id="modaleSocial" class="modal">
@@ -911,8 +941,7 @@
       <div class="footer-logo">
         <img id="header-lavori-footer" src="image/Lavori-Mascote.png" alt="Lavori Mascote" />
       </div>
-      <p>&copy; 2025 Lavori.
-        Responsável técnico Lawrence de Luca Dias CRM 7010/SC - RQE 12962.</p>
+      <p id="footer"></p>
       <div class="footer-icon"><a href="https://www.instagram.com/clinicalavori/" target="_blank" title="link do instagram da clínica Lavori"><img id="header-instagram-footer" src="image/icons-instagram2.png" alt="Instagram"></a>
       </div>
   </footer>
