@@ -1,0 +1,244 @@
+/* ========================== */
+/* 🔹 SEÇÃO DO ARTIGO HISTORIA */
+/* ========================== */
+
+.section-history {
+    width: 100%;
+    background: var(--cor-fundo-clinicas);
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.content-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.image-history {
+    flex: 1 1 10%;
+    min-width: 17.5rem;
+    /* 280px */
+    position: relative;
+    overflow: visible;
+}
+
+.image-history img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    /* 8px */
+    object-fit: cover;
+    box-shadow: 0 0.9375rem 1.875rem var(--cor-sombra);
+    /* 15px 30px */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.image-history img:hover {
+    transform: translateY(-0.625rem) scale(1.03);
+    /* -10px */
+    box-shadow: 0 1.5625rem 2.8125rem rgba(0, 0, 0, 0.4);
+    /* 25px 45px */
+}
+
+.content-history:nth-child(even) .image-history img {
+    transform: translateX(1.25rem);
+    /* 20px */
+}
+
+.scroll-animate {
+    animation: floatFromSide 1.2s ease forwards;
+}
+
+@keyframes floatFromSide {
+    from {
+        opacity: 0;
+        transform: translateX(-5rem);
+        /* 80px */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.article-text-history {
+    flex: 1 1 50%;
+    min-width: 18.75rem;
+    /* 300px */
+    padding: 0 1rem;
+    color: var(--cor-texto-primario);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.article-text-history p {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.article-text-history h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto-primario);
+    font-weight: bolder;
+    text-align: start;
+}
+
+.content-history.reverse {
+    flex-direction: row-reverse;
+}
+
+.history-title {
+    text-align: start;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.history-title h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    color: var(--cor-titulo-subclinica);
+    box-shadow: -0.5rem 0 0 var(--cor-whatsapp-hover);
+    /* -8px */
+    padding-left: 0.625rem;
+    /* 10px */
+}
+
+.line-history {
+    width: 100%;
+    height: 0.25rem;
+    /* 4px */
+    background-color: var(--cor-titulo-subclinica);
+    margin: 2rem 0;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-wrapper img {
+    width: 31.25rem;
+    /* 500px */
+    height: 21.875rem;
+    /* 350px */
+    object-fit: cover;
+    border-radius: 0.5rem;
+    /* 8px */
+    box-shadow: 0 0.9375rem 1.875rem var(--cor-sombra);
+    /* 15px 30px */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev-btn {
+    left: 0.625rem;
+    /* 10px */
+}
+
+.next-btn {
+    right: 0.625rem;
+    /* 10px */
+}
+
+/* Tablet */
+@media screen and (min-width: 48.0625rem) and (max-width: 64rem) {
+    .section-history {
+        padding: 3rem 1.5rem;
+    }
+
+    .content-history,
+    .content-history.reverse {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .image-history,
+    .article-text-history {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .article-text-history {
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .article-text-history h2 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .article-text-history p {
+        font-size: 1.2rem;
+    }
+
+    .image-history img {
+        width: 100%;
+        max-width: 31.25rem;
+        /* 500px */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .history-title h1 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .line-history {
+        margin: 2.5rem 0;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 46.25rem) {
+    .section-history {
+        padding: 3rem 1.5rem;
+    }
+
+    .history-title h1 {
+        font-size: 2rem;
+    }
+
+    .article-text-history h2 {
+        font-size: 1.8rem;
+    }
+
+    .article-text-history p {
+        font-size: 1rem;
+    }
+
+    .image-history img {
+        width: 95%;
+    }
+}

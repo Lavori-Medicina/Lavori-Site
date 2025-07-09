@@ -1,0 +1,138 @@
+/* ========================== */
+/* 🔹 SEÇÃO DO ARTIGO INFORMATIVO */
+/* ========================== */
+
+.article-section {
+  width: 100%;
+  background-color: #e9f2f9;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.article-image {
+  flex: 1 1 30%;
+  min-width: 18.75rem;
+  /* 300px */
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  /* 8px */
+  object-fit: cover;
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.3);
+  /* 15px 30px */
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.article-text {
+  flex: 1 1 50%;
+  min-width: 18.75rem;
+  /* 300px */
+  padding: 0 1rem;
+  color: #0a3950;
+}
+
+.article-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.article-text p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #007acc;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3125rem;
+  /* 5px */
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #005f99;
+}
+
+/* Tablet: entre 769px e 1024px */
+@media screen and (min-width: 48.0625rem) and (max-width: 64rem) {
+  .article-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .article-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .article-image,
+  .article-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .article-image {
+    width: 50%;
+  }
+
+  .article-image img {
+    max-width: 62.5rem;
+    /* 1000px */
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .article-text h2 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .article-text p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .btn-primary {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile: até 740px */
+@media screen and (max-width: 46.25rem) {
+  .article-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .article-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .article-text p {
+    font-size: 1rem;
+  }
+}
