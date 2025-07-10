@@ -111,9 +111,9 @@ const imageSets = {
     "image/laguna-recepção.jpg"
   ],
   garopaba: [
-    "image/clinica imbituba.jpg",
-    "image/clinica-lavori-imbituba-recepcao-1.jpg",
-    "image/clinica-lavori-imbituba-recepcao-2.jpg"
+    "image/clinica-lavori-garopaba.jpg",
+    "image/clinica-lavori-garopaba2.jpg",
+    "image/clinica-lavori-garopaba3.jpg"
   ],
   pauloLopes: [
    "image/clinica imbituba.jpg",
