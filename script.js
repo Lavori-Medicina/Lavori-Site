@@ -111,9 +111,10 @@ const imageSets = {
     "image/laguna-recepção.jpg"
   ],
   garopaba: [
-    "image/clinica-lavori-garopaba.jpg",
-    "image/clinica-lavori-garopaba2.jpg",
-    "image/clinica-lavori-garopaba3.jpg"
+    "image/clinica-lavori-garopaba-recepcao-1.jpg",
+    "image/clinica-lavori-garopaba-recepcao-2.jpg",
+    "image/clinica-lavori-garopaba-recepcao-3.jpg",
+    "image/clinica-lavori-garopaba-recepcao-4.jpg"
   ],
   pauloLopes: [
   "image/clinica-lavori-paulolopes.jpg",
