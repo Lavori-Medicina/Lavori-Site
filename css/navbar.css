@@ -1,0 +1,228 @@
+/* ========================== */
+/* 🔹 NAVEGAÇÃO (NAVBAR)      */
+/* ========================== */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--cor-branca);
+  box-shadow: 0 0.125rem 0.3125rem var(--cor-sombra);
+  /* 2px 5px */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#header-lavori {
+  width: 9.375rem;
+  /* 150px */
+}
+
+#header-instagram {
+  width: 4.0625rem;
+  /* 65px */
+  height: 4.0625rem;
+  cursor: pointer;
+}
+
+nav ul#nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a:not(#contact a) {
+  text-decoration: none;
+  color: var(--cor-texto-primario);
+  padding: 0.3125rem 0;
+  /* 5px */
+}
+
+#contact a {
+  text-decoration: none;
+  border: 1px solid var(--cor-borda-botao);
+  padding: 0.625rem 1.875rem;
+  /* 10px 30px */
+  border-radius: 0.5rem;
+  /* 8px */
+  color: var(--cor-branca);
+  background-color: var(--cor-botao-primario);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover {
+  background: var(--cor-botao-hover);
+  color: var(--cor-branca);
+}
+
+ul li:not(#contact) a:hover {
+  box-shadow: 0rem 0.125rem var(--cor-botao-primario);
+  /* 2px */
+  color: var(--cor-botao-hover);
+}
+
+/* Botão hamburguer */
+.hamburger {
+  display: none;
+}
+
+#header-instagram-footer {
+  width: 0.625rem;
+  /* 10px */
+  height: 0.625rem;
+  cursor: pointer;
+}
+
+/* ========================== */
+/* 🔹 MEDIA QUERIES           */
+/* ========================== */
+
+@media screen and (max-width: 75rem) {
+  nav ul#nav-links {
+    gap: 3rem;
+    font-size: 1.05rem;
+  }
+
+  #header-lavori {
+    width: 6.875rem;
+    /* 110px */
+  }
+
+  #header-instagram {
+    width: 3.125rem;
+    /* 50px */
+    height: 3.125rem;
+  }
+
+  #contact a {
+    padding: 0.4375rem 1.375rem;
+    /* 7px 22px */
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  nav ul#nav-links {
+    gap: 0.8rem;
+    font-size: 1rem;
+  }
+
+  #header-lavori {
+    width: 6.25rem;
+    /* 100px */
+  }
+
+  #header-instagram {
+    width: 2.8125rem;
+    /* 45px */
+    height: 2.8125rem;
+  }
+
+  #contact a {
+    padding: 0.375rem 1.25rem;
+    /* 6px 20px */
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 56.25rem) {
+  nav ul#nav-links {
+    gap: 0.25rem;
+    /* 4px */
+    font-size: 0.85rem;
+  }
+
+  #header-lavori {
+    width: 4.6875rem;
+    /* 75px */
+  }
+
+  #header-instagram {
+    width: 2rem;
+    /* 32px */
+    height: 2rem;
+  }
+
+  #contact a {
+    padding: 0.25rem 0.75rem;
+    /* 4px 12px */
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.75rem;
+    /* 12px */
+    right: 0.9375rem;
+    /* 15px */
+    z-index: 1001;
+  }
+
+  #header-lavori {
+    width: 10rem;
+  }
+
+  nav ul#nav-links {
+    position: fixed;
+    top: 0;
+    left: -15.625rem;
+    /* -250px */
+    width: 15.625rem;
+    /* 250px */
+    height: 100vh;
+    background-color: var(--cor-branca);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    /* 80px */
+    gap: 2rem;
+    font-size: 1.2rem;
+    list-style: none;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0.125rem 0 0.3125rem var(--cor-sombra);
+    /* 2px 5px */
+    z-index: 999;
+  }
+
+  nav ul#nav-links.active {
+    left: 0;
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--cor-overlay);
+    z-index: 998;
+  }
+
+  nav ul#nav-links.active+#overlay {
+    display: block;
+  }
+
+  #header-instagram {
+    width: 3.75rem;
+    /* 60px */
+    height: 3.75rem;
+  }
+
+  #contact a {
+    padding: 0.75rem 1.25rem;
+    /* 12px 20px */
+    font-size: 1rem;
+  }
+}
